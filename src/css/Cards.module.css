@@ -1,0 +1,16 @@
+.cards{background-color:white; padding:50px 10%;}
+.cards img{width:100%; height:250px;}
+.cards h1{color:white; font-size:24px;}
+.cards p{color:white; font-size:18px;}
+.cardBolimlar{padding:10px;}
+
+.cardBolimlar>div{box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;}
+.sarlavha{color:rebeccapurple !important; font-size: 32px !important; text-align:center}
+@media (min-width:1650px){
+    .cards img{height:400px;}
+    .cards h1{font-size: 28px;}
+    .cards p{font-size: 22px;}
+}
+@media (max-width:768px){
+   
+}

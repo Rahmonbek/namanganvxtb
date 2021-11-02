@@ -1,0 +1,35 @@
+.foot{padding:50px 5%; background-color:rgb(62, 26, 99) }
+.foot ul{list-style:none; }
+.foot ul li{margin-top: 20px;}
+.foot li a{color:white; font-size:18px}
+.foot img{border-radius: 50%;
+    
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 20px 60px 4px;
+}
+.foot p{color:white; font-size:18px; margin-top: 20px;}
+.icons{display: flex; justify-content:space-around;}
+.icons a{width:50px; border-radius: 50%; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    height:50px; display: flex; align-items:center; justify-content: center; background-color:white; color:rebeccapurple;}
+.icons i{font-size: 25px;}
+@media (max-width:1050px){
+   .foot ul{justify-content: center; width:100%;}
+   .foot li{width:100%; text-align: center;margin-top: 30px; margin-left:-20px}
+   .foot li a{font-size: 24px;}
+   .foot p{font-size: 24px; text-align: center;}
+.icons a{width:70px; height:70px;}
+.icons i{font-size: 40px;}
+.colImg{display:flex; justify-content:center; align-items:center; padding:30px}
+}
+@media (max-width:699px){
+    .foot p{font-size: 18px;}
+}
+
+@media (min-width:1650px){
+    .colImg{display:flex; justify-content:center; align-items:center;}
+.foot img{margin-left: -320px; width:400px;}
+    .foot p{font-size: 30px;}
+    .foot li a{font-size: 32px;}
+    .icons i{font-size: 45px;}
+    .icons a{width: 80px;height: 80px;}
+}
