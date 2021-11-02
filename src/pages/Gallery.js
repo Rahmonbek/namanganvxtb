@@ -63,8 +63,8 @@ axios.get(`${url}/region/${res.data.region}/`).then(res1=>{
   </video>
   </div>
   <div className={style.binaf}>
-      <h1>{this.state.region!==null?this.state.region.address:''} {this.state.region!==null?this.state.region.region_name:''} tumani 
-      <br/> {this.state.school!==null?this.state.school.school_number:''} - {this.state.school!==null?this.state.school.type:''}</h1>
+  <h1>O'zbekiston Respublikasi Namangan 
+      <br/>viloyati xalq ta'limi boshqarmasi fotolavhalari</h1>
   </div>
 
 <div className={styles.rasmlar}>

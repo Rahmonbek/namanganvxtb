@@ -644,7 +644,7 @@ this.getSpec()
 
 <YMaps>
 <div>
-<Map style={{width:'100%', height:'400px'}} defaultState={{ center: [41.3572425,60.818505], zoom: 12 }} >
+<Map style={{width:'100%', height:'400px'}} defaultState={{ center: [41.000630,71.669404], zoom: 12 }} >
 <Clusterer
               options={{
                 groupByCoordinates: false,
@@ -652,7 +652,7 @@ this.getSpec()
             >
               <Placemark
                 key={-1}
-                geometry={[41.3572425,60.818505]}
+                geometry={[41.000630,71.669404]}
                 options={{
                   iconLayout: "default#image",
                 }}

@@ -43,14 +43,7 @@ export default class NavbarT extends Component {
                     <div className={style.nav}>
                     <ul id="navb">
                             <li onClick={this.closeNav}>
-                                <a className={style.lik} href="#">Bosh sahifa</a>
-                            </li>
-                           
-                            <li onClick={this.closeNav}>
-                                <a className={style.lik} href="#rahbariyat">Rahbariyat</a>
-                            </li>
-                            <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/tumanlar">Tumanlar</NavLink>
+                                <NavLink className={style.lik} to="/">Bosh sahifa</NavLink>
                             </li>
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/gallery">Fotolavhalar</NavLink>
@@ -58,9 +51,15 @@ export default class NavbarT extends Component {
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/yangiliklar">Yangiliklar</NavLink>
                             </li>
-                         
                             <li onClick={this.closeNav}>
-                                <a className={style.lik} href="#bog'lanish">Bog'lanish</a>
+                                <NavLink className={style.lik} to="/rahbariyat">Rahbariyat</NavLink>
+                            </li>
+                            <li onClick={this.closeNav}>
+                                <NavLink className={style.lik} to="/tumanlar">Tumanlar</NavLink>
+                            </li>
+                            
+                            <li onClick={this.closeNav}>
+                            <NavLink className={style.lik} to="/boglanish">Bog'lanish</NavLink>
                             </li>
                         </ul>
                         </div>

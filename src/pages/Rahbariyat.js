@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import NavbarT from "./NavbarT";
-import FooterA from "./FooterA";
+import Footer from "./Footer";
 import { Modal } from "antd";
-import styles from "../css/Rahbariyat.module.css";
+import style from "../css/Rahbariyat.module.css";
 import rahbar from "../images/Xudoyberganov.png";
 import gozal from "../images/gozal.png";
 import axmedov from "../images/axmedov.png";
@@ -14,15 +14,7 @@ import lex from "../images/h3.jpg";
 import gov from "../images/h4.jpg";
 import par from "../images/logo_small.png";
 import xalq from "../images/logo.png";
-
-// import {
-//   MDBCard,
-//   MDBCardBody,
-//   MDBCardTitle,
-//   MDBCardText,
-//   MDBCardImage,
-//   MDBBtn,
-// } from "mdb-react-ui-kit";
+import GridLoader from "react-spinners/GridLoader";
 
 import {
   Button,
@@ -31,7 +23,7 @@ import {
   Row,
   Container,
 } from "react-bootstrap";
-import Loader from "./Loader";
+// import Loader from "./Loader";
 
 export default class Rahbariyat extends Component {
   state = {
@@ -231,22 +223,26 @@ export default class Rahbariyat extends Component {
     return (
       <div>
         {this.state.timePassed === false ? (
-          <Loader />
+       <div className={style.load}>
+       <GridLoader
+color="violet" loading={this.state.loader} size={40} />
+       </div>
+       
         ) : (
-          <div className={styles.rahbariyat}>
+          <div className={style.rahbariyat}>
             <NavbarT />
             <div>
-              <div className={styles.head}>
-                <div className={styles.head_text}>
-                  O'zbekiston Respublikasi Xorazm viloyati Bog'ot tumani xalq
-                  ta'limi boshqarmasining rahbariyati
+              <div className={style.head}>
+                <div className={style.head_text}>
+                O'zbekiston Respublikasi Namangan 
+      viloyati xalq ta'limi boshqarmasining rahbariyat a'zolari
                 </div>
               </div>
-              <div className={styles.rahbariyatTitle}>
+              <div className={style.rahbariyatTitle}>
                 <h3>Rahbariyat</h3>
               </div>
-              <div className={styles.line}></div>
-              <div className={styles.rahbariyatBody}>
+              <div className={style.line}></div>
+              <div className={style.rahbariyatBody}>
                 <Container fluid>
                   <Row>
                     <Col lg={9} sm={12}>
@@ -255,13 +251,13 @@ export default class Rahbariyat extends Component {
                           ? this.state.rahbariyat.map((item, key) => {
                               return item.daraja === this.state.daraja ? (
                                 <Col lg={12} md={12} sm={12}>
-                                  <div className={styles.card}>
+                                  <div className={style.card}>
                                     <Row>
                                       <Col xl={4} lg={5} md={5} sm={5} xs={12}>
                                         <img src={item.image} alt="" />
                                       </Col>
                                       <Col xl={8} lg={7} md={7} sm={7} xs={12}>
-                                        <div className={styles.cardBody}>
+                                        <div className={style.cardBody}>
                                           <h4>{item.lavozimi}</h4>
                                           <h4>{item.fullName}</h4>
                                           <h6>
@@ -273,7 +269,7 @@ export default class Rahbariyat extends Component {
                                           <h6>
                                             <b>Email:</b> {item.email}
                                           </h6>
-                                          <div className={styles.cardBodyBtn}>
+                                          <div className={style.cardBodyBtn}>
                                             <Button
                                               style={{
                                                 backgroundColor: "#1105e6",
@@ -282,7 +278,7 @@ export default class Rahbariyat extends Component {
                                               onClick={() =>
                                                 this.openModal(key)
                                               }
-                                              className={styles.btn}
+                                              className={style.btn}
                                             >
                                               Batafsil
                                             </Button>
@@ -300,7 +296,7 @@ export default class Rahbariyat extends Component {
                       </Row>
                     </Col>
                     <Col lg={3} sm={12}>
-                      <div className={styles.saytlar}>
+                      <div className={style.saytlar}>
                         <ul>
                           <li>
                             <img src={gerb} />
@@ -379,7 +375,7 @@ export default class Rahbariyat extends Component {
                 </Col>
                 <Col
                   md={8}
-                  className={styles.modalBody}
+                  className={style.modalBody}
                   style={{ minHeight: "320px" }}
                 >
                   <p style={{ textAlign: "center", marginBottom: "0" }}>
@@ -399,7 +395,7 @@ export default class Rahbariyat extends Component {
                 </Col>
               </Row>
             </Modal>
-            <FooterA />
+            <Footer />
           </div>
         )}
       </div>

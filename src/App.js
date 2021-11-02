@@ -8,6 +8,7 @@ import Gallery from './pages/Gallery';
 import Yangiliklar from './pages/Yangiliklar';
 import Tumanlar from './pages/Tumanlar';
 import Rahbariyat from './pages/Rahbariyat';
+import Boglanish from './pages/Boglanish';
 
 export default class App extends Component {
   render() {
@@ -30,6 +31,9 @@ export default class App extends Component {
   </Route>
   <Route exact path="/rahbariyat">
   <Rahbariyat/>
+  </Route>
+  <Route exact path="/boglanish">
+  <Boglanish/>
   </Route>
 </Switch>
       

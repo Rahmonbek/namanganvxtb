@@ -1,0 +1,30 @@
+.phone{
+    position: fixed;
+    z-index: 2131230;
+top:50vh;
+width: 70px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+right: 3%;
+border-radius: 50%;
+background-color:white;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.telegramm{
+position: fixed;
+z-index: 2131230;
+top:62vh;
+width: 70px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+right: 3%;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+border-radius: 50%;
+background-color:white; 
+}
+.load{width:100%; height:100%; position:fixed; top:0px; left:0px; z-index: 567; display: flex; justify-content:center; align-items:center;}
+.sarlavha{color:rebeccapurple; font-size: 32px; text-align:center; margin-top:140px; margin-bottom:30px;}

@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.sarlavha{color:rebeccapurple; font-size: 32px; text-align:center}
+.sarlavha{color:rgb(108, 22, 105); font-size: 32px; text-align:center}
 .head_text {
   background-color: rgba(0, 0, 0, 0.611);
   color: white;
@@ -48,12 +48,12 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid blue;
+  border: 1px solid rgb(111, 3, 90);
   color: white;
-  background: blue;
+  background: rgb(111, 3, 90);
 }
 .ahref:hover {
-  color: blue;
+  color: rgb(111, 3, 90);
   background-color: white;
   border-color: transparent;
 }
@@ -63,7 +63,7 @@ body {
 .chiziq {
   width: 100px;
   height: 4px;
-  background-color: blue;
+  background-color: rgb(111, 3, 90);
   margin: auto;
 }
 .tumanlar {
@@ -124,7 +124,7 @@ body {
 .but {
   width: 100%;
   /* padding: 10px 40px; */
-  background-color: blue;
+  background-color: rgb(111, 3, 90);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   color: white;
   font-size: 18px;
@@ -139,9 +139,9 @@ body {
   font-weight: bold;
 }
 .but:hover {
-  color: blue;
+  color: rgb(111, 3, 90);
   background-color: white;
-  border: 1px solid blue;
+  border: 1px solid rgb(111, 3, 90);
 }
 @media(min-width:1700px) {
   .container h4 {

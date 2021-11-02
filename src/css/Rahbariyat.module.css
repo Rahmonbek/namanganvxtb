@@ -37,7 +37,7 @@
 }
 .line {
   width: 30%;
-  border-bottom: #1105e6 solid 4px;
+  border-bottom: #51065c solid 4px;
   margin: auto;
   margin-bottom: 5%;
 }
@@ -46,7 +46,7 @@
   /* padding-top: 0; */
 }
 .card {
-  /* border: 1px solid #1105e6; */
+  /* border: 1px solid #78057e; */
   margin: 10px;
   border-radius: 10px;
   background-color: white;
@@ -55,14 +55,14 @@
 .card1 {
   margin: 10px;
   border-radius: 10px;
-  background-color: rgba(3, 110, 231, 0.445);
+  background-color: rgba(231, 3, 185, 0.445);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 15px;
   width: 90%;
 }
 .card1 li {
   color: #040135;
-  border-bottom: 2px rgb(68, 57, 224) solid;
+  border-bottom: 2px rgb(113, 16, 106) solid;
   width: 90%;
 }
 .card1 ul :hover {
@@ -95,7 +95,7 @@
   text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
-  color: #1105e6;
+  color: #a306a5;
 }
 .cardBody > h6 {
   margin-top: 10px;
@@ -113,7 +113,7 @@
   font-size: 20px;
 }
 .card > h4 {
-  color: #1105e6;
+  color: #78057e;
   padding-left: 15px;
 }
 .card img {
@@ -123,11 +123,11 @@
   border-bottom-left-radius: 10px;
 }
 .modalBody > p {
-  color: #1105e6;
+  color: #78057e;
   font-size: 20px;
 }
 .card1 > h4 {
-  color: #1105e6;
+  color: #78057e;
 }
 @media (min-width: 0px) and (max-width: 566px) {
   .head {
@@ -395,7 +395,7 @@
 .maincontainer > .back {
   position: absolute;
   transform: perspective(600px) rotateY(180deg);
-  background: #1105e6;
+  background: #78057e;
   color: #fff;
   width: 302px;
   height: 290px;
@@ -430,7 +430,7 @@
   margin: 10px 0px;
   width: 100%;
   padding: 20px 20px 10px 20px;
-  border-top: 1px solid darkblue;
+  border-top: 1px solid rgb(94, 3, 80);
   display: flex;
   align-items: center;
 }
@@ -446,8 +446,10 @@
   left: -10px;
 }
 .saytlar a:hover {
-  color: blue;
+  color: rgb(121, 7, 114);
 }
+.load{width:100%; height:100%; position:fixed; top:0px; left:0px; z-index: 567; display: flex; justify-content:center; align-items:center;}
+
 @media (max-width: 900px) {
   .saytlar {
     display: none !important;

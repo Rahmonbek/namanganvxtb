@@ -42,8 +42,8 @@ color="violet" loading={this.state.loader} size={40} />
             <NavbarT />
             <div className={style.head}>
               <div className={style.head_text}>
-                O'zbekiston Respublikasi Xorazm viloyati xalq ta'limi
-                boshqarmasining tumanlaridagi bo'limlari
+              O'zbekiston Respublikasi Namangan 
+      viloyati xalq ta'limi boshqarmasining tumanlaridagi bo'limlari
               </div>
             </div>
             <div className={style.tumanlar}>

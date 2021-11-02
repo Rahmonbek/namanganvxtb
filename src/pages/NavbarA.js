@@ -42,25 +42,25 @@ export default class NavbarA extends Component {
                     </div>
                     <div className={style.nav}>
                     <ul id="navb">
-                            <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/">Bosh sahifa</NavLink>
+                    <li onClick={this.closeNav}>
+                    <NavLink className={style.lik} to="/">Bosh sahifa</NavLink>
                             </li>
-                            <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/#rahbariyat">Rahbariyat</NavLink>
-                            </li>
-                         
-                            <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/#video">Videolavhalar</NavLink>
-                            </li>
-                      
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/gallery">Fotolavhalar</NavLink>
                             </li>
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/yangiliklar">Yangiliklar</NavLink>
+                            </li> 
+                            <li onClick={this.closeNav}>
+                            <NavLink className={style.lik} to="/rahbariyat">Rahbariyat</NavLink>
                             </li>
                             <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/#bog'lanish">Bog'lanish</NavLink>
+                                <NavLink className={style.lik} to="/tumanlar">Tumanlar</NavLink>
+                            </li>
+                          
+                         
+                            <li onClick={this.closeNav}>
+                            <NavLink className={style.lik} to="/boglanish">Bog'lanish</NavLink>
                             </li>
                         </ul>
                         </div>
