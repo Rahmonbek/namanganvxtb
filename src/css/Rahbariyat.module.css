@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rahbariyat {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.head {
+  margin-top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-image: url(../images/dxorazm14.jpg);
+  padding-top: 60vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.head_text {
+  background-color: rgba(0, 0, 0, 0.611);
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+.rahbariyatTitle h3 {
+  text-align: center;
+  font-family: "Lobster";
+  font-size: 60px;
+  font-weight: 500;
+  margin: 5% 5% 10px 5% !important;
+}
+.line {
+  width: 30%;
+  border-bottom: #1105e6 solid 4px;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.rahbariyatBody {
+  padding: 0 6%;
+  /* padding-top: 0; */
+}
+.card {
+  /* border: 1px solid #1105e6; */
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card1 {
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(3, 110, 231, 0.445);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px;
+  width: 90%;
+}
+.card1 li {
+  color: #040135;
+  border-bottom: 2px rgb(68, 57, 224) solid;
+  width: 90%;
+}
+.card1 ul :hover {
+  background-color: rgba(255, 255, 255, 0.404);
+}
+
+.cardsCol {
+  margin: 10px auto;
+  min-width: 310px;
+}
+.modalRow {
+  display: flex;
+}
+.modalCol1 img {
+  width: 100%;
+  height: auto;
+}
+/* .modalCol2 {
+  flex: 60%;
+} */
+.cardButton {
+  width: 220px;
+  margin-left: auto;
+}
+.cardBody {
+  margin: 15px;
+  min-height: 350px;
+}
+.cardBody > h4 {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #1105e6;
+}
+.cardBody > h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cardBody > h6 > b {
+  margin-right: 8px;
+}
+.cardBodyBtn {
+  position: absolute;
+  right: 35px;
+  bottom: 25px;
+}
+.cardBodyBtn > .btn {
+  font-size: 20px;
+}
+.card > h4 {
+  color: #1105e6;
+  padding-left: 15px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.modalBody > p {
+  color: #1105e6;
+  font-size: 20px;
+}
+.card1 > h4 {
+  color: #1105e6;
+}
+@media (min-width: 0px) and (max-width: 566px) {
+  .head {
+    height: 550px;
+    background-size: 100% 60%;
+    padding-top: 80%;
+    background-position-y: 35%;
+  }
+  .head_text {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .rahbariyatTitle > h3 {
+    font-size: 28px;
+  }
+  .cardBody > h4 {
+    font-size: 18px;
+  }
+  .cardBody > h6 {
+    font-size: 14px;
+  }
+  .cardBody {
+    padding-bottom: 50px;
+    min-height: 300px;
+  }
+  .cardBodyBtn > .btn {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575px) {
+  .card img {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+}
+.card h4,
+.card h6 {
+  margin-top: 30px;
+}
+@media (min-width: 567px) and (max-width: 767px) {
+  /* .head {
+    padding-top: 325px;
+    height: 475px;
+    background-size: 100% 100%;
+  } */
+  .head_text {
+    font-size: 23px;
+    padding: 20px 40px;
+  }
+  .rahbariyatTitle > h3 {
+    font-size: 34px;
+  }
+  .cardBody > h4 {
+    font-size: 20px;
+  }
+  .cardBody > h6 {
+    font-size: 16px;
+  }
+  .cardBody {
+    min-height: 275px;
+  }
+  .cardBodyBtn > .btn {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .head {
+    padding-top: 620px;
+    background-size: 100% 80.5%;
+    height: 810px;
+  }
+  .head_text {
+    font-size: 28px;
+  }
+  .card {
+    min-width: 600px;
+  }
+  .cardBody {
+    padding-bottom: 50px;
+    min-height: 250px;
+  }
+  .rahbariyatTitle > h3 {
+    font-size: 38px;
+  }
+  .cardBody > h4 {
+    font-size: 20px;
+  }
+  .cardBody > h6 {
+    font-size: 16px;
+  }
+  .cardBodyBtn > .btn {
+    font-size: 14px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .head {
+    padding-top: 30%;
+    height: 550px;
+    background-size: 100% 100%;
+  }
+  .head_text {
+    padding: 20px 120px;
+  }
+  .card {
+    min-width: 600px;
+  }
+  .cardBody {
+    min-height: 275px;
+  }
+  .rahbariyatTitle > h3 {
+    font-size: 42px;
+  }
+  .cardBody > h4 {
+    font-size: 20px;
+  }
+  .cardBody > h6 {
+    font-size: 16px;
+  }
+  .cardBodyBtn > .btn {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .head_text {
+    padding: 20px 150px;
+  }
+  .rahbariyatTitle > h3 {
+    font-size: 48px;
+  }
+  .card {
+    min-width: 600px;
+  }
+  .cardBody > h4 {
+    font-size: 24px;
+  }
+  .cardBody > h6 {
+    font-size: 20px;
+  }
+  .cardBodyBtn > .btn {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .head {
+    padding-top: 70vh;
+    background-size: 100% 100%;
+  }
+  .head_text {
+    font-size: 45px;
+    padding: 20px 230px;
+  }
+  .rahbariyatBody {
+    padding: 3%;
+    padding-top: 0;
+  }
+  .rahbariyatTitle > h3 {
+    font-size: 50px;
+  }
+  .card {
+    min-width: 700px;
+  }
+  .cardBody > h4 {
+    font-size: 28px;
+  }
+  .cardBody > h6 {
+    font-size: 24px;
+  }
+  .cardBodyBtn > .btn {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .head {
+    padding-top: 75vh;
+    background-size: 100% 100%;
+  }
+  .head_text {
+    font-size: 50px;
+    padding: 20px 230px;
+  }
+  .rahbariyatTitle > h3 {
+    font-size: 60px;
+  }
+  .rahbariyatBody {
+    padding: 2%;
+    padding-top: 0;
+  }
+  .card {
+    width: 100%;
+  }
+  .cardBody {
+    min-height: 400px;
+  }
+  .cardBody > h4 {
+    font-size: 32px;
+  }
+  .cardBody > h6 {
+    font-size: 28px;
+  }
+  .cardBodyBtn > .btn {
+    font-size: 22px;
+  }
+}
+
+/* card css */
+
+.maincontainer {
+  width: 302px;
+  height: 299px;
+  margin: 10px auto;
+}
+
+.maincontainer img {
+  border-radius: 10px;
+}
+
+.maincontainer .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.15;
+  background-color: rgb(0, 0, 0);
+}
+
+.backH2 {
+  /* position: absolute; */
+  font-size: 18px;
+  color: white;
+}
+
+.backp {
+  /* position: absolute; */
+  /* top: 50px; */
+  font-size: 14px;
+}
+
+.frontText {
+  position: absolute;
+  padding: 10px;
+  top: 200px;
+  text-align: center;
+  color: white;
+}
+
+.frontH2 {
+  font-size: 20px;
+  background-color: rgba(241, 241, 245, 0.466);
+  border-radius: 10px;
+}
+.frontH2 span {
+  font-size: 14px;
+}
+/* style the maincontainer class with all child div's of class .front */
+.maincontainer > .front {
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  width: 302px;
+  height: 290px;
+  backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+  transition: transform 0.5s linear 0s;
+}
+
+/* style the maincontainer class with all child div's of class .back */
+.maincontainer > .back {
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  background: #1105e6;
+  color: #fff;
+  width: 302px;
+  height: 290px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  backface-visibility: hidden; /* cant see the backside elements as theyre turning around */
+  transition: transform 0.5s linear 0s;
+}
+
+.maincontainer:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+.saytlar {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  position: sticky;
+  top: 117px;
+  padding: 10px;
+  width: 120%;
+}
+.saytlar ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.saytlar li {
+  height: 70px;
+  margin: 10px 0px;
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+  border-top: 1px solid darkblue;
+  display: flex;
+  align-items: center;
+}
+.saytlar a {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.saytlar img {
+  width: 50px;
+  position: relative;
+  left: -10px;
+}
+.saytlar a:hover {
+  color: blue;
+}
+@media (max-width: 900px) {
+  .saytlar {
+    display: none !important;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .head{
+    height:100vh !important;
+    padding-top:33vh;
+    background-size:100% 50%; 
+    background-position: 0px 70px ;
+  }
+  .rahbariyatBody{margin-top: -500px;}
+}
+@media (min-width: 0) and (max-width: 566px) {
+  .head{
+    height:100vh !important;
+    padding-top:30vh;
+    background-size:100% 40%;
+    background-position: 0px 70px ;
+    
+  }
+  .rahbariyatBody{margin-top: -380px;}
+}
+

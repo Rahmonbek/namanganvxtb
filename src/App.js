@@ -7,6 +7,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Gallery from './pages/Gallery';
 import Yangiliklar from './pages/Yangiliklar';
 import Tumanlar from './pages/Tumanlar';
+import Rahbariyat from './pages/Rahbariyat';
 
 export default class App extends Component {
   render() {
@@ -26,6 +27,9 @@ export default class App extends Component {
   </Route>
   <Route exact path="/tumanlar">
   <Tumanlar/>
+  </Route>
+  <Route exact path="/rahbariyat">
+  <Rahbariyat/>
   </Route>
 </Switch>
       

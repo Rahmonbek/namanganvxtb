@@ -15,6 +15,7 @@ import tuman1 from "../images/tuman1.jpg";
 import tuman2 from "../images/tuman2.jpg";
 import tuman3 from "../images/tuman3.jpg";
 import tuman4 from "../images/tuman4.jpg";
+import GridLoader from "react-spinners/GridLoader";
 
 export default class Tumanlar extends Component {
   constructor(props) {
@@ -26,7 +27,7 @@ export default class Tumanlar extends Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ timePassed: true });
-    }, 2);
+    }, 3000);
   }
   render() {
     return (
@@ -47,11 +48,10 @@ color="violet" loading={this.state.loader} size={40} />
             </div>
             <div className={style.tumanlar}>
               <div className={style.tumanlar_item}>
-                <h1 className="title">Xonqa tumani</h1>
+                <h1 className={style.sarlavha}>Xonqa tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -169,11 +169,10 @@ color="violet" loading={this.state.loader} size={40} />
               </div>
               <br />
               <div className={style.tumanlar_item}>
-                <h1 className="title">Gurlan tumani</h1>
+                <h1 className={style.sarlavha}>Gurlan tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -291,11 +290,10 @@ color="violet" loading={this.state.loader} size={40} />
               </div>
               <br />
               <div className={style.tumanlar_item}>
-                <h1 className="title">Xazorasp tumani</h1>
+                <h1 className={style.sarlavha}>Xazorasp tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -413,11 +411,10 @@ color="violet" loading={this.state.loader} size={40} />
               </div>
               <br />
               <div className={style.tumanlar_item}>
-                <h1 className="title">Urganch tumani</h1>
+                <h1 className={style.sarlavha}>Urganch tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -535,11 +532,10 @@ color="violet" loading={this.state.loader} size={40} />
               </div>
               <br />
               <div className={style.tumanlar_item}>
-                <h1 className="title">Yangibozor tumani</h1>
+                <h1 className={style.sarlavha}>Yangibozor tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -657,11 +653,10 @@ color="violet" loading={this.state.loader} size={40} />
               </div>
               <br />
               <div className={style.tumanlar_item}>
-                <h1 className="title">Yangiariq tumani</h1>
+                <h1 className={style.sarlavha}>Yangiariq tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -780,11 +775,10 @@ color="violet" loading={this.state.loader} size={40} />
               <br />
               
               <div className={style.tumanlar_item}>
-                <h1 className="title">Bog'ot tumani</h1>
+                <h1 className={style.sarlavha}>Bog'ot tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -903,11 +897,10 @@ color="violet" loading={this.state.loader} size={40} />
               <br />
 
               <div className={style.tumanlar_item}>
-                <h1 className="title">Qo'shko'pir tumani</h1>
+                <h1 className={style.sarlavha}>Qo'shko'pir tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -1026,11 +1019,10 @@ color="violet" loading={this.state.loader} size={40} />
               <br />
 
               <div className={style.tumanlar_item}>
-                <h1 className="title">Shovot tumani</h1>
+                <h1 className={style.sarlavha}>Shovot tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -1127,9 +1119,7 @@ color="violet" loading={this.state.loader} size={40} />
             
                  
 
-
-                      {/* <YouTube
-                      
+                      <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
                           playerVars: {
@@ -1138,9 +1128,7 @@ color="violet" loading={this.state.loader} size={40} />
                           },
                         }}
                         className={style.video}
-                      /> */}
-
-
+                      />
                       
                       <p   className={style.pp}>
                       Xorazm viloyati xalq ta'limi boshqarmasiga virtual
@@ -1157,11 +1145,10 @@ color="violet" loading={this.state.loader} size={40} />
               <br />
 
               <div className={style.tumanlar_item}>
-                <h1 className="title">Xiva tumani</h1>
+                <h1 className={style.sarlavha}>Xiva tumani</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -1280,11 +1267,10 @@ color="violet" loading={this.state.loader} size={40} />
               <br />
 
               <div className={style.tumanlar_item}>
-                <h1 className="title">Urganch shahri</h1>
+                <h1 className={style.sarlavha}>Urganch shahri</h1>
 
-                <div className="chiziq"></div>
-                <br />
-                <br />
+             
+             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
