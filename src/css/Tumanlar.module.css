@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.head {
+  margin-top: 0px;
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-image: url(../images/dxorazm0.jpg);
+  padding-top: 73vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.head_text {
+  background-color: rgba(0, 0, 0, 0.611);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+
+.iconsHead {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.ahref {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid blue;
+  color: white;
+  background: blue;
+}
+.ahref:hover {
+  color: blue;
+  background-color: white;
+  border-color: transparent;
+}
+.ahref i {
+  font-size: 17px;
+}
+.chiziq {
+  width: 100px;
+  height: 4px;
+  background-color: blue;
+  margin: auto;
+}
+.tumanlar {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.tumanlar_item {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 70px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
+    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
+    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  position: relative;
+  padding: 30px 20px 40px;
+  }
+.Col1 {
+  height: auto;
+  padding: 5%;
+}
+
+.container {
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.video {
+  width: 100%;
+  height: 310px;
+}
+.tumanlar_item img {
+  width: 100%;
+}
+.tumanlar_item h4,
+.tumanlar_item p {
+  text-align: center;
+}
+.tumanlar_item p:nth-child(even) {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.tumanlar_item p:nth-child(odd) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: grey;
+  font-weight: bold;
+}
+.pp {
+  margin-top: 5%;
+  padding: 2%;
+  font-size: 20px;
+  color: rgb(140, 139, 139);
+}
+.but {
+  width: 100%;
+  /* padding: 10px 40px; */
+  background-color: blue;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: white;
+  font-size: 18px;
+  height: auto;
+  padding: 5%;
+  display: block;
+  margin: auto;
+  border: 1px solid transparent;
+  margin-top: 5%;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.but:hover {
+  color: blue;
+  background-color: white;
+  border: 1px solid blue;
+}
+@media(min-width:1700px) {
+  .container h4 {
+    font-size: 3.5vh;
+  }
+
+  .NameTag p:nth-child(1) {
+    font-size: 3.5vh;
+  }
+
+  .NameTag p:nth-child(2) {
+    font-size: 4vh;
+  }
+
+  .ahref {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+  }
+
+  .Rasm {
+    height: 350px;
+  }
+
+  .video {
+    height: 350px;
+  }
+
+  .pp {
+    font-size: 4vh;
+  }
+  .but{
+    font-size: 3.5vh;
+    }
+    }
+
+    @media(min-width:768px) and (max-width:991px) {
+
+.head{
+  background-size: 200% 100%;
+ 
+}
+      .but {
+        width: 100%;
+        height: auto;
+        padding: 5%;
+        margin-top: 10%;
+        color: white;
+        cursor: pointer;
+        overflow: hidden;
+        font-size: 15px;
+
+
+      }
+
+      .but p {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+
+        font-size: 15px;
+        color: white;
+      }
+
+      .iconsHead {
+        position: relative;
+    width: 100%;
+    }
+    .video {
+      width: 100%;
+      height: 200px;
+    }
+
+    .Rasm {
+      width: 100%;
+      height: 200px;
+    }
+
+
+
+
+    .ahref {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+}
+@media (max-width:650px) {
+  .head_text{
+margin: 0px;
+font-size: 18px;
+  }
+  .head{
+    padding-top: 120%;
+  } 
+
+
+}
+@media (max-width:767px) {
+  .head{
+    background-size: 200% 100%;
+  
+  }
+  .container {
+    display: block;
+  }
+ .iconsHead{
+    bottom: 0px;
+    margin: auto;
+    }
+.ahref i {
+  font-size: 18px;
+
+    }
+
+    .video {
+      width: 100%;
+      height: 250px;
+    }
+
+    .but {
+      width: 100%;
+      height: auto;
+      padding: 5%;
+      margin: auto;
+    }
+    }
+@media(max-width:550px) {
+  .head{
+    background-size: 200% 100%;
+  
+  }
+  .iconsHead {
+    width: 90%;
+  }
+
+  .ahref {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+margin-bottom: 10px;
+  }
+
+  .ahref i {
+    font-size: 17px;
+
+  }
+
+  .but {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+  }
+.ahref {
+  scale: 0.7;
+}
+.iconsHead{
+  padding:0;
+}
+#mediaa11{
+  margin: 0;
+}
+
+}
+
+ @media (max-width:430px) {
+  .head{
+    background-size: 200% 100%;
+  
+  }
+ .ahref {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+ }
+
+ .ahref i {
+   font-size: 15px;
+
+  }
+  .but{
+   width: 100%;
+   height: auto;
+   padding: 5%;
+   font-size: 15px;
+   }
+
+   .but p {
+     font-size: 14px;
+  }
+
+ }
+ @media (max-width:360px) {
+  .head{
+    height: 600px;
+    background-size: 200% 100%;
+  
+  }
+   .tumanlar_item h1{
+     font-size: 3.5vh;
+   }
+ 
+  .ahref {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  .ahref i {
+    font-size: 11px;
+}
+
+.ahref {
+  font-size: 10px;
+  position: relative;
+  }
+  .but{
+   width: 100%;
+   height: auto;
+   padding: 5%;
+   font-size: 2vh;
+   align-content: center;
+   align-items: center;
+   }
+
+   .NameTag p:nth-child(1) {
+     font-size: 2vh;
+   }
+
+   .NameTag p:nth-child(2) {
+     font-size: 2.4vh;
+   }
+
+   .video {
+     height: 180px;
+   }
+
+   .pp {
+     font-size: 10px;
+   }
+   
+    
+    
+   }
+
+   @media(max-width:300px) {
+     .ahref {
+       width: 20px;
+       height: 20px;
+       border-radius: 50%;
+     }
+
+     .ahref i {
+       font-size: 8px;
+     }
+
+     .NameTag p:nth-child(1) {
+       font-size: 1.8vh;
+     }
+
+     .NameTag p:nth-child(2) {
+       font-size: 2vh;
+     }
+
+     .pp {
+       font-size: 10px;
+  }
+
+  .but {
+    height: auto;
+    padding: 5%;
+    font-size: 1.7vh;
+  }
+ }
