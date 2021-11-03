@@ -1,7 +1,7 @@
 import { Row } from 'react-bootstrap'
 import React, { Component } from 'react'
 import style from '../css/Navbar.module.css'
-import logo from '../images/logo.jpg'
+import logo from '../images/logo.png'
 import { NavLink } from 'react-router-dom'
 export default class NavbarT extends Component {
  state={
@@ -45,9 +45,7 @@ export default class NavbarT extends Component {
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/">Bosh sahifa</NavLink>
                             </li>
-                            <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/gallery">Fotolavhalar</NavLink>
-                            </li>
+                           
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/yangiliklar">Yangiliklar</NavLink>
                             </li>
@@ -57,7 +55,9 @@ export default class NavbarT extends Component {
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/tumanlar">Tumanlar</NavLink>
                             </li>
-                            
+                            <li onClick={this.closeNav}>
+                                <NavLink className={style.lik} to="/maktablar">Maktablar</NavLink>
+                            </li>
                             <li onClick={this.closeNav}>
                             <NavLink className={style.lik} to="/boglanish">Bog'lanish</NavLink>
                             </li>

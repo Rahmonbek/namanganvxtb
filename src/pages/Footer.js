@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 import { Col, Row } from 'react-bootstrap'
 import style from '../css/Footer.module.css'
 import { url, user } from '../host/Host'
-import logo from '../images/logo.jpg'
+import logo from '../images/logo.png'
 export default class Footer extends Component {
     state={
         school:null
