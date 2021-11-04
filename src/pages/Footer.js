@@ -48,21 +48,21 @@ export default class Footer extends Component {
                         <img src={logo}/>
                     </Col>
                     <Col lg={4} md={12} sm={12}>
-                        <p><b>Ishonch telefonlari : </b>{this.state.school!==null?this.state.school.phone:''}<br/>
+                        <p><b>Ishonch telefonlari : </b>+998-69-232-61-15<br/>
                        </p>
-                        <p><b>Email : </b>{this.state.school!==null?this.state.school.email:''}</p>
+                        <p><b>Email : </b>namangan_vxtb@xtv.uz</p>
                         <p><b>Manzil : </b>{this.state.school!==null?this.state.school.address:''}</p>
                         <div className={style.icons}>
-                        <a href={this.state.school!==null?this.state.school.telegram:''}>
+                        <a target="_blank" href="https://t.me/joinchat/Ew9lX74i1WYzYjAy">
                                 <i className="fa fa-telegram"></i>
                             </a>
-                            <a href={this.state.school!==null?this.state.school.instagra:''}>
+                            <a target="_blank" href={this.state.school!==null?this.state.school.instagra:''}>
                                 <i className="fa fa-instagram"></i>
                             </a>
-                            <a href={this.state.school!==null?this.state.school.youtube:''}>
+                            <a target="_blank" href={this.state.school!==null?this.state.school.youtube:''}>
                                 <i className="fa fa-youtube"></i>
                             </a>
-                            <a href={this.state.school!==null?this.state.school.facebook:''}>
+                            <a target="_blank" href="https://www.facebook.com/Namanganvxtb">
                                 <i className="fa fa-facebook"></i>
                             </a>
                         </div>

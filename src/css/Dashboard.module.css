@@ -82,7 +82,7 @@ transition: 1s;
 .videos_item{padding:20px 10px;}
 .you{width:100%; height:300px; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;}
 .xarita{width:100%; background-color:white; padding:50px 10%;}
-.xarita div{padding:20px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+.xarita_item{padding:20px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
 @media (max-width:1050px) and (min-width:700px){
     .video{top:50px;}
 

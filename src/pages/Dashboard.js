@@ -23,6 +23,7 @@ import {getNews} from '../host/Config'
 import pic20 from "../images/twitter 2.png";
 import Cards from './Cards'
 import { Link } from 'react-router-dom'
+import "./form.css"
 
 export default class Dashboard extends Component {
   state={
@@ -202,7 +203,7 @@ this.getSpec()
                 </Col>
 
                 <Col className={style.htr} lg={2} md={6} sm={12}>
-                  <a href={this.state.school?this.state.school.telegram:''} className={style.colT} target="_blank">
+                  <a href="https://t.me/joinchat/Ew9lX74i1WYzYjAy" className={style.colT} target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Telegram_Messenger.png" />
                     <p>Telegram sahifasi</p>
                   </a>
@@ -214,7 +215,7 @@ this.getSpec()
                   </a>
                 </Col>
                 <Col className={style.htr} lg={2} md={6} sm={12}>
-                  <a href={this.state.school?this.state.school.facebook:''} className={style.colT} target="_blank">
+                  <a href="https://www.facebook.com/Namanganvxtb" className={style.colT} target="_blank">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" />
                     <p>Facebook sahifasi</p>
                   </a>
@@ -638,13 +639,14 @@ this.getSpec()
 
         </div>
         <div className={style.xarita}>
-
-<h1 className={style.sarlavha}> Bizning manzilimiz</h1>
+<Row>
+<Col lg={6} md={12} sm={12}>
+  <h1 className={style.sarlavha}>Bizning manzilimiz</h1>
 <br/>
 
 <YMaps>
-<div>
-<Map style={{width:'100%', height:'400px'}} defaultState={{ center: [41.000630,71.669404], zoom: 12 }} >
+<div className={style.xarita_item}>
+<Map style={{width:'100%', height:'550px'}} defaultState={{ center: [41.000630,71.669404], zoom: 12 }} >
 <Clusterer
               options={{
                 groupByCoordinates: false,
@@ -657,7 +659,7 @@ this.getSpec()
                   iconLayout: "default#image",
                 }}
                 properties={{
-                  hintContent: `<h6><b className="personStyle">1 - maktab</b></h6>`,
+                  hintContent: `<i><b className="personStyle">Namangan viloyati VXTB</b></i>`,
                 }}
                 modules={["geoObject.addon.hint"]}
               />
@@ -665,6 +667,32 @@ this.getSpec()
 </Map>
 </div>
 </YMaps>
+
+  </Col>
+
+  <Col lg={6} md={12} sm={12}>
+  <h1 className={style.sarlavha}>Biz bilan bo'glaning</h1>
+
+
+<div className="formFER">
+                <div className="container">
+                  <div className="brand-logo"></div>
+                  <div className="inputs">
+                  <form>
+                      <label>F.I.O.</label>
+                      <input type="text" id="name" placeholder="Ism Familiya Sharifi" />
+                      <label>Telefon raqam</label>
+                      <input type="text" id="phone" placeholder="+998 99 999 99 99" />
+                      <label>Murojaat</label>
+                      <textarea id="text" placeholder="Murojaat matni..."></textarea>
+                      <button type="button" onClick={this.sendMurojat}>Yuborish</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+  </Col>
+
+</Row>
 </div>
 <Footer/>        
             </div>}
