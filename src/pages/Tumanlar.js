@@ -33,35 +33,29 @@ export default class Tumanlar extends Component {
     return (
       <div>
         {this.state.timePassed == false ? (
-        <div className={style.load}>
-        <GridLoader
-color="violet" loading={this.state.loader} size={40} />
-        </div>
+          <div className={style.load}>
+            <GridLoader color="violet" loading={this.state.loader} size={40} />
+          </div>
         ) : (
           <div>
             <NavbarT />
             <div className={style.head}>
               <div className={style.head_text}>
-              O'zbekiston Respublikasi Namangan 
-      viloyati xalq ta'limi boshqarmasining tumanlaridagi bo'limlari
+                O'zbekiston Respublikasi Namangan viloyati xalq ta'limi
+                boshqarmasining tumanlaridagi bo'limlari
               </div>
             </div>
             <div className={style.tumanlar}>
               <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Xonqa tumani</h1>
+                <h1 className={style.sarlavha}>Chortoq tumani</h1>
 
-             
-             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img
-                        className={style.Rasm}
-                        src={sanakulov}
-                      />
+                      <img className={style.Rasm} src={sanakulov} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -155,497 +149,13 @@ color="violet" loading={this.state.loader} size={40} />
                         }}
                         className={style.video}
                       />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
-                      </a>
-                    </Col>
-                  </Container>
-                </Row>
-              </div>
-              <br />
-              <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Gurlan tumani</h1>
-
-             
-             
-                <Row>
-                  <Container className={style.container}>
-                    <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
-                      <div className={style.chiziq}></div>
-                      <br />
-                      <img
-                        className={style.Rasm}
-                        src={sharahmetov}
-                      />
-                      <br />
-
-                      <div className={style.NameTag}>
-                        <p>Ismoilov Rahmon Zohid o'g'li</p>
-                        <p>Bo'limning ijtimoiy sahifalari:</p>
-                      </div>
-                      <div className={style.iconsHead}>
-                        <div id={style.mediaa11}>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://t.me/samarqand_33_maktab"
-                          >
-                            <i className="fab fa-telegram"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <Tooltip
-                            placement="bottom"
-                            title="ittower01@gmail.com"
-                          >
-                            {" "}
-                            <a
-                              target="_blank"
-                              className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
-                    }`}
-                            >
-                              <i className="fas fa-envelope"></i>
-                            </a>
-                          </Tooltip>
-                        </div>
-                        <div>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.instagram.com/33_maktab_official/"
-                          >
-                            <i className="fab fa-instagram"></i>
-                          </a>
-                        </div>
-                        <div id={style.mediaa11}>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
-                          >
-                            <i className="fab fa-facebook"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
-                          >
-                            <i className="fab fa-youtube"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <Tooltip placement="bottom" title="+998 93 082 03 72">
-                            {" "}
-                            <a
-                              target="_blank"
-                              className={style.ahref}
-                              href={`tel: +998 93 082 03 72}`}
-                            >
-                              <i className="fas fa-phone"></i>
-                            </a>{" "}
-                          </Tooltip>
-                        </div>
-                      </div>
-                    </Col>
-                    <Col
-                      className={style.Col1}
-                      lg={6}
-                      md={6}
-                      sm={12}
-                      style={{ position: "relative" }}
-                    >
-                      <h4>Bo'lim haqida</h4>
-                      <div className={style.chiziq}></div>
-                      <br />
-                      <YouTube
-                        videoId="qaJGUdMi_kc"
-                        opts={{
-                          playerVars: {
-                            // https://developers.google.com/youtube/player_parameters
-                            autoplay: 0,
-                          },
-                        }}
-                        className={style.video}
-                      />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
-                      </a>
-                    </Col>
-                  </Container>
-                </Row>
-              </div>
-              <br />
-              <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Xazorasp tumani</h1>
-
-             
-             
-                <Row>
-                  <Container className={style.container}>
-                    <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
-                      <div className={style.chiziq}></div>
-                      <br />
-                      <img
-                        className={style.Rasm}
-                        src={tuman1}
-                      />
-                      <br />
-
-                      <div className={style.NameTag}>
-                        <p>Ismoilov Rahmon Zohid o'g'li</p>
-                        <p>Bo'limning ijtimoiy sahifalari:</p>
-                      </div>
-                      <div className={style.iconsHead}>
-                        <div id={style.mediaa11}>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://t.me/samarqand_33_maktab"
-                          >
-                            <i className="fab fa-telegram"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <Tooltip
-                            placement="bottom"
-                            title="ittower01@gmail.com"
-                          >
-                            {" "}
-                            <a
-                              target="_blank"
-                              className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
-                    }`}
-                            >
-                              <i className="fas fa-envelope"></i>
-                            </a>
-                          </Tooltip>
-                        </div>
-                        <div>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.instagram.com/33_maktab_official/"
-                          >
-                            <i className="fab fa-instagram"></i>
-                          </a>
-                        </div>
-                        <div id={style.mediaa11}>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
-                          >
-                            <i className="fab fa-facebook"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
-                          >
-                            <i className="fab fa-youtube"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <Tooltip placement="bottom" title="+998 93 082 03 72">
-                            {" "}
-                            <a
-                              target="_blank"
-                              className={style.ahref}
-                              href={`tel: +998 93 082 03 72}`}
-                            >
-                              <i className="fas fa-phone"></i>
-                            </a>{" "}
-                          </Tooltip>
-                        </div>
-                      </div>
-                    </Col>
-                    <Col
-                      className={style.Col1}
-                      lg={6}
-                      md={6}
-                      sm={12}
-                      style={{ position: "relative" }}
-                    >
-                      <h4>Bo'lim haqida</h4>
-                      <div className={style.chiziq}></div>
-                      <br />
-                      <YouTube
-                        videoId="qaJGUdMi_kc"
-                        opts={{
-                          playerVars: {
-                            // https://developers.google.com/youtube/player_parameters
-                            autoplay: 0,
-                          },
-                        }}
-                        className={style.video}
-                      />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
-                      </a>
-                    </Col>
-                  </Container>
-                </Row>
-              </div>
-              <br />
-              <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Urganch tumani</h1>
-
-             
-             
-                <Row>
-                  <Container className={style.container}>
-                    <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
-                      <div className={style.chiziq}></div>
-                      <br />
-                      <img
-                        className={style.Rasm}
-                        src={tuman2}
-                      />
-                      <br />
-
-                      <div className={style.NameTag}>
-                        <p>Ismoilov Rahmon Zohid o'g'li</p>
-                        <p>Bo'limning ijtimoiy sahifalari:</p>
-                      </div>
-                      <div className={style.iconsHead}>
-                        <div id={style.mediaa11}>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://t.me/samarqand_33_maktab"
-                          >
-                            <i className="fab fa-telegram"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <Tooltip
-                            placement="bottom"
-                            title="ittower01@gmail.com"
-                          >
-                            {" "}
-                            <a
-                              target="_blank"
-                              className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
-                    }`}
-                            >
-                              <i className="fas fa-envelope"></i>
-                            </a>
-                          </Tooltip>
-                        </div>
-                        <div>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.instagram.com/33_maktab_official/"
-                          >
-                            <i className="fab fa-instagram"></i>
-                          </a>
-                        </div>
-                        <div id={style.mediaa11}>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
-                          >
-                            <i className="fab fa-facebook"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
-                          >
-                            <i className="fab fa-youtube"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <Tooltip placement="bottom" title="+998 93 082 03 72">
-                            {" "}
-                            <a
-                              target="_blank"
-                              className={style.ahref}
-                              href={`tel: +998 93 082 03 72}`}
-                            >
-                              <i className="fas fa-phone"></i>
-                            </a>{" "}
-                          </Tooltip>
-                        </div>
-                      </div>
-                    </Col>
-                    <Col
-                      className={style.Col1}
-                      lg={6}
-                      md={6}
-                      sm={12}
-                      style={{ position: "relative" }}
-                    >
-                      <h4>Bo'lim haqida</h4>
-                      <div className={style.chiziq}></div>
-                      <br />
-                      <YouTube
-                        videoId="qaJGUdMi_kc"
-                        opts={{
-                          playerVars: {
-                            // https://developers.google.com/youtube/player_parameters
-                            autoplay: 0,
-                          },
-                        }}
-                        className={style.video}
-                      />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
-                      </a>
-                    </Col>
-                  </Container>
-                </Row>
-              </div>
-              <br />
-              <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Yangibozor tumani</h1>
-
-             
-             
-                <Row>
-                  <Container className={style.container}>
-                    <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
-                      <div className={style.chiziq}></div>
-                      <br />
-                      <img
-                        className={style.Rasm}
-                        src={tuman3}
-                      />
-                      <br />
-
-                      <div className={style.NameTag}>
-                        <p>Ismoilov Rahmon Zohid o'g'li</p>
-                        <p>Bo'limning ijtimoiy sahifalari:</p>
-                      </div>
-                      <div className={style.iconsHead}>
-                        <div id={style.mediaa11}>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://t.me/samarqand_33_maktab"
-                          >
-                            <i className="fab fa-telegram"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <Tooltip
-                            placement="bottom"
-                            title="ittower01@gmail.com"
-                          >
-                            {" "}
-                            <a
-                              target="_blank"
-                              className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
-                    }`}
-                            >
-                              <i className="fas fa-envelope"></i>
-                            </a>
-                          </Tooltip>
-                        </div>
-                        <div>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.instagram.com/33_maktab_official/"
-                          >
-                            <i className="fab fa-instagram"></i>
-                          </a>
-                        </div>
-                        <div id={style.mediaa11}>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
-                          >
-                            <i className="fab fa-facebook"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <a
-                            target="_blank"
-                            className={style.ahref}
-                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
-                          >
-                            <i className="fab fa-youtube"></i>
-                          </a>
-                        </div>
-                        <div>
-                          <Tooltip placement="bottom" title="+998 93 082 03 72">
-                            {" "}
-                            <a
-                              target="_blank"
-                              className={style.ahref}
-                              href={`tel: +998 93 082 03 72}`}
-                            >
-                              <i className="fas fa-phone"></i>
-                            </a>{" "}
-                          </Tooltip>
-                        </div>
-                      </div>
-                    </Col>
-                    <Col
-                      className={style.Col1}
-                      lg={6}
-                      md={6}
-                      sm={12}
-                      style={{ position: "relative" }}
-                    >
-                      <h4>Bo'lim haqida</h4>
-                      <div className={style.chiziq}></div>
-                      <br />
-                      <YouTube
-                        videoId="qaJGUdMi_kc"
-                        opts={{
-                          playerVars: {
-                            // https://developers.google.com/youtube/player_parameters
-                            autoplay: 0,
-                          },
-                        }}
-                        className={style.video}
-                      />
-                      <p   className={style.pp}>
+                      <p className={style.pp}>
                         Xorazm viloyati xalq ta'limi boshqarmasiga virtual
                         sayohat qiling va boshqarma haqida ko'proq ma'lumotga
                         ega bo'ling.
                       </p>
                       <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
+                        Bo'limning veb saytiga o'tish
                       </a>
                     </Col>
                   </Container>
@@ -653,20 +163,15 @@ color="violet" loading={this.state.loader} size={40} />
               </div>
               <br />
               <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Yangiariq tumani</h1>
+                <h1 className={style.sarlavha}>Chust tumani</h1>
 
-             
-             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img
-                        className={style.Rasm}
-                        src={tuman4}
-                      />
+                      <img className={style.Rasm} src={sharahmetov} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -760,35 +265,29 @@ color="violet" loading={this.state.loader} size={40} />
                         }}
                         className={style.video}
                       />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
                         sayohat qiling va boshqarma haqida ko'proq ma'lumotga
                         ega bo'ling.
                       </p>
                       <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
+                        Bo'limning veb saytiga o'tish
                       </a>
                     </Col>
                   </Container>
                 </Row>
               </div>
               <br />
-              
               <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Bog'ot tumani</h1>
+                <h1 className={style.sarlavha}>Kosonsoy tumani</h1>
 
-             
-             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img
-                        className={style.Rasm}
-                        src={tuman1}
-                      />
+                      <img className={style.Rasm} src={tuman1} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -882,13 +381,361 @@ color="violet" loading={this.state.loader} size={40} />
                         }}
                         className={style.video}
                       />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
                         sayohat qiling va boshqarma haqida ko'proq ma'lumotga
                         ega bo'ling.
                       </p>
                       <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
+                        Bo'limning veb saytiga o'tish
+                      </a>
+                    </Col>
+                  </Container>
+                </Row>
+              </div>
+              <br />
+              <div className={style.tumanlar_item}>
+                <h1 className={style.sarlavha}>Mingbuloq tumani</h1>
+
+                <Row>
+                  <Container className={style.container}>
+                    <Col className={style.Col1} lg={6} md={6} sm={12}>
+                      <h4>Bo'lim direktori</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <img className={style.Rasm} src={tuman2} />
+                      <br />
+
+                      <div className={style.NameTag}>
+                        <p>Ismoilov Rahmon Zohid o'g'li</p>
+                        <p>Bo'limning ijtimoiy sahifalari:</p>
+                      </div>
+                      <div className={style.iconsHead}>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://t.me/samarqand_33_maktab"
+                          >
+                            <i className="fab fa-telegram"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip
+                            placement="bottom"
+                            title="ittower01@gmail.com"
+                          >
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`mailto: ittower01@gmail.com
+                    }`}
+                            >
+                              <i className="fas fa-envelope"></i>
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.instagram.com/33_maktab_official/"
+                          >
+                            <i className="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                          >
+                            <i className="fab fa-facebook"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
+                          >
+                            <i className="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip placement="bottom" title="+998 93 082 03 72">
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`tel: +998 93 082 03 72}`}
+                            >
+                              <i className="fas fa-phone"></i>
+                            </a>{" "}
+                          </Tooltip>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col
+                      className={style.Col1}
+                      lg={6}
+                      md={6}
+                      sm={12}
+                      style={{ position: "relative" }}
+                    >
+                      <h4>Bo'lim haqida</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <YouTube
+                        videoId="qaJGUdMi_kc"
+                        opts={{
+                          playerVars: {
+                            // https://developers.google.com/youtube/player_parameters
+                            autoplay: 0,
+                          },
+                        }}
+                        className={style.video}
+                      />
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
+                        ega bo'ling.
+                      </p>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
+                    </Col>
+                  </Container>
+                </Row>
+              </div>
+              <br />
+              <div className={style.tumanlar_item}>
+                <h1 className={style.sarlavha}>Namangan shahri</h1>
+
+                <Row>
+                  <Container className={style.container}>
+                    <Col className={style.Col1} lg={6} md={6} sm={12}>
+                      <h4>Bo'lim direktori</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <img className={style.Rasm} src={tuman3} />
+                      <br />
+
+                      <div className={style.NameTag}>
+                        <p>Ismoilov Rahmon Zohid o'g'li</p>
+                        <p>Bo'limning ijtimoiy sahifalari:</p>
+                      </div>
+                      <div className={style.iconsHead}>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://t.me/samarqand_33_maktab"
+                          >
+                            <i className="fab fa-telegram"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip
+                            placement="bottom"
+                            title="ittower01@gmail.com"
+                          >
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`mailto: ittower01@gmail.com
+                    }`}
+                            >
+                              <i className="fas fa-envelope"></i>
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.instagram.com/33_maktab_official/"
+                          >
+                            <i className="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                          >
+                            <i className="fab fa-facebook"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
+                          >
+                            <i className="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip placement="bottom" title="+998 93 082 03 72">
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`tel: +998 93 082 03 72}`}
+                            >
+                              <i className="fas fa-phone"></i>
+                            </a>{" "}
+                          </Tooltip>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col
+                      className={style.Col1}
+                      lg={6}
+                      md={6}
+                      sm={12}
+                      style={{ position: "relative" }}
+                    >
+                      <h4>Bo'lim haqida</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <YouTube
+                        videoId="qaJGUdMi_kc"
+                        opts={{
+                          playerVars: {
+                            // https://developers.google.com/youtube/player_parameters
+                            autoplay: 0,
+                          },
+                        }}
+                        className={style.video}
+                      />
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
+                        ega bo'ling.
+                      </p>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
+                    </Col>
+                  </Container>
+                </Row>
+              </div>
+              <br />
+              <div className={style.tumanlar_item}>
+                <h1 className={style.sarlavha}>Namangan tumani</h1>
+
+                <Row>
+                  <Container className={style.container}>
+                    <Col className={style.Col1} lg={6} md={6} sm={12}>
+                      <h4>Bo'lim direktori</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <img className={style.Rasm} src={tuman4} />
+                      <br />
+
+                      <div className={style.NameTag}>
+                        <p>Ismoilov Rahmon Zohid o'g'li</p>
+                        <p>Bo'limning ijtimoiy sahifalari:</p>
+                      </div>
+                      <div className={style.iconsHead}>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://t.me/samarqand_33_maktab"
+                          >
+                            <i className="fab fa-telegram"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip
+                            placement="bottom"
+                            title="ittower01@gmail.com"
+                          >
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`mailto: ittower01@gmail.com
+                    }`}
+                            >
+                              <i className="fas fa-envelope"></i>
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.instagram.com/33_maktab_official/"
+                          >
+                            <i className="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                          >
+                            <i className="fab fa-facebook"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
+                          >
+                            <i className="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip placement="bottom" title="+998 93 082 03 72">
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`tel: +998 93 082 03 72}`}
+                            >
+                              <i className="fas fa-phone"></i>
+                            </a>{" "}
+                          </Tooltip>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col
+                      className={style.Col1}
+                      lg={6}
+                      md={6}
+                      sm={12}
+                      style={{ position: "relative" }}
+                    >
+                      <h4>Bo'lim haqida</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <YouTube
+                        videoId="qaJGUdMi_kc"
+                        opts={{
+                          playerVars: {
+                            // https://developers.google.com/youtube/player_parameters
+                            autoplay: 0,
+                          },
+                        }}
+                        className={style.video}
+                      />
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
+                        ega bo'ling.
+                      </p>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
                       </a>
                     </Col>
                   </Container>
@@ -897,10 +744,125 @@ color="violet" loading={this.state.loader} size={40} />
               <br />
 
               <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Qo'shko'pir tumani</h1>
+                <h1 className={style.sarlavha}>Norin tumani</h1>
 
-             
-             
+                <Row>
+                  <Container className={style.container}>
+                    <Col className={style.Col1} lg={6} md={6} sm={12}>
+                      <h4>Bo'lim direktori</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <img className={style.Rasm} src={tuman1} />
+                      <br />
+
+                      <div className={style.NameTag}>
+                        <p>Ismoilov Rahmon Zohid o'g'li</p>
+                        <p>Bo'limning ijtimoiy sahifalari:</p>
+                      </div>
+                      <div className={style.iconsHead}>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://t.me/samarqand_33_maktab"
+                          >
+                            <i className="fab fa-telegram"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip
+                            placement="bottom"
+                            title="ittower01@gmail.com"
+                          >
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`mailto: ittower01@gmail.com
+                    }`}
+                            >
+                              <i className="fas fa-envelope"></i>
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.instagram.com/33_maktab_official/"
+                          >
+                            <i className="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                          >
+                            <i className="fab fa-facebook"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
+                          >
+                            <i className="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip placement="bottom" title="+998 93 082 03 72">
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`tel: +998 93 082 03 72}`}
+                            >
+                              <i className="fas fa-phone"></i>
+                            </a>{" "}
+                          </Tooltip>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col
+                      className={style.Col1}
+                      lg={6}
+                      md={6}
+                      sm={12}
+                      style={{ position: "relative" }}
+                    >
+                      <h4>Bo'lim haqida</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <YouTube
+                        videoId="qaJGUdMi_kc"
+                        opts={{
+                          playerVars: {
+                            // https://developers.google.com/youtube/player_parameters
+                            autoplay: 0,
+                          },
+                        }}
+                        className={style.video}
+                      />
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
+                        ega bo'ling.
+                      </p>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
+                    </Col>
+                  </Container>
+                </Row>
+              </div>
+              <br />
+
+              <div className={style.tumanlar_item}>
+                <h1 className={style.sarlavha}>To'raqo'rg'on tumani</h1>
+
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
@@ -1004,13 +966,13 @@ color="violet" loading={this.state.loader} size={40} />
                         }}
                         className={style.video}
                       />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
                         sayohat qiling va boshqarma haqida ko'proq ma'lumotga
                         ega bo'ling.
                       </p>
                       <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
+                        Bo'limning veb saytiga o'tish
                       </a>
                     </Col>
                   </Container>
@@ -1019,20 +981,15 @@ color="violet" loading={this.state.loader} size={40} />
               <br />
 
               <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Shovot tumani</h1>
+                <h1 className={style.sarlavha}>Uchqurg'on tumani</h1>
 
-             
-             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img
-                        className={style.Rasm}
-                        src={djulibekov}
-                      />
+                      <img className={style.Rasm} src={djulibekov} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1116,8 +1073,6 @@ color="violet" loading={this.state.loader} size={40} />
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
-            
-                 
 
                       <YouTube
                         videoId="qaJGUdMi_kc"
@@ -1129,14 +1084,14 @@ color="violet" loading={this.state.loader} size={40} />
                         }}
                         className={style.video}
                       />
-                      
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
                         sayohat qiling va boshqarma haqida ko'proq ma'lumotga
                         ega bo'ling.
                       </p>
                       <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
+                        Bo'limning veb saytiga o'tish
                       </a>
                     </Col>
                   </Container>
@@ -1145,20 +1100,15 @@ color="violet" loading={this.state.loader} size={40} />
               <br />
 
               <div className={style.tumanlar_item}>
-                <h1 className={style.sarlavha}>Xiva tumani</h1>
+                <h1 className={style.sarlavha}>Uychi tumani</h1>
 
-             
-             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img
-                        className={style.Rasm}
-                        src={sanakulov}
-                      />
+                      <img className={style.Rasm} src={sanakulov} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1252,13 +1202,13 @@ color="violet" loading={this.state.loader} size={40} />
                         }}
                         className={style.video}
                       />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
                         sayohat qiling va boshqarma haqida ko'proq ma'lumotga
                         ega bo'ling.
                       </p>
                       <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
+                        Bo'limning veb saytiga o'tish
                       </a>
                     </Col>
                   </Container>
@@ -1269,18 +1219,13 @@ color="violet" loading={this.state.loader} size={40} />
               <div className={style.tumanlar_item}>
                 <h1 className={style.sarlavha}>Urganch shahri</h1>
 
-             
-             
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img
-                        className={style.Rasm}
-                        src={sharahmetov}
-                      />
+                      <img className={style.Rasm} src={sharahmetov} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1374,29 +1319,250 @@ color="violet" loading={this.state.loader} size={40} />
                         }}
                         className={style.video}
                       />
-                      <p   className={style.pp}>
-                      Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
                         sayohat qiling va boshqarma haqida ko'proq ma'lumotga
                         ega bo'ling.
                       </p>
                       <a href="#" className={style.but} target="_blank">
-                       Bo'limning veb saytiga o'tish
+                        Bo'limning veb saytiga o'tish
                       </a>
                     </Col>
                   </Container>
                 </Row>
               </div>
               <br />
+              <div className={style.tumanlar_item}>
+                <h1 className={style.sarlavha}>Yangiqo'rg'on tumani</h1>
 
+                <Row>
+                  <Container className={style.container}>
+                    <Col className={style.Col1} lg={6} md={6} sm={12}>
+                      <h4>Bo'lim direktori</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <img className={style.Rasm} src={tuman2} />
+                      <br />
 
-             
+                      <div className={style.NameTag}>
+                        <p>Ismoilov Rahmon Zohid o'g'li</p>
+                        <p>Bo'limning ijtimoiy sahifalari:</p>
+                      </div>
+                      <div className={style.iconsHead}>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://t.me/samarqand_33_maktab"
+                          >
+                            <i className="fab fa-telegram"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip
+                            placement="bottom"
+                            title="ittower01@gmail.com"
+                          >
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`mailto: ittower01@gmail.com
+                    }`}
+                            >
+                              <i className="fas fa-envelope"></i>
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.instagram.com/33_maktab_official/"
+                          >
+                            <i className="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                          >
+                            <i className="fab fa-facebook"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
+                          >
+                            <i className="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip placement="bottom" title="+998 93 082 03 72">
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`tel: +998 93 082 03 72}`}
+                            >
+                              <i className="fas fa-phone"></i>
+                            </a>{" "}
+                          </Tooltip>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col
+                      className={style.Col1}
+                      lg={6}
+                      md={6}
+                      sm={12}
+                      style={{ position: "relative" }}
+                    >
+                      <h4>Bo'lim haqida</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <YouTube
+                        videoId="qaJGUdMi_kc"
+                        opts={{
+                          playerVars: {
+                            // https://developers.google.com/youtube/player_parameters
+                            autoplay: 0,
+                          },
+                        }}
+                        className={style.video}
+                      />
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
+                        ega bo'ling.
+                      </p>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
+                    </Col>
+                  </Container>
+                </Row>
+              </div>
+              <br />
+              <div className={style.tumanlar_item}>
+                <h1 className={style.sarlavha}>Pop tumani</h1>
 
+                <Row>
+                  <Container className={style.container}>
+                    <Col className={style.Col1} lg={6} md={6} sm={12}>
+                      <h4>Bo'lim direktori</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <img className={style.Rasm} src={tuman2} />
+                      <br />
 
-
-
-
-
-
+                      <div className={style.NameTag}>
+                        <p>Ismoilov Rahmon Zohid o'g'li</p>
+                        <p>Bo'limning ijtimoiy sahifalari:</p>
+                      </div>
+                      <div className={style.iconsHead}>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://t.me/samarqand_33_maktab"
+                          >
+                            <i className="fab fa-telegram"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip
+                            placement="bottom"
+                            title="ittower01@gmail.com"
+                          >
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`mailto: ittower01@gmail.com
+                    }`}
+                            >
+                              <i className="fas fa-envelope"></i>
+                            </a>
+                          </Tooltip>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.instagram.com/33_maktab_official/"
+                          >
+                            <i className="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                        <div id={style.mediaa11}>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                          >
+                            <i className="fab fa-facebook"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <a
+                            target="_blank"
+                            className={style.ahref}
+                            href="https://www.youtube.com/channel/UC4vQC9mOo5B6_imRFUA62Xg"
+                          >
+                            <i className="fab fa-youtube"></i>
+                          </a>
+                        </div>
+                        <div>
+                          <Tooltip placement="bottom" title="+998 93 082 03 72">
+                            {" "}
+                            <a
+                              target="_blank"
+                              className={style.ahref}
+                              href={`tel: +998 93 082 03 72}`}
+                            >
+                              <i className="fas fa-phone"></i>
+                            </a>{" "}
+                          </Tooltip>
+                        </div>
+                      </div>
+                    </Col>
+                    <Col
+                      className={style.Col1}
+                      lg={6}
+                      md={6}
+                      sm={12}
+                      style={{ position: "relative" }}
+                    >
+                      <h4>Bo'lim haqida</h4>
+                      <div className={style.chiziq}></div>
+                      <br />
+                      <YouTube
+                        videoId="qaJGUdMi_kc"
+                        opts={{
+                          playerVars: {
+                            // https://developers.google.com/youtube/player_parameters
+                            autoplay: 0,
+                          },
+                        }}
+                        className={style.video}
+                      />
+                      <p className={style.pp}>
+                        Xorazm viloyati xalq ta'limi boshqarmasiga virtual
+                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
+                        ega bo'ling.
+                      </p>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
+                    </Col>
+                  </Container>
+                </Row>
+              </div>
             </div>
             <Footer />
           </div>
