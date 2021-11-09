@@ -36,9 +36,9 @@
 .items_item p{font-size: 18px; color:rebeccapurple; margin-top:20px;  text-align:center;}
 .ustoz{width:100%;margin-top:1200px; background-color: white; padding:50px 10%;}
 .tad{width:100%;margin-top:0px; background-color: white; padding:50px 10%;}
-.ustoz_item img{width: 100%; height:350px;}
+.ustoz_item img{width: 100%; height:370px;}
 .ustoz_item{padding:10px;}
-.ustoz_item div{padding:10px;  background-color:white;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; padding-bottom:5px; height:530px;}
+.ustoz_item div{padding:10px;  background-color:white;box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; padding-bottom:5px; height:550px;}
 .ustoz_item h4{font-size: 26px; margin-top:20px; text-align: center; color:rebeccapurple}
 .ustoz_item p{font-size: 16px; color:rebeccapurple; text-align: center;}
 .gal{ padding:50px 10%; background-color: white;}

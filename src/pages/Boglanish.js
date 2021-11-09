@@ -37,8 +37,8 @@ export default class Boglanish extends Component {
 <br/>
 
 <YMaps>
-<div className={style.xarita_item}>
-<Map style={{width:'100%', height:'550px'}} defaultState={{ center: [41.000630,71.669404], zoom: 12 }} >
+<div className={style.xarita_item} style={{paddingLeft:'10%',}}>
+<Map style={{width:'100%', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', height:'550px'}} defaultState={{ center: [41.000630,71.669404], zoom: 12 }} >
 <Clusterer
               options={{
                 groupByCoordinates: false,
