@@ -19,7 +19,25 @@ import new3 from "../images/new3.jpg";
 import new4 from "../images/new4.jpg";
 import new5 from "../images/new5.jpg";
 import new6 from "../images/new6.jpg";
+import rasm1 from "../images/rasm1.jpg";
+import rasm2 from "../images/rasm2.jpg";
+import rasm3 from "../images/rasm3.jpg";
+import rasm4 from "../images/rasm4.jpg";
+import rasm5 from "../images/rasm5.jpg";
+import rasm6 from "../images/rasm6.jpg";
 import YouTube from "@u-wave/react-youtube";
+import rahbar from "../images/Xudoyberganov.png";
+import gozal from "../images/gozal.png";
+import axmedov from "../images/axmedov.png";
+import sapayev from "../images/sapayev.jpg";
+import matyoqubov from "../images/matyoqubov.png";
+import abdurahmonov from "../images/abdurahmonov.png";
+import gerb from "../images/gerb.png";
+import lex from "../images/h3.jpg";
+import gov from "../images/h4.jpg";
+import par from "../images/logo_small.png";
+import xalq from "../images/logo.png";
+
 import Footer from "./Footer";
 import { Clusterer, Map, Placemark, YMaps } from "react-yandex-maps";
 import GridLoader from "react-spinners/GridLoader";
@@ -40,6 +58,143 @@ export default class Dashboard extends Component {
     staff: null,
     spec: null,
     event: null,
+    rahbariyat: [
+      {
+        id: 1,
+        fullName: "Raximova  Go'zal  Bekturdiyevna",
+        phone:"+998-91-452-40-02",
+        qabul: "Dushanba - Shanba 9:00 - 17:00",
+        email: "bogot__txtb@umail.uz",
+        describe:
+          "1993-1998 yy. - Nizomiy nomidagi Toshkent Davlat Pedogogika universiteti",
+        describe1:
+          "1996-1998 yy.-Toshkent shaxar Xamza tumanidagi 307-son kompleks maktabida ukituvchi",
+        describe2: "1998-2003 yy  -Bogot tumanidagi 4-son maktabda o'kituvchi",
+        describe3:
+          "2003-2004 yy –Bogot tumani xalk ta'limi bo'limi tashxis markazi psixolgi",
+        describe4:
+          "2007-2008 yy- Bogot tumani Maishiy xizmat va axborot texnalogiyalari KXK direktor urinbosari",
+        describe5: "2008-2010 yy  -Bogot tumanidagi 4-son maktabda direktor",
+        describe6: "2010 y.-x.v     - Bogot tumanidagi 7-son maktabda direktor",
+        lavozimi: "Bog'ot tumani xalq ta'limi bo'limi mudiri",
+        image: gozal,
+        daraja: 1,
+      },
+      {
+        id: 2,
+        fullName: "Sapaev Ulug'bek Ollayarovich",
+        phone: "+998-91-234-40-50",
+        qabul: "Dushanba - Shanba 9:00 - 17:00",
+        email: "bogot__txtb@umail.uz",
+        describe: "1996-2000 yy.-Urganch davlat universiteti talabasi",
+        describe1: "2001-2011 yy.-Bog'ot tuman xalq ta'limi bo'limi metodisti",
+        describe2:
+          "2011-2013 yy.- Bog'ot tuman XTMFMTTE bo'limi DTSM kichik guruhi eksperti",
+        describe3:
+          "2013-2017 yy	- Bog'ot tuman XTMFMTTE bo'limi DTSM kichik guruhi rahbari",
+        describe4:
+          "2017-2021 yy.- Bog'ot tuman XTB ma'naviy axloqiy tarbiya va bolalarni ijtimoiy ximoya qilish sho''basi raxbari ",
+        describe5:
+          "2021 y x.v – Bog'ot tuman xalq ta'limi bo'limi kadrlar bo'yicha inspektor metodisti",
+        describe6: "",
+        lavozimi:
+          "Bog'ot tuman xalq ta'limi bo'limi kadrlar bo'yicha inspektor metodisti",
+        image: sapayev,
+        daraja: 1,
+      },
+      {
+        id: 2,
+        fullName: "Xudoyberganov Odilbek Shixnazarovich",
+        phone: "+998-91-143-40-02",
+        qabul: "Dushanba - Shanba 9:00 - 17:00",
+        email: "bogot__txtb@umail.uz",
+        describe: "2001-2005 yil - Urganch davlat universiteti talabasi",
+        describe1:
+          "2005-2007 yil - Toshkent axborot texnologiyalari universiteti Urganch filiali magistranti",
+        describe2: "2007-2013 yil - Urganch davlat universiteti o'qituvchisi",
+        describe3:
+          "2013-2014 yil - Bog'ot qishloq xo'jalik kasb-hunar kollejining ishlab chiqarish ta'limi ustasi",
+        describe4:
+          "2014-2018 yil - Bog'ot tuman xalq ta'limi bo'limi davlat ta'lim standart monitoringi mutaxassisi",
+        describe5:
+          "2018-2021 yil - Bog'ot tuman xalq ta'limi bo'limi mudiri o'rinbosari",
+        describe6:
+          "2021 yil - Bog'ot tuman xalq ta'limi bo'limi ma'naviy-axloqiy tarbiya va bolalarning ijtimoiy himoya sho''basi rahbari",
+        lavozimi:
+          "Bog'ot tuman xalq ta'limi bo'limi ma'naviyat bo'yicha sho'ba raxbari",
+        image: rahbar,
+        daraja: 1,
+      },
+    
+      // {
+      //   id: 2,
+      //   fullName: "Axmedov  Anvarbek  Yo'ldoshboyevich",
+      //   phone:"+998-91-000-00-00",
+      //   qabul: "Dushanba - Shanba 9:00 - 17:00",
+      //   email: "bogot__txtb@umail.uz",
+      //   describe:
+      //     "2007-2008 yy. -O'zbekiston Respublikasi Milliy Xavfsizlik Xizmati Chegara qo'shinlarida oddiy askar ",
+      //   describe1:
+      //     "2009-2013 yy. -Toshkent Axborot texnologiyalari universiteti talabasi ",
+      //   describe2:
+      //     "2013-2014 yy. -Bog'ot yengil sanoat kasb-hunar kollejida ishlab chiqarish ta'limi ustasi ",
+      //   describe3:
+      //     "2014-2017 yy. -Bog'ot yengil sanoat kasb-hunar kollejida o'quv ishlari bo'yicha direktor o'rinbosari ",
+      //   describe4:
+      //     "2017-2018 yy. -O'zbekiston yoshlar ittifoqi Bog'ot tuman Kengashi bosh mutaxassisi ",
+      //   describe5:
+      //     "2018 - h.v        - Bog'ot tuman xalq bo'limi ta'lim muassasalari faoliyatini tashkil etish sho'basi bosh mutaxassisi",
+      //   describe6: "",
+      //   lavozimi:
+      //     "Bog'ot tuman xalq bo'limi ta'lim muassasalari faoliyatini tashkil etish sho'basi bosh mutaxassisi",
+      //   image: axmedov,
+      //   daraja: 1,
+      // },
+    
+      // {
+      //   id: 2,
+      //   fullName: "Matyakubov   Farxod   Axmedovich",
+      //   phone: "+998-91-000-00-00",
+      //   qabul: "Dushanba - Shanba 9:00 - 17:00",
+      //   email: "bogot__txtb@umail.uz",
+      //   describe:
+      //     "1977-1983 yy -  Toshkent  ulgurji  kitob  savdosi  “Tashkoopkniga”ishchi ",
+      //   describe1:
+      //     "1983-1984 yy – Tashtrans  spes  stroy trest  sleser  trubaukladchik",
+      //   describe2: "1984-1986-yy    Bogot  rayijroko'm  instruktor",
+      //   describe3: "1986-2000-yy     Mexnat  bo'limi direktor  birja  truda",
+      //   describe4: "2000-2005-yy     Bog'ot  ASM KUK  maslaxatchi",
+      //   describe5: "2010-2011- yy    Maishiy  xizmat  KXK yordamchi  buxgalter",
+      //   describe6:
+      //     "2015-x/v     Bagat  XTB muhandis xozirgi  kunda MTEX  boshligi",
+      //   lavozimi: "Bog'ot tumani  xalq ta'limi bo'limida muhandisi",
+      //   image: matyoqubov,
+      //   daraja: 1,
+      // },
+      // {
+      //   id: 2,
+      //   fullName: "Аbduraxmanov Oybek Rustamovich",
+      //   phone: "+998-91-653-34-77",
+      //   qabul: "Dushanba - Shanba 9:00 - 17:00",
+      //   email: "bogot__txtb@umail.uz",
+      //   describe: "1994-1999 yy- Urganch davlat universiteti talabasi",
+      //   describe1: "1999-2002 yy - 'Bogʼottumangaz' filiali operatori",
+      //   describe2:
+      //     "2002-2005 yy - Yakka tadbirkorlik faoliyati bilan shugʼullangan ",
+      //   describe3:
+      //     "2005-2010 yy - Bogʼot tumanidagi 9-son umumiy oʼrta taʼlim maktabi oʼqituvchisi ",
+      //   describe4:
+      //     "2010-2014 yy - Bogʼot tumanidagi 9-son umumiy oʼrta taʼlim maktabi direktorining oʼquv ishlari boʼyicha oʼrinbosari",
+      //   describe5:
+      //     "2014-2017 yy - Bogʼot tumanidagi 30-son umumiy oʼrta taʼlim maktabi direktori",
+      //   describe6:
+      //     "2018- x.v. – Bogʼot tuman XTB taʼlim sifati monitoringi boʼlimi inspektor metodisti",
+      //   lavozimi:
+      //     "Bogʼot tumanidagi XTB taʼlim sifati monitoringi bosh inspektor metodisti",
+      //   image: abdurahmonov,
+      //   daraja: 1,
+      // },
+    ],
   };
 
   getSchool = () => {
@@ -318,15 +473,15 @@ export default class Dashboard extends Component {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
               >
-                {this.state.staff !== null && this.state.spec !== null ? (
-                  this.state.staff.map((item) => {
+                {this.state.rahbariyat !== null ? (
+                  this.state.rahbariyat.map((item) => {
                     return (
                       <div>
                         <div className={style.ustoz_item}>
                           <div>
                             <img src={item.image} />
-                            <h4>{item.full_name}</h4>
-                            <p>{this.echoSpec(item.speciality[0])}</p>
+                            <h4>{item.fullName}</h4>
+                            <p>{item.lavozimi}</p>
                           </div>
                         </div>
                       </div>
@@ -346,7 +501,7 @@ export default class Dashboard extends Component {
                   <div className={style.gal_item}>
                     <img
                       src={
-                        this.state.school !== null ? this.state.school.b_r1 : ""
+                       rasm1
                       }
                     />
                   </div>
@@ -355,9 +510,7 @@ export default class Dashboard extends Component {
                   <div className={style.gal_item}>
                     <img
                       src={
-                        this.state.school !== null
-                          ? this.state.school.m_h_h1
-                          : ""
+                       rasm2
                       }
                     />
                   </div>
@@ -366,9 +519,7 @@ export default class Dashboard extends Component {
                   <div className={style.gal_item}>
                     <img
                       src={
-                        this.state.school !== null
-                          ? this.state.school.m_h_h2
-                          : ""
+                       rasm3
                       }
                     />
                   </div>
@@ -377,9 +528,7 @@ export default class Dashboard extends Component {
                   <div className={style.gal_item}>
                     <img
                       src={
-                        this.state.school !== null
-                          ? this.state.school.m_h_h3
-                          : ""
+                       rasm4
                       }
                     />
                   </div>
@@ -388,9 +537,7 @@ export default class Dashboard extends Component {
                   <div className={style.gal_item}>
                     <img
                       src={
-                        this.state.school !== null
-                          ? this.state.school.m_h_h4
-                          : ""
+                       rasm5
                       }
                     />
                   </div>
@@ -399,9 +546,7 @@ export default class Dashboard extends Component {
                   <div className={style.gal_item}>
                     <img
                       src={
-                        this.state.school !== null
-                          ? this.state.school.foto5
-                          : ""
+                       rasm6
                       }
                     />
                   </div>
