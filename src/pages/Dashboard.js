@@ -179,7 +179,7 @@ export default class Dashboard extends Component {
             <div className={style.binaf}>
               <h1>
                 O'zbekiston Respublikasi Namangan
-                <br />
+           
                 viloyati xalq ta'limi boshqarmasi
               </h1>
             </div>
@@ -479,7 +479,7 @@ export default class Dashboard extends Component {
                     <div>
                       <img src={new3} />
                       <h4>
-                        Namangan viloyatidagi barcha umumta'lim maktablarga Xalq
+                        Maktablarga Xalq
                         ta‘limi vazirligi tavsiyasi asosida "Stamina klviaturasi
                         simulyatori" trenajyori oʻrnatildi
                       </h4>
@@ -494,7 +494,7 @@ export default class Dashboard extends Component {
                     <div>
                       <img src={new4} />
                       <h4>
-                        Milliy gvardiya Namangan viloyati oʻquvchi yoshlar
+                        Namangan viloyati oʻquvchi yoshlar
                         oʻrtasida “Funksional koʻp kurash (krossfit)” sport
                         musobaqasin tashkillashtirildi.
                       </h4>
@@ -533,7 +533,7 @@ export default class Dashboard extends Component {
                     </div>
                   </div>
                 </div>
-                <div></div>
+               
               </Carousel>
               <br />
               <br />
@@ -704,7 +704,7 @@ export default class Dashboard extends Component {
                   </div>
                 </div>
 
-                <div></div>
+               
               </Carousel>
               <br />{" "}
             </div>
