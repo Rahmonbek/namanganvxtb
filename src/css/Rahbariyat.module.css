@@ -15,18 +15,12 @@
   height: 100vh;
   background-size: 100% 100%;
   background-image: url(../images/dxorazm14.jpg);
-  padding-top: 60vh;
+  padding-top: 100px;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.head_text {
-  background-color: rgba(0, 0, 0, 0.611);
-  color: white;
-  font-size: 30px;
-  text-align: center;
-  padding: 20px 60px;
-}
+.head_text{font-size: 21px; color:rgb(69, 6, 61); width:100%; padding:10px; background-color:white;  margin:auto; text-align: center; line-height: 2.3em;}
 
 .rahbariyatTitle h3 {
   text-align: center;
