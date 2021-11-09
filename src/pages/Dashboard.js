@@ -707,7 +707,7 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                      video="5WJMIfsgQrk"
+                      video="78msxs4ENXs"
                       className={style.you}
                       autoplay={true}
                       muted={true}
@@ -717,7 +717,7 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                      video="ERl3IPN9l30"
+                      video="OLXzDBhOcCw"
                       className={style.you}
                       autoplay={true}
                       muted={true}
@@ -727,7 +727,7 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                      video="k6sD_RHLiVg"
+                      video="68n_cnOcSlA"
                       className={style.you}
                       autoplay={true}
                       muted={true}
@@ -737,7 +737,7 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                      video="x3M_2IBy_Lk"
+                      video="CIYz_ieJK8I"
                       className={style.you}
                       autoplay={true}
                       muted={true}
@@ -747,7 +747,7 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                      video="-zZ54gFLkq4"
+                      video="Gb018wuoplc"
                       className={style.you}
                       autoplay={true}
                       muted={true}
@@ -757,7 +757,7 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                      video="Xjp5L7QvilA"
+                      video="VG3oq3wPB3U"
                       className={style.you}
                       autoplay={true}
                       muted={true}
