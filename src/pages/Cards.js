@@ -120,9 +120,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(94)300-57-77">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (94)300-57-77}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -198,9 +198,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(97)376-76-86">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (97)376-76-86}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -276,9 +276,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(93)916-88-55">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (93)916-88-55}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -354,9 +354,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(93)942-05-77">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (93)942-05-77}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -432,9 +432,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(97)251-50-50">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (97)251-50-50}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -510,9 +510,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="bottom" title="(8362)31-52-967">
+                <Tooltip placement="bottom" title="(94)152-55-55">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (94)152-55-55}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -535,7 +535,7 @@ export default class Cards extends Component {
               />
               <Card.Body>
                 <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
-                  Norin shahri xaql ta'limi boshqarmasi
+                  Norin tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
                   Bo'lim veb saytini ko'rish
@@ -588,9 +588,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(97)254-87-77">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (97)254-87-77}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -666,9 +666,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(93)231-00-08">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (93)231-00-08}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -744,9 +744,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(93)058-03-03">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (93)058-03-03}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -821,9 +821,9 @@ export default class Cards extends Component {
                 </div>
               </div>
               <div className={style.tel}>
-                <Tooltip placement="bottom" title="(8362)31-52-967">
+                <Tooltip placement="bottom" title="(99)398-47-07">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (99)398-47-07}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -899,9 +899,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(93)914-64-00">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (93)914-64-00}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -978,9 +978,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(91)114-05-85">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (91)114-05-85}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
@@ -1056,9 +1056,9 @@ export default class Cards extends Component {
               </div>
 
               <div className={style.tel}>
-                <Tooltip placement="top" title="(8362)31-52-967">
+                <Tooltip placement="top" title="(90)330-31-00">
                   {" "}
-                  <a target="_blank" href={`tel: (8362)31-52-967}`}>
+                  <a target="_blank" href={`tel: (90)330-31-00}`}>
                     <i class="fas fa-phone-alt"></i>
                   </a>{" "}
                 </Tooltip>
