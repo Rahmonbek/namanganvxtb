@@ -15,6 +15,7 @@ import tuman1 from "../images/tuman1.jpg";
 import tuman2 from "../images/tuman2.jpg";
 import tuman3 from "../images/tuman3.jpg";
 import tuman4 from "../images/tuman4.jpg";
+import person from "../images/person.jpg";
 import GridLoader from "react-spinners/GridLoader";
 
 export default class Tumanlar extends Component {
@@ -55,7 +56,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={sanakulov} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -171,7 +172,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={sharahmetov} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -287,7 +288,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={tuman1} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -403,7 +404,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={tuman1} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -519,7 +520,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={tuman2} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -635,7 +636,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={tuman3} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -751,7 +752,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={tuman4} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -868,7 +869,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={tuman1} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1105,7 +1106,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={djulibekov} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1224,7 +1225,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={sanakulov} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1341,7 +1342,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={sharahmetov} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1457,7 +1458,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={tuman2} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1573,7 +1574,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={tuman2} />
+                      <img className={style.Rasm} src={person} />
                       <br />
 
                       <div className={style.NameTag}>
