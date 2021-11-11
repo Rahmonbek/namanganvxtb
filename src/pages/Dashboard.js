@@ -707,6 +707,14 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
+                     onEnd={this._onEnd}
+  opts={{
+    playerVars: {
+     
+      rel:0
+    },
+  }}
+ 
                       video="78msxs4ENXs"
                       className={style.you}
                       autoplay={true}
@@ -717,6 +725,14 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
+                     onEnd={this._onEnd}
+  opts={{
+    playerVars: {
+     
+      rel:0
+    },
+  }}
+ 
                       video="OLXzDBhOcCw"
                       className={style.you}
                       autoplay={true}
@@ -727,6 +743,14 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
+                     onEnd={this._onEnd}
+  opts={{
+    playerVars: {
+     
+      rel:0
+    },
+  }}
+ 
                       video="68n_cnOcSlA"
                       className={style.you}
                       autoplay={true}
@@ -737,6 +761,14 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
+                     onEnd={this._onEnd}
+  opts={{
+    playerVars: {
+     
+      rel:0
+    },
+  }}
+ 
                       video="CIYz_ieJK8I"
                       className={style.you}
                       autoplay={true}
@@ -747,6 +779,14 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
+                     onEnd={this._onEnd}
+  opts={{
+    playerVars: {
+     
+      rel:0
+    },
+  }}
+ 
                       video="Gb018wuoplc"
                       className={style.you}
                       autoplay={true}
@@ -757,6 +797,14 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
+                     onEnd={this._onEnd}
+  opts={{
+    playerVars: {
+     
+      rel:0
+    },
+  }}
+ 
                       video="VG3oq3wPB3U"
                       className={style.you}
                       autoplay={true}

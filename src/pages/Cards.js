@@ -21,6 +21,10 @@ import "react-multi-carousel/lib/styles.css";
 import { Tooltip } from "antd";
 import { Link } from "react-router-dom";
 export default class Cards extends Component {
+  _onEnd(event) {
+    // access to player in all event handlers via event.target
+    event.target.playVideo();}  
+  
   render() {
     const responsive3 = {
       superLargeDesktop: {
