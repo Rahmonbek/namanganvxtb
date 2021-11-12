@@ -76,14 +76,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title="chortoq_txtb@xtv.uz "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
-                    }`}
+                              href={`mailto: chortoq_txtb@xtv.uz                    }`}
                             >
                               <i className="fas fa-envelope"></i>
                             </a>
@@ -190,15 +189,12 @@ export default class Tumanlar extends Component {
                           </a>
                         </div>
                         <div>
-                          <Tooltip
-                            placement="bottom"
-                            title="ittower01@gmail.com"
-                          >
+                          <Tooltip placement="bottom" title="chusttxtb@xtv.uz ">
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto: chusttxtb@xtv.uz
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -308,13 +304,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title=" kosonsoy-xtb@inbox.uz  "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto:  kosonsoy-xtb@inbox.uz  
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -540,13 +536,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title=" mingbuloqxtb@xtv.uz "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto:  mingbuloqxtb@xtv.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -656,13 +652,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title="namangan_shxtb@xtv.uz "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto: namangan_shxtb@xtv.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -772,13 +768,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title=" namangan_txtb@xtv.uz "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto:  namangan_txtb@xtv.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -887,15 +883,12 @@ export default class Tumanlar extends Component {
                           </a>
                         </div>
                         <div>
-                          <Tooltip
-                            placement="bottom"
-                            title="ittower01@gmail.com"
-                          >
+                          <Tooltip placement="bottom" title="NorinTXTB@xtv.uz ">
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto: NorinTXTB@xtv.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -1009,13 +1002,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title="turakurgan_txtb@uzedu.uz "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto: turakurgan_txtb@uzedu.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -1126,13 +1119,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title=" uchkurgon_txtb@xtv.uz "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto:  uchkurgon_txtb@xtv.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -1243,15 +1236,12 @@ export default class Tumanlar extends Component {
                           </a>
                         </div>
                         <div>
-                          <Tooltip
-                            placement="bottom"
-                            title="ittower01@gmail.com"
-                          >
+                          <Tooltip placement="bottom" title="Uychitxtb@xtb.uz ">
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto: Uychitxtb@xtb.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -1362,13 +1352,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title="Yangiqurgon_txtb@exat.uz "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto: Yangiqurgon_txtb@exat.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
@@ -1478,13 +1468,13 @@ export default class Tumanlar extends Component {
                         <div>
                           <Tooltip
                             placement="bottom"
-                            title="ittower01@gmail.com"
+                            title=" Pop _TXTB@xtv.uz "
                           >
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto:  Pop _TXTB@xtv.uz 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
