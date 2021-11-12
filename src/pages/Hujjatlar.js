@@ -2,12 +2,14 @@ import { Row, Col } from 'react-bootstrap'
 import React, { Component } from 'react'
 import style from '../css/Hujjatlar.module.css'
 import doc from "../images/doc.jpg"
+import qoy from "../images/qoy.jpg"
+import uzb from "../images/uzb.png"
 export default class Hujjatlar extends Component {
     render() {
         return (
             <div className={style.hujjat}>
                 <h1 className={style.sarlavha}>Ta'limga oid qonunlar</h1>
-                <Row>
+                <Row className={style.rowT}>
 
                 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4791458" target="_blank">
@@ -118,14 +120,14 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 
                 </Row>
             
-            
+                <br/><br/>            
                 <h1 className={style.sarlavha}>Prezident farmonlari, farmoyishlari va qarorlari</h1>
-                <Row>
+                <Row className={style.rowT}>
 
                 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
 <Row>
-    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
     O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
 </h1></Col>
@@ -137,7 +139,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
 <Row>
-    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
     O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
 </h1></Col>
@@ -149,7 +151,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
 <Row>
-    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
     O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
 </h1></Col>
@@ -161,7 +163,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
 <Row>
-    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
     O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
 </h1></Col>
@@ -173,7 +175,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
 <Row>
-    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
     O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
 </h1></Col>
@@ -185,9 +187,26 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
 <Row>
-    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
     O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+</h1></Col>
+
+</Row></a>                    </Col>
+
+
+                </Row>
+     
+                <br/><br/>            
+                <h1 className={style.sarlavha}>O`quvchilar uchun</h1>
+                <Row className={style.rowT}>
+
+                <Col lg={12} md={12} className={style.colT} style={{marginTop:'20px', borderRight:"none"}} sm={12}>
+<a className={style.ss} href="https://www.uzedu.uz/oz/voyaga-yetmagan-bolalarni-farzandlikka-olish-tartibi" target="_blank">
+<Row>
+    <Col lg={4} style={{display:'flex', justifyContent:'center'}}><img style={{width:'50%'}} src={qoy} /></Col>
+    <Col lg={8} style={{display:'flex', alignItems:'center'}}><h1 style={{ width:'100%'}}>
+    Voyaga yetmagan bolalarni farzandlikka olish tartibi
 </h1></Col>
 
 </Row></a>                    </Col>
