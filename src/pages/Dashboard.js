@@ -48,6 +48,7 @@ import pic20 from "../images/twitter 2.png";
 import Cards from "./Cards";
 import { Link } from "react-router-dom";
 import "./form.css";
+import Hujjatlar from "./Hujjatlar";
 
 export default class Dashboard extends Component {
   state = {
@@ -560,6 +561,7 @@ export default class Dashboard extends Component {
                 Barchasini ko'rish
               </Link>
             </div>
+            <Hujjatlar/>
             <div className={style.video1}>
               <video loop={true} autoPlay={true} muted={true}>
                 <source src={video2} type="video/mp4" />
