@@ -199,7 +199,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
      
                 <br/><br/>            
                 <h1 className={style.sarlavha}>O`quvchilar uchun</h1>
-                <Row className={style.rowT}>
+                <Row>
 
                 <Col lg={12} md={12} className={style.colT} style={{marginTop:'20px', borderRight:"none"}} sm={12}>
 <a className={style.ss} href="https://www.uzedu.uz/oz/voyaga-yetmagan-bolalarni-farzandlikka-olish-tartibi" target="_blank">
