@@ -137,11 +137,11 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 
 
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
-<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<a className={style.ss} href="https://www.terabayt.uz/post/ozbekistonda-elektr-energiyasini-hisoblashning-yangicha-principiga-otiladi" target="_blank">
 <Row>
     <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
-    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+    «Raqamli O‘zbekiston – 2030» strategiyasini tasdiqlash va uni samarali amalga oshirish chora-tadbirlari
 </h1></Col>
 
 </Row></a>                    </Col>
@@ -149,11 +149,11 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 
 
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
-<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<a className={style.ss} href="https://lex.uz/docs/4532156" target="_blank">
 <Row>
     <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
-    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+    XALQ TAʼLIMI TIZIMIDAGI MAKTABDAN TASHQARI TAʼLIM SAMARADORLIGINI TUBDAN OSHIRISH CHORA-TADBIRLARI
 </h1></Col>
 
 </Row></a>                    </Col>
