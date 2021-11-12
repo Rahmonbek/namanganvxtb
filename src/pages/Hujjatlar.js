@@ -9,7 +9,7 @@ export default class Hujjatlar extends Component {
                 <h1 className={style.sarlavha}>Ta'limga oid qonunlar</h1>
                 <Row>
 
-                <Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+                <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4791458" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -20,7 +20,7 @@ export default class Hujjatlar extends Component {
 </Row></a>
                     </Col>
                     
-                    <Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+                    <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4770705" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -29,7 +29,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4739520" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -38,7 +38,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4807552" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -47,7 +47,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4711327" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -57,7 +57,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4211827" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -67,7 +67,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4211827" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -76,7 +76,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4211827" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -86,7 +86,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4613683" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -95,7 +95,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4211827" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -106,7 +106,7 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </h1></Col>
 
 </Row></a>                    </Col>
-<Col lg={6} md={12} style={{marginTop:'20px'}} sm={12}>
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
 <a className={style.ss} href="https://lex.uz/docs/-4211827" target="_blank">
 <Row>
     <Col lg={3}><img src={doc} /></Col>
@@ -117,7 +117,87 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 </Row></a>                    </Col>
 
                 </Row>
+            
+            
+                <h1 className={style.sarlavha}>Prezident farmonlari, farmoyishlari va qarorlari</h1>
+                <Row>
+
+                <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
+<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<Row>
+    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
+    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+</h1></Col>
+
+</Row></a>                    </Col>
+
+
+
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
+<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<Row>
+    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
+    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+</h1></Col>
+
+</Row></a>                    </Col>
+
+
+
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
+<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<Row>
+    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
+    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+</h1></Col>
+
+</Row></a>                    </Col>
+
+
+
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
+<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<Row>
+    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
+    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+</h1></Col>
+
+</Row></a>                    </Col>
+
+
+
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
+<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<Row>
+    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
+    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+</h1></Col>
+
+</Row></a>                    </Col>
+
+
+
+<Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
+<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<Row>
+    <Col lg={3}><img src={doc} /></Col>
+    <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
+    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+</h1></Col>
+
+</Row></a>                    </Col>
+
+
+                </Row>
+     
+            
             </div>
+
         )
     }
 }
