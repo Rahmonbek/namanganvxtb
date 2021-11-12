@@ -198,68 +198,17 @@ export default class Dashboard extends Component {
     ],
   };
 
-  getSchool = () => {
-    axios.get(`${url}/school-by-admin/${user}`).then((res) => {
-      this.setState({
-        school: res.data,
-      });
-      axios.get(`${url}/region/${res.data.region}/`).then((res1) => {
-        this.setState({ region: res1.data });
-        setTimeout(() => {
-          this.setState({
-            loader: false,
-          });
-        }, 3000);
-      });
-    });
-  };
-  getNews = () => {
-    getNews()
-      .then((res) => {
-        this.setState({
-          news: res.data,
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-  getStaff = () => {
-    axios.get(`${url}/staff-by-school/${idMaktab}/`).then((res) => {
-      this.setState({
-        staff: res.data,
-      });
-    });
-  };
-  getEvent = () => {
-    axios.get(`${url}/event/${idMaktab}/`).then((res) => {
-      this.setState({
-        event: res.data,
-      });
-    });
-  };
-  getSpec = () => {
-    axios.get(`${url}/spec/`).then((res) => {
-      this.setState({
-        spec: res.data,
-      });
-    });
-  };
-  echoSpec = (id) => {
-    var s = "";
-    this.state.spec.map((item) => {
-      if (item.id === id) {
-        s = item.name;
-      }
-    });
-    return s;
-  };
   componentDidMount() {
-    this.getNews();
-    this.getEvent();
-    this.getSchool();
-    this.getStaff();
-    this.getSpec();
+    // this.getNews();
+    // this.getEvent();
+    // this.getSchool();
+    // this.getStaff();
+    // this.getSpec();
+    setTimeout(() => {
+      this.setState({
+        loader: false,
+      });
+    }, 4000);
   }
   render() {
     const responsive1 = {

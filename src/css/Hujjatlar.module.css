@@ -1,7 +1,7 @@
 .hujjat{width:100%; padding:40px 10%; background-color:white;}
 .ss{width:100%; align-items:center;}
 .ss img{width:100%;}
-.ss h1{font-size:18px; color:blueviolet; text-transform: capitalize;}
+.ss h1{font-size:18px; color:blueviolet;}
 .ss h1:hover{color:rgb(46, 12, 79)}
 .sarlavha{color:rebeccapurple; font-size: 32px; text-align:center}
 .colT:nth-child(odd){padding-right:10px; border-right:3px solid rgb(46, 12, 79)}

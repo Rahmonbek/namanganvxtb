@@ -113,7 +113,8 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Row>
     <Col lg={3}><img src={doc} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
-    O‘zbekiston Respublikasi vazirlar mahkamasining qarori umumiy o'rta ta'lim muassasalari va akademik litsey bitiruvchilarini rag'batlantirish yanada takomillashtirish chora-tadbirlar to'g'risida
+    O‘zbekiston Respublikasi vazirlar mahkamasining qarori umumiy o'rta ta'lim muassasalari va akademik 
+    litsey bitiruvchilarini rag'batlantirish yanada takomillashtirish chora-tadbirlar to'g'risida
 </h1></Col>
 
 </Row></a>                    </Col>
@@ -129,7 +130,10 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Row>
     <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
-    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+    O‘zbekiston Respublikasining Prezidentining qarori
+axborot texnologiyalari sohasida ta'lim tizimini yanada takommilashtirish, ilmiy tadqiqotlarni 
+rivojlantirish va ularning IT-industriya bilan integratsiya qilish chora-tadbirlar to'g'risida qarori
+
 </h1></Col>
 
 </Row></a>                    </Col>
@@ -153,7 +157,10 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Row>
     <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
-    XALQ TAʼLIMI TIZIMIDAGI MAKTABDAN TASHQARI TAʼLIM SAMARADORLIGINI TUBDAN OSHIRISH CHORA-TADBIRLARI
+    Oʻzbekiston Respublikasi Prezidentining 2019-yil 30-sentyabrdagi “Xalq taʼlimi tizimidagi maktabdan tashqari taʼlim 
+    samaradorligini tubdan oshirish chora-tadbirlari toʻgʻrisida” PQ-4467-son qarori 
+
+
 </h1></Col>
 
 </Row></a>                    </Col>
@@ -165,7 +172,8 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 <Row>
     <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
-    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+    Oʻzbekiston Respublikasi Prezidentining 2019-yil 9-sentyabrdagi “Oʻzbekiston Respublikasi 
+    Vazirlar Mahkamasi huzuridagi Prezident, ijod va ixtisoslashtirilgan maktablarni rivojlantirish agentligini tashkil etish toʻgʻrisida“ PF-5815-sonli farmoni
 </h1></Col>
 
 </Row></a>                    </Col>
@@ -173,11 +181,14 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 
 
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
-<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<a className={style.ss} href="https://lex.uz/docs/4320719?otherlang=3" target="_blank">
 <Row>
     <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
-    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+    Oʻzbekiston Respublikasi Prezidentining 2019 yil 3 maydagi “Iqtidorli yoshlarni
+    aniqlash va yuqori malakali kadrlar tayyorlashning uzluksiz tizimini tashkil etish chora-tadbirlari toʻgʻrisida”gi PQ-4306-son Qarori
+
+
 </h1></Col>
 
 </Row></a>                    </Col>
@@ -185,11 +196,12 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
 
 
 <Col lg={6} md={12} className={style.colT} style={{marginTop:'20px'}} sm={12}>
-<a className={style.ss} href="https://lex.uz/docs/-5032128" target="_blank">
+<a className={style.ss} href="https://lex.uz/pdfs/4312785" target="_blank">
 <Row>
     <Col lg={3}><img src={uzb} /></Col>
     <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1>
-    O‘ZBEKISTON RESPUBLIKASI PREZIDENTINING PQ-4851
+    25 July Oʻzbekiston Respublikasi Prezidentining 2019-yil 29-apreldagi 
+    "Oʻzbekiston Respublikasi Xalq taʼlimi tizimini 2030-yilgacha rivojlantirish konsepsiyasini tasdiqlash toʻgʻrisida" PF-5712-son Farmoni
 </h1></Col>
 
 </Row></a>                    </Col>
@@ -204,9 +216,9 @@ O‘zbekiston Respublikasi vazirlar mahkamasining qarori Al-Xorazmiy nomidagi xa
                 <Col lg={12} md={12} className={style.colT} style={{marginTop:'20px', borderRight:"none"}} sm={12}>
 <a className={style.ss} href="https://www.uzedu.uz/oz/voyaga-yetmagan-bolalarni-farzandlikka-olish-tartibi" target="_blank">
 <Row>
-    <Col lg={4} style={{display:'flex', justifyContent:'center'}}><img style={{width:'50%'}} src={qoy} /></Col>
-    <Col lg={8} style={{display:'flex', alignItems:'center'}}><h1 style={{ width:'100%'}}>
-    Voyaga yetmagan bolalarni farzandlikka olish tartibi
+    <Col lg={3} style={{display:'flex', justifyContent:'center'}}><img style={{width:'75%'}} src={qoy} /></Col>
+    <Col lg={9} style={{display:'flex', alignItems:'center'}}><h1 style={{ width:'100%'}}>
+    Oʻzbekiston Respublikasi Oila Kodeksi hamda Vazirlar Mahkamasining “Oʻzbekiston Respublikasining Oila Kodeksini amalga oshirish uchun zarur boʻlgan meʼyoriy hujjatlarni tasdiqlash toʻgʻrisida”gi 171-son qarori bilan tasdiqlangan Voyaga yetmagan bolalarni farzandlikka va bolalarni oilaga tarbiyaga olish (patronat) toʻgʻrisida nizomi
 </h1></Col>
 
 </Row></a>                    </Col>
