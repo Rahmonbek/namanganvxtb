@@ -23,8 +23,9 @@ import { Link } from "react-router-dom";
 export default class Cards extends Component {
   _onEnd(event) {
     // access to player in all event handlers via event.target
-    event.target.playVideo();}  
-  
+    event.target.playVideo();
+  }
+
   render() {
     const responsive3 = {
       superLargeDesktop: {
@@ -81,11 +82,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="chortoq_txtb@xtv.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: chortoq_txtb@xtv.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -159,11 +160,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="chusttxtb@xtv.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: chusttxtb@xtv.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -237,11 +238,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="kosonsoy-xtb@inbox.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: kosonsoy-xtb@inbox.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -315,11 +316,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="mingbuloqxtb@xtv.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: mingbuloqxtb@xtv.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -393,11 +394,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="namangan_shxtb@xtv.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: namangan_shxtb@xtv.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -471,11 +472,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="bottom" title="ittower01@gmail.com">
+                  <Tooltip placement="bottom" title="namangan_txtb@xtv.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: namangan_txtb@xtv.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -549,11 +550,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="NorinTXTB@xtv.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: NorinTXTB@xtv.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -627,11 +628,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="Pop _TXTB@xtv.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: Pop _TXTB@xtv.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -705,11 +706,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="turakurgan_txtb@uzedu.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: turakurgan_txtb@uzedu.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -783,11 +784,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="bottom" title="ittower01@gmail.com">
+                  <Tooltip placement="bottom" title="uchkurgon_txtb@xtv.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: uchkurgon_txtb@xtv.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -860,11 +861,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="Uychitxtb@xtb.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: Uychitxtb@xtb.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -939,11 +940,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="Yangiqurgon_txtb@exat.uz">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: Yangiqurgon_txtb@exat.uz
                   }`}
                     >
                       <i className="fas fa-envelope"></i>
@@ -1017,11 +1018,11 @@ export default class Cards extends Component {
             <div className={style.hov}>
               <div className={style.hov_item}>
                 <div>
-                  <Tooltip placement="right" title="ittower01@gmail.com">
+                  <Tooltip placement="right" title="">
                     {" "}
                     <a
                       target="_blank"
-                      href={`mailto: ittower01@gmail.com
+                      href={`mailto: 
                   }`}
                     >
                       <i className="fas fa-envelope"></i>

@@ -418,15 +418,12 @@ export default class Tumanlar extends Component {
                           </a>
                         </div>
                         <div>
-                          <Tooltip
-                            placement="bottom"
-                            title="ittower01@gmail.com"
-                          >
+                          <Tooltip placement="bottom" title="">
                             {" "}
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`mailto: ittower01@gmail.com
+                              href={`mailto: 
                     }`}
                             >
                               <i className="fas fa-envelope"></i>
