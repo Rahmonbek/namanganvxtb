@@ -74,11 +74,11 @@ export default class Yangiliklar extends Component {
               </video>
             </div>
             <div className={style.binaf}>
-              <h1>
+              {/* <h1>
                 {" "}
                 O'zbekiston Respublikasi Namangan viloyati xalq ta'limi
                 boshqarmasining yangiliklari
-              </h1>
+              </h1> */}
             </div>
             <div className={styles.newsY}>
               <Collapse accordion defaultActiveKey={["0"]}>

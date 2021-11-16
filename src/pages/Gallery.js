@@ -57,8 +57,8 @@ export default class Gallery extends Component {
   </video>
   </div>
   <div className={style.binaf}>
-  <h1>O'zbekiston Respublikasi Namangan 
-      viloyati xalq ta'limi boshqarmasi fotolavhalari</h1>
+  {/* <h1>O'zbekiston Respublikasi Namangan 
+      viloyati xalq ta'limi boshqarmasi fotolavhalari</h1> */}
   </div>
 
 <div className={styles.rasmlar}>

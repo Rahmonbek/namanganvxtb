@@ -39,6 +39,8 @@ export default class NavbarA extends Component {
                   </div>
                     <div className={style.brand}>
                         <img src={logo}/>
+                        <p>Namangan viloyat xalq ta'limi boshqarmasi</p>
+
                     </div>
                     <div className={style.nav}>
                     <ul id="navb">

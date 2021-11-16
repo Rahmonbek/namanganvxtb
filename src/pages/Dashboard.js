@@ -37,6 +37,7 @@ import lex from "../images/h3.jpg";
 import gov from "../images/h4.jpg";
 import par from "../images/logo_small.png";
 import xalq from "../images/logo.png";
+import p from '../images/p.webp'
 
 import Footer from "./Footer";
 import { Clusterer, Map, Placemark, YMaps } from "react-yandex-maps";
@@ -282,33 +283,26 @@ export default class Dashboard extends Component {
               </video>
             </div>
             <div className={style.binaf}>
-              <h1>
+              {/* <h1>
                 O'zbekiston Respublikasi Namangan
            
                 viloyati xalq ta'limi boshqarmasi
-              </h1>
+              </h1> */}
             </div>
             <div className={style.second}>
               <div className={style.second_item}>
                 <Row>
                   <Col lg={6} md={12} sm={12}>
                     <p className={style.fikr}>
-                      {this.state.school !== null
-                        ? this.state.school.m_h_o
-                        : ""}
+                    Ba’zi maktablarda salbiy baholash tizimi bekor qilindi, imtihonni topshirish uchun istagancha urinish mumkin. Ammo hayotda bu holatning aksi senda uchrasa bundan o‘pkalama.
                     </p>
                     <p className={style.ism}>
-                      {this.state.school !== null
-                        ? this.state.school.m_h_o_t
-                        : ""}
+                    Shavkat Mirziyoyev
                     </p>
                   </Col>
                   <Col lg={6} md={12} sm={12}>
                     <img
-                      src={
-                        this.state.school !== null
-                          ? this.state.school.m_h_o_r
-                          : ""
+                      src={p
                       }
                     />
                   </Col>

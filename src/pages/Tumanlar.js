@@ -41,10 +41,10 @@ export default class Tumanlar extends Component {
           <div>
             <NavbarT />
             <div className={style.head}>
-              <div className={style.head_text}>
+              {/* <div className={style.head_text}>
                 O'zbekiston Respublikasi Namangan viloyati xalq ta'limi
                 boshqarmasining tumanlaridagi bo'limlari
-              </div>
+              </div> */}
             </div>
             <div className={style.tumanlar}>
               <div className={style.tumanlar_item}>

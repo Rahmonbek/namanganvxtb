@@ -233,10 +233,10 @@ color="violet" loading={this.state.loader} size={40} />
             <NavbarT />
             <div>
               <div className={style.head}>
-                <div className={style.head_text}>
+                {/* <div className={style.head_text}>
                 O'zbekiston Respublikasi Namangan 
       viloyati xalq ta'limi boshqarmasining rahbariyat a'zolari
-                </div>
+                </div> */}
               </div>
               <div className={style.rahbariyatTitle}>
                 <h3>Rahbariyat</h3>
