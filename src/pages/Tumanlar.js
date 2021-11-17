@@ -16,6 +16,20 @@ import tuman2 from "../images/tuman2.jpg";
 import tuman3 from "../images/tuman3.jpg";
 import tuman4 from "../images/tuman4.jpg";
 import person from "../images/person.jpg";
+import chortoq from "../images/Chortoq tumani.jpg";
+import chust from "../images/Chust tumani.jpg";
+import davlatobod from "../images/Davlatobod tumani.jpg";
+import kosonsoy from "../images/Kosonsoy tumani.jpg";
+import mingbuloq from "../images/Mingbuloq tumani.jpg";
+import namangansh from "../images/Namangan shaxar muduri.jpg";
+import namangant from "../images/Namangan tumani muduri.jpg";
+import norin from "../images/Norin tumani.jpg";
+import pop from "../images/Pop tumani muduri.jpg";
+import toraqorgon from "../images/To'raqo'rg'on tumani.jpg";
+import uchqorgon from "../images/Uchqorgon tumani muduri.jpg";
+import uychi from "../images/UYchi tumani.jpg";
+import yanginamangan from "../images/Yangi Namangan tumani.jpg";
+import yangiqorgon from "../images/Yangiqorgon tumani.jpg";
 import GridLoader from "react-spinners/GridLoader";
 
 export default class Tumanlar extends Component {
@@ -56,7 +70,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={chortoq} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -101,7 +115,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/groups/1020634188706212/?ref=share"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -171,7 +185,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={chust} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -214,7 +228,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/groups/chustxtb/?multi_permalinks=670397927279829"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -284,7 +298,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={kosonsoy} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -330,7 +344,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/profile.php?id=100068972252751"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -400,7 +414,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={davlatobod} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -443,7 +457,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/groups/222091629666161/?ref=share_group_link"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -513,7 +527,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={mingbuloq} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -559,7 +573,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://facebook.com/groups/1549796655354486/"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -629,7 +643,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={namangansh} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -675,7 +689,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/namanganshxtb/"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -745,7 +759,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={namangant} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -791,7 +805,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/groups/1240427446468350/?ref=share"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -862,7 +876,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={norin} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -905,7 +919,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/Norinxtb"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -976,10 +990,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img
-                        className={style.Rasm}
-                        src="https://as1.ftcdn.net/v2/jpg/02/94/62/14/500_F_294621430_9dwIpCeY1LqefWCcU23pP9i11BgzOS0N.jpg"
-                      />
+                      <img className={style.Rasm} src={toraqorgon} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1025,7 +1036,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/groups/376064277043880/permalink/606130964037209/"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -1096,7 +1107,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={uchqorgon} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1142,7 +1153,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/profile.php?id=100072324061993"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -1215,7 +1226,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={uychi} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1258,7 +1269,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/groups/uychixtb/?ref=share"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -1329,7 +1340,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={yangiqorgon} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1375,7 +1386,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/groups/1645400222322751/?ref=share"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
@@ -1445,7 +1456,7 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim direktori</h4>
                       <div className={style.chiziq}></div>
                       <br />
-                      <img className={style.Rasm} src={person} />
+                      <img className={style.Rasm} src={pop} />
                       <br />
 
                       <div className={style.NameTag}>
@@ -1491,7 +1502,7 @@ export default class Tumanlar extends Component {
                           <a
                             target="_blank"
                             className={style.ahref}
-                            href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                            href="https://www.facebook.com/PopTXTB/posts/434742101646016"
                           >
                             <i className="fab fa-facebook"></i>
                           </a>
