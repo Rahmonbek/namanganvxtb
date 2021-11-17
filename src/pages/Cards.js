@@ -109,7 +109,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/groups/1020634188706212/?ref=share"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -187,7 +187,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/groups/chustxtb/?multi_permalinks=670397927279829"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -265,7 +265,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/profile.php?id=100068972252751"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -343,7 +343,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://facebook.com/groups/1549796655354486/"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -421,7 +421,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/namanganshxtb/"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -499,7 +499,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/groups/1240427446468350/?ref=share"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -575,10 +575,7 @@ export default class Cards extends Component {
                   </a>
                 </div>
                 <div>
-                  <a
-                    target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
-                  >
+                  <a target="_blank" href="https://www.facebook.com/Norinxtb">
                     <i className="fab fa-facebook"></i>
                   </a>
                 </div>
@@ -655,7 +652,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/PopTXTB/posts/434742101646016"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -733,7 +730,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/groups/376064277043880/permalink/606130964037209/"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -811,7 +808,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/profile.php?id=100072324061993"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -888,7 +885,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/groups/uychixtb/?ref=share"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -967,7 +964,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/groups/1645400222322751/?ref=share"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
@@ -1045,7 +1042,7 @@ export default class Cards extends Component {
                 <div>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/people/Samarqand-Tuman-Idum/100072115398865/"
+                    href="https://www.facebook.com/groups/222091629666161/?ref=share_group_link"
                   >
                     <i className="fab fa-facebook"></i>
                   </a>
