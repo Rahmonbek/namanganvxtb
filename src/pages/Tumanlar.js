@@ -16,6 +16,19 @@ import tuman2 from "../images/tuman2.jpg";
 import tuman3 from "../images/tuman3.jpg";
 import tuman4 from "../images/tuman4.jpg";
 import person from "../images/person.jpg";
+import chortoqrah from "../images/Chortoq tumanirah.jpg";
+import chustrah from "../images/chustrah.jpg";
+import mingbuloqrah from "../images/Mingbuloq tumanirah.jpg";
+import namangantumrah from "../images/Namangan tumanirah.jpg";
+import norinrah from "../images/Norin tumanirah.jpg";
+import poprah from "../images/pop tumanirah.jpg";
+import namanganshrah from "../images/namangan shaxarrah.jpg";
+import toraqqorgonrah from "../images/Toraqorgon tumanirah.jpg";
+import uchqorgonrah from "../images/Uchqorgon tumanirah.jpg";
+import uychirah from "../images/Uychi tumanirah.jpg";
+import yangiqorgonrah from "../images/Yangiqorgonrah.jpg";
+import davlatobodrah from "../images/Davlatobod tumanirah.jpg";
+import kosonsoyrah from "../images/Kosonsoy tumanirah.jpg";
 import chortoq from "../images/Chortoq tumani.jpg";
 import chust from "../images/Chust tumani.jpg";
 import davlatobod from "../images/Davlatobod tumani.jpg";
@@ -31,7 +44,7 @@ import uychi from "../images/UYchi tumani.jpg";
 import yanginamangan from "../images/Yangi Namangan tumani.jpg";
 import yangiqorgon from "../images/Yangiqorgon tumani.jpg";
 import GridLoader from "react-spinners/GridLoader";
-import Rasm from '../images/dxorazm0.jpg'
+import Rasm from "../images/dxorazm0.jpg";
 export default class Tumanlar extends Component {
   constructor(props) {
     super(props);
@@ -159,7 +172,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -170,13 +183,19 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                     <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      <div className={style.NameTag}>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
-                     <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                      <div className={style.Yimage}>
+                        <img src={chortoqrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -278,7 +297,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -290,12 +309,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={chustrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -400,7 +425,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -412,12 +437,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={kosonsoyrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -519,7 +550,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -531,12 +562,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={davlatobodrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -641,7 +678,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -653,12 +690,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={mingbuloqrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -763,7 +806,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -775,12 +818,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={namanganshrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -885,7 +934,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -897,12 +946,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={namangantumrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -1005,7 +1060,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1017,12 +1072,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={norinrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -1128,7 +1189,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1140,12 +1201,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={toraqqorgonrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -1261,12 +1328,18 @@ export default class Tumanlar extends Component {
                       />
 
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={uchqorgonrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -1369,7 +1442,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1381,12 +1454,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={uychirah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -1492,7 +1571,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1504,12 +1583,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={yangiqorgonrah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>
@@ -1614,7 +1699,7 @@ export default class Tumanlar extends Component {
                       <div className={style.NameTag}>
                         <p>Bo'lim videosi</p>
                       </div>
-                      
+
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1626,12 +1711,18 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
                       <div className={style.NameTag}>
-                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                        <p
+                          style={{
+                            paddingTop: "15px",
+                            borderTop: "3px solid rgb(111, 3, 90)",
+                          }}
+                        >
+                          Bo'lim rasmi
+                        </p>
                       </div>
                       <div className={style.Yimage}>
-<img src={Rasm} style={{width:'100%'}}/> 
-                     </div>
-                      
+                        <img src={poprah} style={{ width: "100%" }} />
+                      </div>
                     </Col>
                   </Container>
                 </Row>

@@ -15,6 +15,10 @@ import gov from "../images/h4.jpg";
 import par from "../images/logo_small.png";
 import xalq from "../images/logo.png";
 import GridLoader from "react-spinners/GridLoader";
+import rustambek from "../images/rustambek.jpg";
+import tohirjon from "../images/tohirjon.jpg";
+import muzaffar from "../images/muzaffar.png";
+import xayrullo from "../images/xayrullo.jpg";
 
 import {
   Button,
@@ -32,7 +36,7 @@ export default class Rahbariyat extends Component {
       {
         id: 1,
         fullName: "Raximova  Go'zal  Bekturdiyevna",
-        phone:"+998-91-452-40-02",
+        phone: "+998-91-452-40-02",
         qabul: "Dushanba - Shanba 9:00 - 17:00",
         email: "bogot__txtb@umail.uz",
         describe:
@@ -95,7 +99,7 @@ export default class Rahbariyat extends Component {
         image: rahbar,
         daraja: 1,
       },
-    
+
       // {
       //   id: 2,
       //   fullName: "Axmedov  Anvarbek  Yo'ldoshboyevich",
@@ -120,7 +124,7 @@ export default class Rahbariyat extends Component {
       //   image: axmedov,
       //   daraja: 1,
       // },
-    
+
       // {
       //   id: 2,
       //   fullName: "Matyakubov   Farxod   Axmedovich",
@@ -223,11 +227,9 @@ export default class Rahbariyat extends Component {
     return (
       <div>
         {this.state.timePassed === false ? (
-       <div className={style.load}>
-       <GridLoader
-color="violet" loading={this.state.loader} size={40} />
-       </div>
-       
+          <div className={style.load}>
+            <GridLoader color="violet" loading={this.state.loader} size={40} />
+          </div>
         ) : (
           <div className={style.rahbariyat}>
             <NavbarT />
@@ -247,52 +249,160 @@ color="violet" loading={this.state.loader} size={40} />
                   <Row>
                     <Col lg={9} sm={12}>
                       <Row>
-                        {this.state.rahbariyat !== []
-                          ? this.state.rahbariyat.map((item, key) => {
-                              return item.daraja === this.state.daraja ? (
-                                <Col lg={12} md={12} sm={12}>
-                                  <div className={style.card}>
-                                    <Row>
-                                      <Col xl={4} lg={5} md={5} sm={5} xs={12}>
-                                        <img src={item.image} alt="" />
-                                      </Col>
-                                      <Col xl={8} lg={7} md={7} sm={7} xs={12}>
-                                        <div className={style.cardBody}>
-                                          <h4>{item.lavozimi}</h4>
-                                          <h4>{item.fullName}</h4>
-                                          <h6>
-                                            <b>Qabul:</b> {item.qabul}
-                                          </h6>
-                                          <h6>
-                                            <b>Telefon:</b> {item.phone}
-                                          </h6>
-                                          <h6>
-                                            <b>Email:</b> {item.email}
-                                          </h6>
-                                          <div className={style.cardBodyBtn}>
-                                            <Button
-                                              style={{
-                                                backgroundColor: "#1105e6",
-                                                borderRadius: "none",
-                                              }}
-                                              onClick={() =>
-                                                this.openModal(key)
-                                              }
-                                              className={style.btn}
-                                            >
-                                              Batafsil
-                                            </Button>
-                                          </div>
-                                        </div>
-                                      </Col>
-                                    </Row>
+                        <Col lg={12} md={12} sm={12}>
+                          <div className={style.card}>
+                            <Row>
+                              <Col xl={4} lg={5} md={5} sm={5} xs={12}>
+                                <img src={rustambek} alt="" />
+                              </Col>
+                              <Col xl={8} lg={7} md={7} sm={7} xs={12}>
+                                <div className={style.cardBody}>
+                                  <h4>Boshqarma boshlig'i</h4>
+                                  <h4>Israilov Rustambek Ibragimovich</h4>
+                                  <h6>
+                                    <b>Qabul:</b> 09:00-16:00
+                                  </h6>
+                                  <h6>
+                                    <b>Telefon:</b> 69 232-61-15
+                                  </h6>
+                                  <h6>
+                                    <b>Email:</b> namangan_vxtb@xtv.uz
+                                  </h6>
+                                  <div className={style.cardBodyBtn}>
+                                    <Button
+                                      style={{
+                                        backgroundColor: "#1105e6",
+                                        borderRadius: "none",
+                                      }}
+                                      // onClick={() =>
+                                      //   this.openModal(key)
+                                      // }
+                                      className={style.btn}
+                                    >
+                                      Batafsil
+                                    </Button>
                                   </div>
-                                </Col>
-                              ) : (
-                                ""
-                              );
-                            })
-                          : ""}
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
+                        </Col>
+                        <Col lg={12} md={12} sm={12}>
+                          <div className={style.card}>
+                            <Row>
+                              <Col xl={4} lg={5} md={5} sm={5} xs={12}>
+                                <img src={muzaffar} alt="" />
+                              </Col>
+                              <Col xl={8} lg={7} md={7} sm={7} xs={12}>
+                                <div className={style.cardBody}>
+                                  <h4>
+                                    Boshqarma boshlig'i birinchi o'rinbosari
+                                  </h4>
+                                  <h4>Isayev Muzaffar Qahramonovich</h4>
+                                  <h6>
+                                    <b>Qabul:</b> 09:00-16:00
+                                  </h6>
+                                  <h6>
+                                    <b>Telefon:</b> 69 232-61-15
+                                  </h6>
+                                  <h6>
+                                    <b>Email:</b> namangan_vxtb@xtv.uz
+                                  </h6>
+                                  <div className={style.cardBodyBtn}>
+                                    <Button
+                                      style={{
+                                        backgroundColor: "#1105e6",
+                                        borderRadius: "none",
+                                      }}
+                                      // onClick={() =>
+                                      //   this.openModal(key)
+                                      // }
+                                      className={style.btn}
+                                    >
+                                      Batafsil
+                                    </Button>
+                                  </div>
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
+                        </Col>
+                        <Col lg={12} md={12} sm={12}>
+                          <div className={style.card}>
+                            <Row>
+                              <Col xl={4} lg={5} md={5} sm={5} xs={12}>
+                                <img src={xayrullo} alt="" />
+                              </Col>
+                              <Col xl={8} lg={7} md={7} sm={7} xs={12}>
+                                <div className={style.cardBody}>
+                                  <h4>Boshqarma boshlig'i o'rinbosari</h4>
+                                  <h4>Abdurahmonov Xayrullo Abdurasulovich</h4>
+                                  <h6>
+                                    <b>Qabul:</b> 09:00-16:00
+                                  </h6>
+                                  <h6>
+                                    <b>Telefon:</b> 69 232-61-15
+                                  </h6>
+                                  <h6>
+                                    <b>Email:</b> namangan_vxtb@xtv.uz
+                                  </h6>
+                                  <div className={style.cardBodyBtn}>
+                                    <Button
+                                      style={{
+                                        backgroundColor: "#1105e6",
+                                        borderRadius: "none",
+                                      }}
+                                      // onClick={() =>
+                                      //   this.openModal(key)
+                                      // }
+                                      className={style.btn}
+                                    >
+                                      Batafsil
+                                    </Button>
+                                  </div>
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
+                        </Col>
+                        <Col lg={12} md={12} sm={12}>
+                          <div className={style.card}>
+                            <Row>
+                              <Col xl={4} lg={5} md={5} sm={5} xs={12}>
+                                <img src={tohirjon} alt="" />
+                              </Col>
+                              <Col xl={8} lg={7} md={7} sm={7} xs={12}>
+                                <div className={style.cardBody}>
+                                  <h4>Boshqarma boshlig'i o'rinbosari</h4>
+                                  <h4>Qirg'izov Tohirjon Foziljonovich</h4>
+                                  <h6>
+                                    <b>Qabul:</b> 09:00-16:00
+                                  </h6>
+                                  <h6>
+                                    <b>Telefon:</b> 69 232-61-15
+                                  </h6>
+                                  <h6>
+                                    <b>Email:</b> namangan_vxtb@xtv.uz
+                                  </h6>
+                                  <div className={style.cardBodyBtn}>
+                                    <Button
+                                      style={{
+                                        backgroundColor: "#1105e6",
+                                        borderRadius: "none",
+                                      }}
+                                      // onClick={() =>
+                                      //   this.openModal(key)
+                                      // }
+                                      className={style.btn}
+                                    >
+                                      Batafsil
+                                    </Button>
+                                  </div>
+                                </div>
+                              </Col>
+                            </Row>
+                          </div>
+                        </Col>
                       </Row>
                     </Col>
                     <Col lg={3} sm={12}>
