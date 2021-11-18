@@ -31,7 +31,7 @@ import uychi from "../images/UYchi tumani.jpg";
 import yanginamangan from "../images/Yangi Namangan tumani.jpg";
 import yangiqorgon from "../images/Yangiqorgon tumani.jpg";
 import GridLoader from "react-spinners/GridLoader";
-
+import Rasm from '../images/dxorazm0.jpg'
 export default class Tumanlar extends Component {
   constructor(props) {
     super(props);
@@ -67,7 +67,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={chortoq} />
@@ -142,6 +142,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -153,6 +156,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -163,14 +170,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                     <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                     <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -182,7 +188,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={chust} />
@@ -255,6 +261,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -266,6 +275,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -276,14 +289,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -295,7 +307,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={kosonsoy} />
@@ -371,6 +383,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -382,6 +397,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -392,14 +411,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -411,7 +429,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={davlatobod} />
@@ -484,6 +502,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -495,6 +516,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -505,14 +530,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -524,7 +548,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={mingbuloq} />
@@ -600,6 +624,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -611,6 +638,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -621,14 +652,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -640,7 +670,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={namangansh} />
@@ -716,6 +746,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -727,6 +760,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -737,14 +774,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -756,7 +792,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={namangant} />
@@ -832,6 +868,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -843,6 +882,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -853,14 +896,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -873,7 +915,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={norin} />
@@ -946,6 +988,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -957,6 +1002,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -967,14 +1016,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -987,7 +1035,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={toraqorgon} />
@@ -1063,6 +1111,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -1074,6 +1125,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1084,14 +1139,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -1104,7 +1158,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={uchqorgon} />
@@ -1180,6 +1234,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -1203,14 +1260,13 @@ export default class Tumanlar extends Component {
                         className={style.video}
                       />
 
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -1223,7 +1279,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={uychi} />
@@ -1296,6 +1352,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -1307,6 +1366,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1317,14 +1380,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -1337,7 +1399,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={yangiqorgon} />
@@ -1413,6 +1475,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -1424,6 +1489,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1434,14 +1503,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>
@@ -1453,7 +1521,7 @@ export default class Tumanlar extends Component {
                 <Row>
                   <Container className={style.container}>
                     <Col className={style.Col1} lg={6} md={6} sm={12}>
-                      <h4>Bo'lim direktori</h4>
+                      <h4>Bo'lim mudiri</h4>
                       <div className={style.chiziq}></div>
                       <br />
                       <img className={style.Rasm} src={pop} />
@@ -1529,6 +1597,9 @@ export default class Tumanlar extends Component {
                           </Tooltip>
                         </div>
                       </div>
+                      <a href="#" className={style.but} target="_blank">
+                        Bo'limning veb saytiga o'tish
+                      </a>
                     </Col>
                     <Col
                       className={style.Col1}
@@ -1540,6 +1611,10 @@ export default class Tumanlar extends Component {
                       <h4>Bo'lim haqida</h4>
                       <div className={style.chiziq}></div>
                       <br />
+                      <div className={style.NameTag}>
+                        <p>Bo'lim videosi</p>
+                      </div>
+                      
                       <YouTube
                         videoId="qaJGUdMi_kc"
                         opts={{
@@ -1550,14 +1625,13 @@ export default class Tumanlar extends Component {
                         }}
                         className={style.video}
                       />
-                      <p className={style.pp}>
-                        Namangan viloyati xalq ta'limi boshqarmasiga virtual
-                        sayohat qiling va boshqarma haqida ko'proq ma'lumotga
-                        ega bo'ling.
-                      </p>
-                      <a href="#" className={style.but} target="_blank">
-                        Bo'limning veb saytiga o'tish
-                      </a>
+                      <div className={style.NameTag}>
+                        <p style={{paddingTop:'15px', borderTop:'3px solid rgb(111, 3, 90)'}}>Bo'lim rasmi</p>
+                      </div>
+                      <div className={style.Yimage}>
+<img src={Rasm} style={{width:'100%'}}/> 
+                     </div>
+                      
                     </Col>
                   </Container>
                 </Row>

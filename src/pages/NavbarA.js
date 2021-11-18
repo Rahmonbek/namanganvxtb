@@ -38,9 +38,10 @@ export default class NavbarA extends Component {
                       <i className="fa fa-bars"></i>
                   </div>
                     <div className={style.brand}>
+                        <NavLink style={{textDecoration:"none", display:'flex', alignItems: 'center', justifyContent:'center'}} to="/">
                         <img src={logo}/>
                         <p>Namangan viloyat xalq ta'limi boshqarmasi</p>
-
+                        </NavLink>
                     </div>
                     <div className={style.nav}>
                     <ul id="navb">
