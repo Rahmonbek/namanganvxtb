@@ -51,7 +51,7 @@ export default class Footer extends Component {
                         <p><b>Ishonch telefonlari : </b>+998-69-232-61-15<br/>
                        </p>
                         <p><b>Email : </b>namangan_vxtb@xtv.uz</p>
-                        <p><b>Manzil : </b>{this.state.school!==null?this.state.school.address:''}</p>
+                        <p><b>Manzil : </b>Namangan viloyati 3 - kichik tumani</p>
                         <div className={style.icons}>
                         <a target="_blank" href="https://t.me/joinchat/Ew9lX74i1WYzYjAy">
                                 <i className="fa fa-telegram"></i>
