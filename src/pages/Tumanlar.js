@@ -148,7 +148,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 94 300 57 77}`}
+                              href={`tel: +998 94 300 57 77`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -174,7 +174,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -273,7 +273,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 97 376 76 86}`}
+                              href={`tel: +998 97 376 76 86`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -299,7 +299,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -401,7 +401,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 93 916 88 55}`}
+                              href={`tel: +998 93 916 88 55`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -427,7 +427,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -526,7 +526,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 91 177 00 00}`}
+                              href={`tel: +998 91 177 00 00`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -552,7 +552,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -654,7 +654,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 93 942 05 77}`}
+                              href={`tel: +998 93 942 05 77`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -680,7 +680,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -782,7 +782,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 97 251 50 50}`}
+                              href={`tel: +998 97 251 50 50`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -808,7 +808,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -910,7 +910,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 94 152 55 55}`}
+                              href={`tel: +998 94 152 55 55`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -936,7 +936,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -1036,7 +1036,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 97 254 87 77}`}
+                              href={`tel: +998 97 254 87 77`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -1062,7 +1062,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -1165,7 +1165,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 93 058 03 03}`}
+                              href={`tel: +998 93 058 03 03`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -1191,7 +1191,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -1294,7 +1294,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 99 398 47 07}`}
+                              href={`tel: +998 99 398 47 07`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -1317,7 +1317,7 @@ export default class Tumanlar extends Component {
                       <br />
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -1418,7 +1418,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 93 914 64 00}`}
+                              href={`tel: +998 93 914 64 00`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -1444,7 +1444,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -1547,7 +1547,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 91 114 05 85}`}
+                              href={`tel: +998 91 114 05 85`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -1573,7 +1573,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters
@@ -1675,7 +1675,7 @@ export default class Tumanlar extends Component {
                             <a
                               target="_blank"
                               className={style.ahref}
-                              href={`tel: +998 93 231 00 08}`}
+                              href={`tel: +998 93 231 00 08`}
                             >
                               <i className="fas fa-phone"></i>
                             </a>{" "}
@@ -1701,7 +1701,7 @@ export default class Tumanlar extends Component {
                       </div>
 
                       <YouTube
-                        videoId="qaJGUdMi_kc"
+                        videoId="HXIoHxjlZsA"
                         opts={{
                           playerVars: {
                             // https://developers.google.com/youtube/player_parameters

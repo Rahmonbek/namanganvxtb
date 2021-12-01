@@ -123,7 +123,8 @@ export default class Rahbariyat extends Component {
                                   <h4>Boshqarma boshlig'i</h4>
                                   <h4>Israilov Rustambek Ibragimovich</h4>
                                   <h6>
-                                    <b>Qabul:</b> 09:00-16:00
+                                    <b>Qabul kunlari:</b> Dushanba, Seshanba,
+                                    Chorshanba, Payshanba
                                   </h6>
                                   <h6>
                                     <b>Telefon:</b>+998 69 232-61-15
@@ -163,7 +164,8 @@ export default class Rahbariyat extends Component {
                                   </h4>
                                   <h4>Isayev Muzaffar Qahramonovich</h4>
                                   <h6>
-                                    <b>Qabul:</b> 09:00-16:00
+                                    <b>Qabul kunlari:</b> Dushanba, Seshanba,
+                                    Chorshanba, Payshanba
                                   </h6>
                                   <h6>
                                     <b>Telefon:</b>+998 69 232-61-15
@@ -201,7 +203,8 @@ export default class Rahbariyat extends Component {
                                   <h4>Boshqarma boshlig'i o'rinbosari</h4>
                                   <h4>Abdurahmonov Xayrullo Abdurasulovich</h4>
                                   <h6>
-                                    <b>Qabul:</b> 09:00-16:00
+                                    <b>Qabul kunlari:</b> Dushanba, Seshanba,
+                                    Chorshanba, Payshanba
                                   </h6>
                                   <h6>
                                     <b>Telefon:</b>+998 69 232-61-15
@@ -239,7 +242,8 @@ export default class Rahbariyat extends Component {
                                   <h4>Boshqarma boshlig'i o'rinbosari</h4>
                                   <h4>Qirg'izov Tohirjon Foziljonovich</h4>
                                   <h6>
-                                    <b>Qabul:</b> 09:00-16:00
+                                    <b>Qabul kunlari:</b> Dushanba, Seshanba,
+                                    Chorshanba, Payshanba
                                   </h6>
                                   <h6>
                                     <b>Telefon:</b>+998 69 232-61-15

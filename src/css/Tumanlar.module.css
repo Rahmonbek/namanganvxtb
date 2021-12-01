@@ -1,15 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-
 }
 
 body {
   overflow-x: hidden;
 }
 
-.load{width:100%; height:100%; position:fixed; top:0px; left:0px; z-index: 567; display: flex; justify-content:center; align-items:center;}
-       
+.load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 567;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .head {
   margin-top: 0px;
   width: 100%;
@@ -21,9 +30,21 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.sarlavha{color:rgb(108, 22, 105); font-size: 32px; text-align:center}
-.head_text{font-size: 21px; color:rgb(160, 13, 141); width:100%; padding:10px; background-color:white;  margin:auto; text-align: center; line-height: 2.3em;}
-
+.sarlavha {
+  color: rgb(108, 22, 105);
+  font-size: 32px;
+  text-align: center;
+}
+.head_text {
+  font-size: 21px;
+  color: rgb(160, 13, 141);
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  line-height: 2.3em;
+}
 
 .iconsHead {
   position: relative;
@@ -74,7 +95,7 @@ body {
     rgba(0, 0, 0, 0.07) 0px 16px 16px;
   position: relative;
   padding: 30px 20px 40px;
-  }
+}
 .Col1 {
   height: auto;
   padding: 5%;
@@ -92,6 +113,7 @@ body {
 }
 .tumanlar_item img {
   width: 100%;
+  max-height: 500px;
 }
 .tumanlar_item h4,
 .tumanlar_item p {
@@ -137,7 +159,7 @@ body {
   background-color: white;
   border: 1px solid rgb(111, 3, 90);
 }
-@media(min-width:1700px) {
+@media (min-width: 1700px) {
   .container h4 {
     font-size: 3.5vh;
   }
@@ -157,7 +179,8 @@ body {
   }
 
   .Rasm {
-    height: 350px;
+    min-height: 350px;
+    max-height: 550px;
   }
 
   .video {
@@ -167,107 +190,95 @@ body {
   .pp {
     font-size: 4vh;
   }
-  .but{
+  .but {
     font-size: 3.5vh;
-    }
-    }
-
-    @media(min-width:768px) and (max-width:991px) {
-
-.head{
-  background-size: 200% 100%;
- 
-}
-      .but {
-        width: 100%;
-        height: auto;
-        padding: 5%;
-        margin-top: 10%;
-        color: white;
-        cursor: pointer;
-        overflow: hidden;
-        font-size: 15px;
-
-
-      }
-
-      .but p {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        margin-left: 0px;
-
-        font-size: 15px;
-        color: white;
-      }
-
-      .iconsHead {
-        position: relative;
-    width: 100%;
-    }
-    .video {
-      width: 100%;
-      height: 200px;
-    }
-
-    .Rasm {
-      width: 100%;
-      height: 200px;
-    }
-
-
-
-
-    .ahref {
-      width: 35px;
-      height: 35px;
-      border-radius: 50%;
-    }
-}
-@media (max-width:650px) {
-  .head_text{
-margin: 0px;
-font-size: 18px;
   }
-  .head{
-    padding-top: 120%;
-  } 
-
-
 }
-@media (max-width:767px) {
-  .head{
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .head {
     background-size: 200% 100%;
-  
+  }
+  .but {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    margin-top: 10%;
+    color: white;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 15px;
+  }
+
+  .but p {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+
+    font-size: 15px;
+    color: white;
+  }
+
+  .iconsHead {
+    position: relative;
+    width: 100%;
+  }
+  .video {
+    width: 100%;
+    height: 200px;
+  }
+
+  .Rasm {
+    width: 100%;
+    height: 200px;
+  }
+
+  .ahref {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .head_text {
+    margin: 0px;
+    font-size: 18px;
+  }
+  .head {
+    padding-top: 120%;
+  }
+}
+@media (max-width: 767px) {
+  .head {
+    background-size: 200% 100%;
   }
   .container {
     display: block;
   }
- .iconsHead{
+  .iconsHead {
     bottom: 0px;
     margin: auto;
-    }
-.ahref i {
-  font-size: 18px;
+  }
+  .ahref i {
+    font-size: 18px;
+  }
 
-    }
+  .video {
+    width: 100%;
+    height: 250px;
+  }
 
-    .video {
-      width: 100%;
-      height: 250px;
-    }
-
-    .but {
-      width: 100%;
-      height: auto;
-      padding: 5%;
-      margin: auto;
-    }
-    }
-@media(max-width:550px) {
-  .head{
+  .but {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+  }
+}
+@media (max-width: 550px) {
+  .head {
     background-size: 200% 100%;
-  
   }
   .iconsHead {
     width: 90%;
@@ -277,12 +288,11 @@ font-size: 18px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .ahref i {
     font-size: 17px;
-
   }
 
   .but {
@@ -291,55 +301,50 @@ margin-bottom: 10px;
     padding: 5%;
     margin: auto;
   }
-.ahref {
-  scale: 0.7;
-}
-.iconsHead{
-  padding:0;
-}
-#mediaa11{
-  margin: 0;
+  .ahref {
+    scale: 0.7;
+  }
+  .iconsHead {
+    padding: 0;
+  }
+  #mediaa11 {
+    margin: 0;
+  }
 }
 
-}
-
- @media (max-width:430px) {
-  .head{
+@media (max-width: 430px) {
+  .head {
     background-size: 200% 100%;
-  
   }
- .ahref {
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
- }
-
- .ahref i {
-   font-size: 15px;
-
-  }
-  .but{
-   width: 100%;
-   height: auto;
-   padding: 5%;
-   font-size: 15px;
-   }
-
-   .but p {
-     font-size: 14px;
+  .ahref {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
   }
 
- }
- @media (max-width:360px) {
-  .head{
+  .ahref i {
+    font-size: 15px;
+  }
+  .but {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    font-size: 15px;
+  }
+
+  .but p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .head {
     height: 600px;
     background-size: 200% 100%;
-  
   }
-   .tumanlar_item h1{
-     font-size: 3.5vh;
-   }
- 
+  .tumanlar_item h1 {
+    font-size: 3.5vh;
+  }
+
   .ahref {
     width: 25px;
     height: 25px;
@@ -348,62 +353,59 @@ margin-bottom: 10px;
 
   .ahref i {
     font-size: 11px;
+  }
+
+  .ahref {
+    font-size: 10px;
+    position: relative;
+  }
+  .but {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    font-size: 2vh;
+    align-content: center;
+    align-items: center;
+  }
+
+  .NameTag p:nth-child(1) {
+    font-size: 2vh;
+  }
+
+  .NameTag p:nth-child(2) {
+    font-size: 2.4vh;
+  }
+
+  .video {
+    height: 180px;
+  }
+
+  .pp {
+    font-size: 10px;
+  }
 }
 
-.ahref {
-  font-size: 10px;
-  position: relative;
+@media (max-width: 300px) {
+  .ahref {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
   }
-  .but{
-   width: 100%;
-   height: auto;
-   padding: 5%;
-   font-size: 2vh;
-   align-content: center;
-   align-items: center;
-   }
 
-   .NameTag p:nth-child(1) {
-     font-size: 2vh;
-   }
+  .ahref i {
+    font-size: 8px;
+  }
 
-   .NameTag p:nth-child(2) {
-     font-size: 2.4vh;
-   }
+  .NameTag p:nth-child(1) {
+    font-size: 1.8vh;
+  }
 
-   .video {
-     height: 180px;
-   }
+  .NameTag p:nth-child(2) {
+    font-size: 2vh;
+  }
 
-   .pp {
-     font-size: 10px;
-   }
-   
-    
-    
-   }
-
-   @media(max-width:300px) {
-     .ahref {
-       width: 20px;
-       height: 20px;
-       border-radius: 50%;
-     }
-
-     .ahref i {
-       font-size: 8px;
-     }
-
-     .NameTag p:nth-child(1) {
-       font-size: 1.8vh;
-     }
-
-     .NameTag p:nth-child(2) {
-       font-size: 2vh;
-     }
-
-     .pp {
-       font-size: 10px;
+  .pp {
+    font-size: 10px;
   }
 
   .but {
@@ -411,4 +413,4 @@ margin-bottom: 10px;
     padding: 5%;
     font-size: 1.7vh;
   }
- }
+}
