@@ -808,6 +808,11 @@
   .news {
     margin-top: 0;
   }
+  .hov a {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+  }
   .news_itemcard2 {
     height: 400px;
   }
