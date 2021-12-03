@@ -15,6 +15,19 @@ import drasm6 from "../images/drasm6.jpg";
 import drasm7 from "../images/drasm7.jpg";
 import drasm9 from "../images/drasm9.jpg";
 import drasm10 from "../images/drasm10.jpg";
+import chortoqrah from "../images/Chortoq tumanirah.jpg";
+import chustrah from "../images/chustrah.jpg";
+import mingbuloqrah from "../images/Mingbuloq tumanirah.jpg";
+import namangantumrah from "../images/Namangan tumanirah.jpg";
+import norinrah from "../images/Norin tumanirah.jpg";
+import poprah from "../images/pop tumanirah.jpg";
+import namanganshrah from "../images/namangan shaxarrah.jpg";
+import toraqqorgonrah from "../images/Toraqorgon tumanirah.jpg";
+import uchqorgonrah from "../images/Uchqorgon tumanirah.jpg";
+import uychirah from "../images/Uychi tumanirah.jpg";
+import yangiqorgonrah from "../images/Yangiqorgonrah.jpg";
+import davlatobodrah from "../images/Davlatobod tumanirah.jpg";
+import kosonsoyrah from "../images/Kosonsoy tumanirah.jpg";
 
 import "antd/dist/antd.css";
 import "react-multi-carousel/lib/styles.css";
@@ -68,7 +81,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={pic13}
+                src={chortoqrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -146,7 +159,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm1}
+                src={chustrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -224,7 +237,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm3}
+                src={kosonsoyrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -302,7 +315,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm2}
+                src={mingbuloqrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -380,7 +393,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm5}
+                src={namanganshrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -458,7 +471,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm8}
+                src={namangantumrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -536,7 +549,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm6}
+                src={norinrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -611,7 +624,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm7}
+                src={poprah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -689,7 +702,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm9}
+                src={toraqqorgonrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -767,7 +780,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm10}
+                src={uchqorgonrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -844,7 +857,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm7}
+                src={uychirah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -923,7 +936,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm9}
+                src={yangiqorgonrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>
@@ -1001,7 +1014,7 @@ export default class Cards extends Component {
               <Card.Img
                 className={style.news_itemcard2}
                 variant="top"
-                src={drasm9}
+                src={davlatobodrah}
               />
               <Card.Body>
                 <Card.Text className={style.ptr}>

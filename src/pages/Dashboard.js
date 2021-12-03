@@ -37,7 +37,7 @@ import lex from "../images/h3.jpg";
 import gov from "../images/h4.jpg";
 import par from "../images/logo_small.png";
 import xalq from "../images/logo.png";
-import p from '../images/p.webp'
+import p from "../images/p.webp";
 import rustambek from "../images/rustambek.jpg";
 import tohirjon from "../images/tohirjon.jpg";
 import muzaffar from "../images/muzaffar.png";
@@ -67,7 +67,7 @@ export default class Dashboard extends Component {
       {
         id: 1,
         fullName: "Israilov Rustambek Ibragimovich",
-        phone:"+998 69 232-61-15",
+        phone: "+998 69 232-61-15",
         qabul: "Dushanba - Shanba 9:00 - 16:00",
         email: "bogot__txtb@umail.uz",
         describe:
@@ -88,7 +88,7 @@ export default class Dashboard extends Component {
       {
         id: 2,
         fullName: "Isayev Muzaffar Qahramonovich",
-        phone:"+998 69 232-61-15",
+        phone: "+998 69 232-61-15",
         qabul: "Dushanba - Shanba 9:00 - 16:00",
         email: "bogot__txtb@umail.uz",
         describe:
@@ -102,14 +102,15 @@ export default class Dashboard extends Component {
           "2007-2008 yy- Bogot tumani Maishiy xizmat va axborot texnalogiyalari KXK direktor urinbosari",
         describe5: "2008-2010 yy  -Bogot tumanidagi 4-son maktabda direktor",
         describe6: "2010 y.-x.v     - Bogot tumanidagi 7-son maktabda direktor",
-        lavozimi: "Namangan viloyati xalq ta'limi boshqarmasi boshlig'i birinchi o'rinbosari",
+        lavozimi:
+          "Namangan viloyati xalq ta'limi boshqarmasi boshlig'i birinchi o'rinbosari",
         image: muzaffar,
         daraja: 1,
       },
       {
         id: 3,
         fullName: "Abdurahmonov Xayrullo Abdurasulovich",
-        phone:"+998 69 232-61-15",
+        phone: "+998 69 232-61-15",
         qabul: "Dushanba - Shanba 9:00 - 16:00",
         email: "bogot__txtb@umail.uz",
         describe:
@@ -123,14 +124,15 @@ export default class Dashboard extends Component {
           "2007-2008 yy- Bogot tumani Maishiy xizmat va axborot texnalogiyalari KXK direktor urinbosari",
         describe5: "2008-2010 yy  -Bogot tumanidagi 4-son maktabda direktor",
         describe6: "2010 y.-x.v     - Bogot tumanidagi 7-son maktabda direktor",
-        lavozimi: "Namangan viloyati xalq ta'limi boshqarmasi boshlig'i o'rinbosari",
+        lavozimi:
+          "Namangan viloyati xalq ta'limi boshqarmasi boshlig'i o'rinbosari",
         image: xayrullo,
         daraja: 1,
       },
       {
         id: 4,
         fullName: "Qirg'izov Tohirjon Foziljonovich",
-        phone:"+998 69 232-61-15",
+        phone: "+998 69 232-61-15",
         qabul: "Dushanba - Shanba 9:00 - 16:00",
         email: "bogot__txtb@umail.uz",
         describe:
@@ -144,11 +146,11 @@ export default class Dashboard extends Component {
           "2007-2008 yy- Bogot tumani Maishiy xizmat va axborot texnalogiyalari KXK direktor urinbosari",
         describe5: "2008-2010 yy  -Bogot tumanidagi 4-son maktabda direktor",
         describe6: "2010 y.-x.v     - Bogot tumanidagi 7-son maktabda direktor",
-        lavozimi: "Namangan viloyati xalq ta'limi boshqarmasi boshlig'i o'rinbosari",
+        lavozimi:
+          "Namangan viloyati xalq ta'limi boshqarmasi boshlig'i o'rinbosari",
         image: tohirjon,
         daraja: 1,
       },
-    
     ],
   };
 
@@ -247,22 +249,19 @@ export default class Dashboard extends Component {
                 <Row>
                   <Col lg={6} md={12} sm={12}>
                     <p className={style.fikr}>
-                    Ba’zi maktablarda salbiy baholash tizimi bekor qilindi, imtihonni topshirish uchun istagancha urinish mumkin. Ammo hayotda bu holatning aksi senda uchrasa bundan o‘pkalama.
+                      Ba’zi maktablarda salbiy baholash tizimi bekor qilindi,
+                      imtihonni topshirish uchun istagancha urinish mumkin. Ammo
+                      hayotda bu holatning aksi senda uchrasa bundan o‘pkalama.
                     </p>
-                    <p className={style.ism}>
-                    Shavkat Mirziyoyev
-                    </p>
+                    <p className={style.ism}>Shavkat Mirziyoyev</p>
                   </Col>
                   <Col lg={6} md={12} sm={12}>
-                    <img
-                      src={p
-                      }
-                    />
+                    <img src={p} />
                   </Col>
                 </Row>
               </div>
             </div>
-          
+
             <div className={style.items}>
               <h1 className={style.sarlavha}> Bizning afzalliklarimiz</h1>
               <br />
@@ -397,56 +396,32 @@ export default class Dashboard extends Component {
               <Row>
                 <Col lg={4} md={6} sm={12}>
                   <div className={style.gal_item}>
-                    <img
-                      src={
-                       rasm1
-                      }
-                    />
+                    <img src={rasm1} />
                   </div>
                 </Col>
                 <Col lg={4} md={6} sm={12}>
                   <div className={style.gal_item}>
-                    <img
-                      src={
-                       rasm2
-                      }
-                    />
+                    <img src={rasm2} />
                   </div>
                 </Col>
                 <Col lg={4} md={6} sm={12}>
                   <div className={style.gal_item}>
-                    <img
-                      src={
-                       rasm3
-                      }
-                    />
+                    <img src={rasm3} />
                   </div>
                 </Col>
                 <Col lg={4} md={6} sm={12}>
                   <div className={style.gal_item}>
-                    <img
-                      src={
-                       rasm4
-                      }
-                    />
+                    <img src={rasm4} />
                   </div>
                 </Col>
                 <Col lg={4} md={6} sm={12}>
                   <div className={style.gal_item}>
-                    <img
-                      src={
-                       rasm5
-                      }
-                    />
+                    <img src={rasm5} />
                   </div>
                 </Col>
                 <Col lg={4} md={6} sm={12}>
                   <div className={style.gal_item}>
-                    <img
-                      src={
-                       rasm6
-                      }
-                    />
+                    <img src={rasm6} />
                   </div>
                 </Col>
               </Row>
@@ -457,7 +432,7 @@ export default class Dashboard extends Component {
                 Barchasini ko'rish
               </Link>
             </div>
-            <Hujjatlar/>
+            <Hujjatlar />
             <div className={style.video1}>
               <video loop={true} autoPlay={true} muted={true}>
                 <source src={video2} type="video/mp4" />
@@ -523,9 +498,8 @@ export default class Dashboard extends Component {
                     <div>
                       <img src={new3} />
                       <h4>
-                        Maktablarga Xalq
-                        ta‘limi vazirligi tavsiyasi asosida "Stamina klviaturasi
-                        simulyatori" trenajyori oʻrnatildi
+                        Maktablarga Xalq ta‘limi vazirligi tavsiyasi asosida
+                        "Stamina klviaturasi simulyatori" trenajyori oʻrnatildi
                       </h4>
                       <p className={style.date}>
                         <i className="fa fa-calendar">07.11.2021</i>
@@ -538,9 +512,9 @@ export default class Dashboard extends Component {
                     <div>
                       <img src={new4} />
                       <h4>
-                        Namangan viloyati oʻquvchi yoshlar
-                        oʻrtasida “Funksional koʻp kurash (krossfit)” sport
-                        musobaqasin tashkillashtirildi.
+                        Namangan viloyati oʻquvchi yoshlar oʻrtasida “Funksional
+                        koʻp kurash (krossfit)” sport musobaqasin
+                        tashkillashtirildi.
                       </h4>
                       <p className={style.date}>
                         <i className="fa fa-calendar">04.11.2021</i>
@@ -577,7 +551,6 @@ export default class Dashboard extends Component {
                     </div>
                   </div>
                 </div>
-               
               </Carousel>
               <br />
               <br />
@@ -605,17 +578,15 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                     onEnd={this._onEnd}
-  opts={{
-    playerVars: {
-     
-      rel:0
-    },
-  }}
- 
+                      onEnd={this._onEnd}
+                      opts={{
+                        playerVars: {
+                          rel: 0,
+                        },
+                      }}
                       video="78msxs4ENXs"
                       className={style.you}
-                      autoplay={true}
+                      // autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -623,17 +594,15 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                     onEnd={this._onEnd}
-  opts={{
-    playerVars: {
-     
-      rel:0
-    },
-  }}
- 
+                      onEnd={this._onEnd}
+                      opts={{
+                        playerVars: {
+                          rel: 0,
+                        },
+                      }}
                       video="OLXzDBhOcCw"
                       className={style.you}
-                      autoplay={true}
+                      // autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -641,17 +610,15 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                     onEnd={this._onEnd}
-  opts={{
-    playerVars: {
-     
-      rel:0
-    },
-  }}
- 
+                      onEnd={this._onEnd}
+                      opts={{
+                        playerVars: {
+                          rel: 0,
+                        },
+                      }}
                       video="68n_cnOcSlA"
                       className={style.you}
-                      autoplay={true}
+                      // autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -659,17 +626,15 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                     onEnd={this._onEnd}
-  opts={{
-    playerVars: {
-     
-      rel:0
-    },
-  }}
- 
+                      onEnd={this._onEnd}
+                      opts={{
+                        playerVars: {
+                          rel: 0,
+                        },
+                      }}
                       video="CIYz_ieJK8I"
                       className={style.you}
-                      autoplay={true}
+                      // autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -677,17 +642,15 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                     onEnd={this._onEnd}
-  opts={{
-    playerVars: {
-     
-      rel:0
-    },
-  }}
- 
+                      onEnd={this._onEnd}
+                      opts={{
+                        playerVars: {
+                          rel: 0,
+                        },
+                      }}
                       video="Gb018wuoplc"
                       className={style.you}
-                      autoplay={true}
+                      // autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -695,17 +658,15 @@ export default class Dashboard extends Component {
                 <Col lg={6} md={6} sm={12}>
                   <div className={style.videos_item}>
                     <YouTube
-                     onEnd={this._onEnd}
-  opts={{
-    playerVars: {
-     
-      rel:0
-    },
-  }}
- 
+                      onEnd={this._onEnd}
+                      opts={{
+                        playerVars: {
+                          rel: 0,
+                        },
+                      }}
                       video="VG3oq3wPB3U"
                       className={style.you}
-                      autoplay={true}
+                      // autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -795,8 +756,6 @@ export default class Dashboard extends Component {
                     </div>
                   </div>
                 </div>
-
-               
               </Carousel>
               <br />{" "}
             </div>
@@ -1013,4 +972,3 @@ export default class Dashboard extends Component {
     );
   }
 }
-
