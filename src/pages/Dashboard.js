@@ -586,7 +586,7 @@ export default class Dashboard extends Component {
                       }}
                       video="78msxs4ENXs"
                       className={style.you}
-                      // autoplay={true}
+                      autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -602,7 +602,7 @@ export default class Dashboard extends Component {
                       }}
                       video="OLXzDBhOcCw"
                       className={style.you}
-                      // autoplay={true}
+                      autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -618,7 +618,7 @@ export default class Dashboard extends Component {
                       }}
                       video="68n_cnOcSlA"
                       className={style.you}
-                      // autoplay={true}
+                      autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -634,7 +634,7 @@ export default class Dashboard extends Component {
                       }}
                       video="CIYz_ieJK8I"
                       className={style.you}
-                      // autoplay={true}
+                      autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -650,7 +650,7 @@ export default class Dashboard extends Component {
                       }}
                       video="Gb018wuoplc"
                       className={style.you}
-                      // autoplay={true}
+                      autoplay={true}
                       muted={true}
                     />
                   </div>
@@ -666,7 +666,7 @@ export default class Dashboard extends Component {
                       }}
                       video="VG3oq3wPB3U"
                       className={style.you}
-                      // autoplay={true}
+                      autoplay={true}
                       muted={true}
                     />
                   </div>
