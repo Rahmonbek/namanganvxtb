@@ -71,7 +71,7 @@ export default class Cards extends Component {
                 src={pic13}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Chortoq tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -149,7 +149,7 @@ export default class Cards extends Component {
                 src={drasm1}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Chust tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -227,7 +227,7 @@ export default class Cards extends Component {
                 src={drasm3}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Kosonsoy tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -305,7 +305,7 @@ export default class Cards extends Component {
                 src={drasm2}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Mingbuloq tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -383,7 +383,7 @@ export default class Cards extends Component {
                 src={drasm5}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Namangan shahri xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -461,7 +461,7 @@ export default class Cards extends Component {
                 src={drasm8}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Namangan tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -539,7 +539,7 @@ export default class Cards extends Component {
                 src={drasm6}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Norin tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -614,7 +614,7 @@ export default class Cards extends Component {
                 src={drasm7}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Pop tuman xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -692,7 +692,7 @@ export default class Cards extends Component {
                 src={drasm9}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   To'raqo'rg'on tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -770,7 +770,7 @@ export default class Cards extends Component {
                 src={drasm10}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Uchqo'rg'on tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -847,7 +847,7 @@ export default class Cards extends Component {
                 src={drasm7}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Uychi tuman xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -926,7 +926,7 @@ export default class Cards extends Component {
                 src={drasm9}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Yangiqo'rg'on tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
@@ -1004,7 +1004,7 @@ export default class Cards extends Component {
                 src={drasm9}
               />
               <Card.Body>
-                <Card.Text style={{ fontSize: "16px" }} className={style.ptr}>
+                <Card.Text className={style.ptr}>
                   Davlatobod tumani xaql ta'limi boshqarmasi
                 </Card.Text>
                 <a className={style.hov_btn} href="#">
