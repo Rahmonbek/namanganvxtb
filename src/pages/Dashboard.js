@@ -12,6 +12,9 @@ import newspictureolimp from "../images/Newspictureolimp.jpg";
 import newspicturekosonsoy from "../images/Newspicturekosonsoy.jpg";
 import newspicturetakewoondo from "../images/NewspictureTakewoondo.jpg";
 import newspicturemeningpre from "../images/Newspicturemeningpre.jpg";
+import newspicturegilam from "../images/Newspicturegilam.jpg";
+import newspictureasal from "../images/Newspictureasal.jpg";
+import newspicturekalendar from "../images/Newspicturekalendar.jpg";
 import lavha1 from "../images/lavha1.jpg";
 import lavha2 from "../images/lavha2.jpg";
 import lavha3 from "../images/lavha3.jpg";
@@ -550,13 +553,13 @@ export default class Dashboard extends Component {
                 <div>
                   <div className={style.new_item}>
                     <div>
-                      <img src={new5} />
+                      <img src={newspicturegilam} />
                       <h4>
-                        USAID 200 dan ortiq O'zbekiston maktablariga 385 mingdan
-                        ortiq kitob taqdim etdi
+                        NAMANGANLIK OʻQUVCHILAR TOʻQIYOTGAN GILAMLAR TURKIYA VA
+                        ARABISTONGA SOTILMOQDA
                       </h4>
                       <p className={style.date}>
-                        <i className="fa fa-calendar">06.11.2021</i>
+                        <i className="fa fa-calendar">18.12.2021</i>
                       </p>
                     </div>
                   </div>
@@ -564,11 +567,24 @@ export default class Dashboard extends Component {
                 <div>
                   <div className={style.new_item}>
                     <div>
-                      <img src={new6} />
+                      <img src={newspictureasal} />
                       <h4>
-                        “Fargʻona vodiysidagi yoshlarni ijtimoiy totuvlik uchun”
-                        loyihasi doirasida oʻtkazilayotgan seminar
-                        ishtirokchilari taqdirlandi
+                        NAMANGANLIK OʻQUVCHILAR TADBIRKORLIK ORTIDAN 70 MLN
+                        SOʻMDAN ZIYOD DAROMAD TOPMOQDA
+                      </h4>
+                      <p className={style.date}>
+                        <i className="fa fa-calendar">19.12.2021</i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div className={style.new_item}>
+                    <div>
+                      <img src={newspicturekalendar} />
+                      <h4>
+                        MAKTAB OʻQUVCHILARI UCHUN QISHKI TAʼTIL 28-DEKABRDAN
+                        BOSHLANADI
                       </h4>
                       <p className={style.date}>
                         <i className="fa fa-calendar">19.12.2021</i>
