@@ -8,6 +8,14 @@ import { Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import school from "../images/gerb.jpg";
+import newspictureolimp from "../images/Newspictureolimp.jpg";
+import newspicturekosonsoy from "../images/Newspicturekosonsoy.jpg";
+import newspicturetakewoondo from "../images/NewspictureTakewoondo.jpg";
+import newspicturemeningpre from "../images/Newspicturemeningpre.jpg";
+import lavha1 from "../images/lavha1.jpg";
+import lavha2 from "../images/lavha2.jpg";
+import lavha3 from "../images/lavha3.jpg";
+import lavha4 from "../images/lavha4.jpg";
 import her2 from "../images/h2.jpg";
 import her3 from "../images/h3.jpg";
 import her4 from "../images/h4.jpg";
@@ -396,6 +404,26 @@ export default class Dashboard extends Component {
               <Row>
                 <Col lg={4} md={6} sm={12}>
                   <div className={style.gal_item}>
+                    <img src={lavha1} />
+                  </div>
+                </Col>
+                <Col lg={4} md={6} sm={12}>
+                  <div className={style.gal_item}>
+                    <img src={lavha2} />
+                  </div>
+                </Col>
+                <Col lg={4} md={6} sm={12}>
+                  <div className={style.gal_item}>
+                    <img src={lavha3} />
+                  </div>
+                </Col>
+                <Col lg={4} md={6} sm={12}>
+                  <div className={style.gal_item}>
+                    <img src={lavha4} />
+                  </div>
+                </Col>
+                <Col lg={4} md={6} sm={12}>
+                  <div className={style.gal_item}>
                     <img src={rasm1} />
                   </div>
                 </Col>
@@ -467,13 +495,12 @@ export default class Dashboard extends Component {
                 <div>
                   <div className={style.new_item}>
                     <div>
-                      <img src={new1} />
+                      <img src={newspictureolimp} />
                       <h4>
-                        Viloyat xalq ta'limi boshqarmasida tanqidiy-tahliliy
-                        yig'ilish bo'lib o'tdi
+                        O'qituvchilar uchun ilk marta reytingli olimpiada !!!
                       </h4>
                       <p className={style.date}>
-                        <i className="fa fa-calendar">04.11.2021</i>
+                        <i className="fa fa-calendar">18.12.2021</i>
                       </p>
                     </div>
                   </div>
@@ -481,14 +508,12 @@ export default class Dashboard extends Component {
                 <div>
                   <div className={style.new_item}>
                     <div>
-                      <img src={new2} />
+                      <img src={newspicturekosonsoy} />
                       <h4>
-                        Viloyat xalq ta'limi boshqarmasida boshlig'i "Kasaba
-                        uyushmalari kuniga 1 yil" esdalik nishoni bilan
-                        taqdirlandi
+                        Kosonsoylik o'quvchilar kasblar yarmakasida qatnashishdi
                       </h4>
                       <p className={style.date}>
-                        <i className="fa fa-calendar">01.11.2021</i>
+                        <i className="fa fa-calendar">18.12.2021</i>
                       </p>
                     </div>
                   </div>
@@ -496,13 +521,13 @@ export default class Dashboard extends Component {
                 <div>
                   <div className={style.new_item}>
                     <div>
-                      <img src={new3} />
+                      <img src={newspicturetakewoondo} />
                       <h4>
-                        Maktablarga Xalq ta‘limi vazirligi tavsiyasi asosida
-                        "Stamina klviaturasi simulyatori" trenajyori oʻrnatildi
+                        Namanganlik o'quvchi jahon chempionatida 3-o'rinni
+                        qo'lga kiritdi
                       </h4>
                       <p className={style.date}>
-                        <i className="fa fa-calendar">07.11.2021</i>
+                        <i className="fa fa-calendar">18.12.2021</i>
                       </p>
                     </div>
                   </div>
@@ -510,14 +535,14 @@ export default class Dashboard extends Component {
                 <div>
                   <div className={style.new_item}>
                     <div>
-                      <img src={new4} />
+                      <img src={newspicturemeningpre} />
                       <h4>
-                        Namangan viloyati oʻquvchi yoshlar oʻrtasida “Funksional
-                        koʻp kurash (krossfit)” sport musobaqasin
-                        tashkillashtirildi.
+                        Namanganda "Mening Prezidentim" tanlovi bosqichi
+                        ishtirokchilari tarixiy shaharlarga bepul sayohat
+                        qiladilar.
                       </h4>
                       <p className={style.date}>
-                        <i className="fa fa-calendar">04.11.2021</i>
+                        <i className="fa fa-calendar">17.12.2021</i>
                       </p>
                     </div>
                   </div>
@@ -546,7 +571,7 @@ export default class Dashboard extends Component {
                         ishtirokchilari taqdirlandi
                       </h4>
                       <p className={style.date}>
-                        <i className="fa fa-calendar">19.11.2021</i>
+                        <i className="fa fa-calendar">19.12.2021</i>
                       </p>
                     </div>
                   </div>
@@ -584,7 +609,7 @@ export default class Dashboard extends Component {
                           rel: 0,
                         },
                       }}
-                      video="78msxs4ENXs"
+                      video="HsfhGX3QsKs"
                       className={style.you}
                       autoplay={true}
                       muted={true}
