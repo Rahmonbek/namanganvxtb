@@ -504,9 +504,12 @@ export default class Dashboard extends Component {
                       class="fa fa-home"
                       aria-hidden="true"
                       style={{
+                        fontSize: "50px",
+                        padding: "30px",
                         color: "rebeccapurple",
                       }}
                     ></i>
+
                     {/* <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAACNCAMAAABWt7KUAAAAAXNSR0IB2cksfwAAALRQTFRFAAAARSFPSCBQRSBQQyJQRCBNRxxQRR9PQCBQSBRNRiBQQCBQUwBTRCBQQyFORhxNRSFPRCJORSBOQyBQSCRcRCBORSFORCBPRCFPPxhLRCBOQhNGRCFPRCBPRh5ORCBORCBNRCFPRCFORCBNRCFOQB1LRCFPRRtNRCFPQR1PRB9ORB9ORiJKRCBPRCBPRCBORSBOQh9MQyBOQx9NRSFORCBOQCBORCBORCBOQx9ORSBOQSFMKLn+rgAAADx0Uk5TAP8goJDAHNwwCrAQBkC+JLLk9lAEw+pvzA3+GvqtNpRnqJhNdy3aEp4XYX9C7+CGtyhUW46kR3vXitA7CUvo/AAABR1JREFUeJzt3Gt7mjAYBuBgOy0toy3Dsyhq56Haqq2t7fb//9fqNBCSF3IgAXfN59u4hN01EDB5CUI40/FicKEng914inKlH/QsnekFfXVMe6bVcsisraipTgxoLOujqqTpPhvRWNb9rYLGrxvSqHmaxjQqHrthkCPveYx27dXf8vQ2d/g4w3pP3XONd3S7kn8IlSt8oBvUdZU9uK0+7HwakoOcO0VPG+/1mFOT4Ch7qninn1o5qp4K3qeil6PoMcZR85jjJD2ChzfISXgmN1n7FsJJeIblcxKeZfkc0uOeAIf0iDyNmeYgZ423i/T7xjlo6h23D06Cg4Lj9uvT4FxKnMsGOGn5duacOXA2p8Xxn06Kw/39WDAH7bwsTeEc1F7+AHJXFgfO5Zlz5pw5BXPs+dTncObN7aVqFr/FOc5rcP+1uddaxcMVLOclu2/lZehT/2sKxw+JUcD1Jo1zm3f4fSHEmbuJnbwwhbPKqbEaIhx2ZH0HcwL6c9KhB/8BTrXG7haCnEFejUefPCwH0ljeBuL083JG3MYCNV/nM8RBD/k0LWaihuakaP4OTwL9zu/R+ptqhqFDa2gOqZmE/eWog//1WUKvTGrcv9/kGHt+Fc9JaI4j6/jq6flFcyANWuIt84I5oCa+mKvFckhNI54DCfE2u1BO8gqP+qc2vmE0Cj2VP6j+5uixo5tpAHOcakUwVbaXSecwGSU11ivEmV5IPPB4ArPlqZy9h9DszyaG47TEMfvUmcctcY41isdVD7d0hvMI7ZaVV1lOnXgMJKbwXR/ivMlymDs4h+PaP6HJ6doclcHZ936Ap3YYk2c4IfNJTuQa69AXM56jBjiVf8lpWlKnMr4zUB6sgS70ocRvid4bd9oMvk8lPJEG7AZt0V6wUuFPvsMa5LiQxvhNIk1zB2pMcyQ1hjmyGrMcaY1RjrzGJEdBY5CjooE4/cG1aILtlVYNwJErTeuEOjX5hww6G/agQppnaF6d4WQ8u8FZqWngGpr8w00XGjUs51OWw4wF5tCwnI3kUKXH9BCJX3cxVqjaKe9ArvcjU2NZDzIaqN+pNsWHtZtzjgZ7BCvBdPfKNvtsuxLXaOdAT/4r8So53Ryw+PlTuGZPM6cbjTu6Y/CS4FQQauZEN7yv/mYJeHj1jJo5uK28/cAG6+FWV+rlRG11qBKkPfxaT4hz+1041B8RtdULAjwClacspyL1ZoCbeEyI2grfqd6JjzYE6mAZTlvyrYkJ8UOUaqtk76c2NSv9nkIYH4xuq4RGjTOU5czigyXayn+fJSt6lDgXspy4OpFoK8aiynmR5YyjY0VtNWAtqhx/DRwpI0F8LM4lqVZl4Cwkrq3aLh78iu9XOjnKObHar5S2mpRTbAW3Vatpl1Oh8gpYHvb3hXI49IT3wVIaZwxaSuP4NchSGgdtaoClPA5yXnaPwDPNP1T7deacOWfOyXL8m7RA022GOfNh+nBdp84uGmCWM02rJDvEYzxmObyyy3qxHF6NRoc+f8rlWMVythxNi97BLKebvdpA571YDtpk/dp8HjOfN94Nzq/SAo0o/W83if+Go28tg9TgCte1wGf1rfSQGnwhCr2Rrm0djLREY7nQHC4TbauEpGQcjcuxPRIQbWuogAni9yGehL5+syvMENmKfZsm198h8sTMmsIxuDoRGeEr19jaTWREXtU/xtDKVmQET5xDjKz7ReSJWwhKRfeqaGTuFwpLtmlcM47IbNvsc4tS4/wBplZt8L334k4AAAAASUVORK5CYII=" /> */}
                     <h1>10,008</h1>
                     <p>Maktab</p>
@@ -518,7 +521,9 @@ export default class Dashboard extends Component {
                       class="fa fa-child"
                       aria-hidden="true"
                       style={{
+                        fontSize: "50px",
                         color: "rebeccapurple",
+                        padding: "30px",
                       }}
                     ></i>
                     <h1>6,236,751</h1>
@@ -527,15 +532,16 @@ export default class Dashboard extends Component {
                 </Col>
                 <Col lg={3} md={6} sm={12}>
                   <div class={style.items_item1}>
-                    <p>
-                      <i
-                        class="fa fa-smile-o"
-                        aria-hidden="true"
-                        style={{
-                          color: "rebeccapurple",
-                        }}
-                      ></i>
-                    </p>
+                    <i
+                      class="fa fa-smile-o"
+                      aria-hidden="true"
+                      style={{
+                        fontSize: "50px",
+                        color: "rebeccapurple",
+                        padding: "30px",
+                      }}
+                    ></i>
+
                     <h1>501,044</h1>
                     <p>O'qituvchi</p>
                   </div>
@@ -547,6 +553,8 @@ export default class Dashboard extends Component {
                       aria-hidden="true"
                       style={{
                         color: "rebeccapurple",
+                        padding: "30px",
+                        fontSize: "50px",
                       }}
                     ></i>
                     <h1>7</h1>
