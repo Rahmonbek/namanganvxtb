@@ -66,16 +66,10 @@ import "./form.css";
 import Hujjatlar from "./Hujjatlar";
 
 export default class Dashboard extends Component {
-  constructor() {
-    super();
-    this.state = {
-      loading: true,
-      News: [],
-    };
-  }
+  
   state = {
     loader: true,
-    News: null,
+    news: null,
     school: null,
     region: null,
     staff: null,
@@ -174,10 +168,7 @@ export default class Dashboard extends Component {
 
   componentDidMount() {
     this.getNews();
-    // this.getEvent();
-    // this.getSchool();
-    // this.getStaff();
-    // this.getSpec();
+   
     setTimeout(() => {
       this.setState({
         loader: false,
@@ -185,23 +176,15 @@ export default class Dashboard extends Component {
     }, 4000);
   }
   getNews = () => {
-    getNews()
+    axios.get(`${url}/news/`)
       .then((res) => {
-        var News = res.data;
-        for (let i = 0; i < News.length; i++) {
-          News[i].key = i + 1;
-          console.log(News[i]);
-        }
+     
         this.setState({
-          News: res.data,
+          news: res.data,
           loading: false,
         });
       })
-      .catch((err) => {
-        this.setState({
-          loading: false,
-        });
-      });
+      
   };
   render() {
     const responsive1 = {
@@ -536,6 +519,7 @@ export default class Dashboard extends Component {
 
               <h1 className={style.sarlavha}> Yangiliklar</h1>
               <br />
+              {this.state.news !== null && this.state.news.length!==0 ? 
               <Carousel
                 swipeable={false}
                 draggable={false}
@@ -554,28 +538,33 @@ export default class Dashboard extends Component {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
               >
-                {this.state.News !== null ? (
-                  this.state.News.map((item) => {
-                    return (
+              
+                 { this.state.news.map((item) => {
+                 
+                  return (
+                 
+                    <div>
+                    <div className={style.new_item}>
                       <div>
-                        <div className={style.new_item}>
-                          <div>
-                            <img src={item.image} />
-                            <h4>{item.name}</h4>
-                            <p className={style.date}>
-                              <i className="fa fa-calendar">
-                                {item.date_added}
-                              </i>
-                            </p>
-                          </div>
-                        </div>
+                        <img src={item.image} />
+                        <h4>{item.name}</h4>
+                        <p className={style.date}>
+                          <i className="fa fa-calendar">
+                            {item.date_added}
+                          </i>
+                        </p>
                       </div>
-                    );
-                  })
-                ) : (
-                  <div></div>
-                )}
+                    </div>
+                  </div>
+               
+               
+              )
+                })}
+                 
               </Carousel>
+              : 
+              ""
+            }
               <br />
               <br />
               <br />

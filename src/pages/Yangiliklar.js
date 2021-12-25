@@ -35,28 +35,20 @@ export default class Yangiliklar extends Component {
     super();
     this.state = {
       loading: true,
-      News: [],
+      News: null,
     };
   }
 
   getNews = () => {
     getNews()
       .then((res) => {
-        var News = res.data;
-        for (let i = 0; i < News.length; i++) {
-          News[i].key = i + 1;
-          console.log(News[i]);
-        }
+      
         this.setState({
-          Tumanlar: res.data,
+          News: res.data,
           loading: false,
         });
       })
-      .catch((err) => {
-        this.setState({
-          loading: false,
-        });
-      });
+     
   };
 
   componentDidMount() {
