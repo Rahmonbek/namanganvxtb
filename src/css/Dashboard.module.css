@@ -91,7 +91,7 @@
   display: flex;
   flex-direction: column;
   height: 300px;
-  border-radius: 30px 5px;
+  border-radius: 20px;
   align-items: center;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
@@ -115,15 +115,22 @@
   display: flex;
   flex-direction: column;
   height: 300px;
-  border-radius: 30px 5px;
+  border-radius: 20px;
   align-items: center;
-  /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   padding: 30px;
 }
-.items_item1:hover {
-  /* box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
-    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; */
+.items_item1:hover p{
+  color:rgb(243, 207, 2)
+}
+.items_item1:hover h1{
+  color:rgb(243, 207, 2)
+}
+.items_item1:hover i{
+  color:rgb(243, 207, 2)
+}
+.items_item1 i{
+  color:rebeccapurple
 }
 .items_item1 p {
   font-size: 23px;
