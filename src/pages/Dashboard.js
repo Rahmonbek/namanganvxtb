@@ -423,7 +423,7 @@ export default class Dashboard extends Component {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
               >
-                {/* {this.state.rahbariyat !== null ? (
+                {this.state.rahbariyat !== null ? (
                   this.state.rahbariyat.map((item) => {
                     return (
                       <div>
@@ -439,7 +439,7 @@ export default class Dashboard extends Component {
                   })
                 ) : (
                   <div></div>
-                )} */}
+                )}
               </Carousel>
               <div id="fotolar"></div>
             </div>
@@ -538,7 +538,7 @@ export default class Dashboard extends Component {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
               >
-              
+             
                  { this.state.news.map((item) => {
                  
                   return (
