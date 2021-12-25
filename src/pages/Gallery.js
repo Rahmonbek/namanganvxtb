@@ -8,7 +8,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import GridLoader from "react-spinners/GridLoader";
 import axios from 'axios'
-import { idMaktab, url, user } from '../host/Host'
+import {url, } from '../host/Host'
 import NavbarA from './NavbarA'
 import Footer from './Footer'
 import rasm1 from "../images/rasm1.jpg";
@@ -24,24 +24,23 @@ import rasm10 from "../images/rasm10.jpg";
 
 
 export default class Gallery extends Component {
-     state={
+state={
     loader:true,
-   
-   
-  
+   images:null,
 }
-  
+getImages=()=>{
+      axios.get(`${url}/fotos/`).then(res=>{
+        console.log(res.data) 
+        this.setState({images:res.data,loader:false})
+      })
+}
  
   
 
 
   componentDidMount() {
-    setTimeout(() => {
-        this.setState({
-          loader: false,
-        });
-      }, 4000);
-    }
+this.getImages() 
+}
     render() {
        
         return (
@@ -57,67 +56,16 @@ export default class Gallery extends Component {
   </video>
   </div>
   <div className={style.binaf}>
-  {/* <h1>O'zbekiston Respublikasi Namangan 
-      viloyati xalq ta'limi boshqarmasi fotolavhalari</h1> */}
+  
   </div>
 
 <div className={styles.rasmlar}>
     <Row style={{justifyContent:'center'}}>
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm1}/>
-     </Col>
-     }
-    
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm2}/>
-     </Col>
-     }
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm3}/>
-     </Col>
-     }
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm4}/>
-     </Col>
-     }
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm5}/>
-     </Col>
-     }
-   
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm6}/>
-     </Col>
-     }
-   
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm7}/>
-     </Col>
-     }
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm8}/>
-     </Col>
-     }
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm9}/>
-     </Col>
-     }
-    {
-        <Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
-         <img src={rasm10}/>
-     </Col>
-     }
-   
-        
+   {this.state.images!==null?this.state.images.map(item=>{
+       return(<Col style={{padding:"10px"}} lg={4} md={6} sm={12}>
+       <img src={item.foto_lavha}/>
+   </Col>)
+   }):''}
     </Row>
 </div>
 <Footer/>

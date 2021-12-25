@@ -555,7 +555,7 @@ export default class Dashboard extends Component {
                 itemClass="carousel-item-padding-40-px"
               >
                 {this.state.news !==null ?(
-                  thi.state.news.map((item)=>{
+                  this.state.news.map((item)=>{
                     return(
                       <div>
                   <div className={style.new_item}>
@@ -572,7 +572,7 @@ export default class Dashboard extends Component {
                 </div>
                     )
                   })
-                )}
+                ):''}
                 <div>
                   <div className={style.new_item}>
                     <div>
