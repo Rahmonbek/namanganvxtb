@@ -8,7 +8,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import GridLoader from "react-spinners/GridLoader";
 import axios from "axios";
-import { idMaktab, url, user } from "../host/Host";
+import { url } from "../host/Host";
 import NavbarA from "./NavbarA";
 import newspictureolimp from "../images/Newspictureolimp.jpg";
 import newspicturekosonsoy from "../images/Newspicturekosonsoy.jpg";
@@ -41,21 +41,6 @@ export default class Yangiliklar extends Component {
       .catch((err) => {
         console.log(err);
       });
-  };
-  getSchool = () => {
-    axios.get(`${url}/school-by-admin/${user}`).then((res) => {
-      this.setState({
-        school: res.data,
-      });
-      axios.get(`${url}/region/${res.data.region}/`).then((res1) => {
-        this.setState({ region: res1.data });
-        setTimeout(() => {
-          this.setState({
-            loader: false,
-          });
-        }, 3000);
-      });
-    });
   };
 
   componentDidMount() {

@@ -57,7 +57,7 @@ import Footer from "./Footer";
 import { Clusterer, Map, Placemark, YMaps } from "react-yandex-maps";
 import GridLoader from "react-spinners/GridLoader";
 import axios from "axios";
-import { idMaktab, url, user } from "../host/Host";
+import { url } from "../host/Host";
 import { getNews } from "../host/Config";
 import pic20 from "../images/twitter 2.png";
 import Cards from "./Cards";
@@ -66,6 +66,13 @@ import "./form.css";
 import Hujjatlar from "./Hujjatlar";
 
 export default class Dashboard extends Component {
+  constructor() {
+    super();
+    this.state = {
+      loading: true,
+      News: [],
+    };
+  }
   state = {
     loader: true,
     news: null,
@@ -166,7 +173,7 @@ export default class Dashboard extends Component {
   };
 
   componentDidMount() {
-    // this.getNews();
+    this.getNews();
     // this.getEvent();
     // this.getSchool();
     // this.getStaff();
@@ -177,6 +184,25 @@ export default class Dashboard extends Component {
       });
     }, 4000);
   }
+  getNews = () => {
+    getNews()
+      .then((res) => {
+        var News = res.data;
+        for (let i = 0; i < News.length; i++) {
+          News[i].key = i + 1;
+          console.log(News[i]);
+        }
+        this.setState({
+          Tumanlar: res.data,
+          loading: false,
+        });
+      })
+      .catch((err) => {
+        this.setState({
+          loading: false,
+        });
+      });
+  };
   render() {
     const responsive1 = {
       superLargeDesktop: {
@@ -414,7 +440,7 @@ export default class Dashboard extends Component {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
               >
-                {this.state.rahbariyat !== null ? (
+                {/* {this.state.rahbariyat !== null ? (
                   this.state.rahbariyat.map((item) => {
                     return (
                       <div>
@@ -430,7 +456,7 @@ export default class Dashboard extends Component {
                   })
                 ) : (
                   <div></div>
-                )}
+                )} */}
               </Carousel>
               <div id="fotolar"></div>
             </div>
@@ -528,6 +554,25 @@ export default class Dashboard extends Component {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
               >
+                {this.state.news !==null ?(
+                  thi.state.news.map((item)=>{
+                    return(
+                      <div>
+                  <div className={style.new_item}>
+                    <div>
+                      <img src={newspictureolimp} />
+                      <h4>
+                        O'qituvchilar uchun ilk marta reytingli olimpiada !!!
+                      </h4>
+                      <p className={style.date}>
+                        <i className="fa fa-calendar">18.12.2021</i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                    )
+                  })
+                )}
                 <div>
                   <div className={style.new_item}>
                     <div>

@@ -2,26 +2,15 @@ import axios from "axios";
 import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
 import style from "../css/Footer.module.css";
-import { url, user } from "../host/Host";
+import { url } from "../host/Host";
 import logo from "../images/logo.png";
 export default class Footer extends Component {
   state = {
     school: null,
   };
-  getSchool = () => {
-    axios
-      .get(`${url}/school-by-admin/${user}`)
-      .then((res) => {
-        this.setState({
-          school: res.data,
-        });
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+
   componentDidMount() {
-    this.getSchool();
+    // this.getSchool();
   }
   render() {
     return (
