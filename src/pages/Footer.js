@@ -5,12 +5,21 @@ import style from "../css/Footer.module.css";
 import { url } from "../host/Host";
 import logo from "../images/logo.png";
 export default class Footer extends Component {
-  state = {
-    school: null,
-  };
-
+  constructor(props) {
+    super(props);
+    this.state = {
+     
+      boshqarma:null
+    };
+  }
   componentDidMount() {
-    // this.getSchool();
+   axios.get(`${url}/boshqarma`).then(res=>{
+     this.setState({
+boshqarma:res.data[0],
+
+
+    })
+   })
   }
   render() {
     return (
@@ -72,37 +81,32 @@ export default class Footer extends Component {
           </Col>
           <Col lg={4} md={12} sm={12}>
             <p>
-              <b>Ishonch telefonlari : </b>+998-69-232-61-15
+              <b>Ishonch telefonlari : </b>{this.state.boshqarma!==null?this.state.boshqarma.phone:''}
               <br />
             </p>
             <p>
-              <b>Email : </b>namangan_vxtb@xtv.uz
+              <b>Email : </b>{this.state.boshqarma!==null?this.state.boshqarma.email:''}
             </p>
             <p>
-              <b>Manzil : </b>Namangan viloyati Davlatobod tumani Tinchlik
-              ko'chasi 2-uy
+              <b>Manzil : </b>{this.state.boshqarma!==null?this.state.boshqarma.manzil:''}
             </p>
             <div className={style.icons}>
-              <a target="_blank" href="https://t.me/joinchat/Ew9lX74i1WYzYjAy">
+              <a target="_blank" href={this.state.boshqarma!==null?this.state.boshqarma.telegram:''}>
                 <i className="fa fa-telegram"></i>
               </a>
               <a
                 target="_blank"
-                href={
-                  this.state.school !== null ? this.state.school.instagra : ""
-                }
+                href={this.state.boshqarma!==null?this.state.boshqarma.instagram:''}
               >
                 <i className="fa fa-instagram"></i>
               </a>
               <a
                 target="_blank"
-                href={
-                  this.state.school !== null ? this.state.school.youtube : ""
-                }
+                href={this.state.boshqarma!==null?this.state.boshqarma.youtube:''}
               >
                 <i className="fa fa-youtube"></i>
               </a>
-              <a target="_blank" href="https://www.facebook.com/Namanganvxtb">
+              <a target="_blank" href={this.state.boshqarma!==null?this.state.boshqarma.facebook:''}>
                 <i className="fa fa-facebook"></i>
               </a>
             </div>
