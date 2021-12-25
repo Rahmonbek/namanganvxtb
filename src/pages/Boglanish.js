@@ -29,18 +29,30 @@ timePassed: true,
    })
   }
   sendMurojat=()=>{
+    this.setState({
+      timePassed: false,
+    })
     var name = document.getElementById('name').value
     var phone = document.getElementById('phone').value
     var text = document.getElementById('text').value
+    var today = new Date();
+var date_sent = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+   
     var seen=false
-    var config={name, phone, text, seen}
+    var config={name, phone, text, seen, date_sent}
     axios.post(`${url}/murojaat/`,config).then(res=>{
         message.success("Xabar yuborildi")
+        this.setState({
+          timePassed: true,
+        })
         document.getElementById('name').value=""
  document.getElementById('phone').value=""
 document.getElementById('text').value=""
       }).catch(err=>{
         message.error("Xabar jo'natilmadi")
+        this.setState({
+          timePassed: true,
+        })
       })
   }
   render() {
