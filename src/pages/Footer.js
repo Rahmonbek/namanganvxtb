@@ -94,15 +94,11 @@ boshqarma:res.data[0],
               <a target="_blank" href={this.state.boshqarma!==null?this.state.boshqarma.telegram:''}>
                 <i className="fa fa-telegram"></i>
               </a>
-              <a
-                target="_blank"
-                href={this.state.boshqarma!==null?this.state.boshqarma.instagram:''}
+              <a target="_blank" href={this.state.boshqarma!==null?this.state.boshqarma.instagram:''}
               >
                 <i className="fa fa-instagram"></i>
               </a>
-              <a
-                target="_blank"
-                href={this.state.boshqarma!==null?this.state.boshqarma.youtube:''}
+              <a target="_blank" href={this.state.boshqarma!==null?this.state.boshqarma.youtube:''}
               >
                 <i className="fa fa-youtube"></i>
               </a>
