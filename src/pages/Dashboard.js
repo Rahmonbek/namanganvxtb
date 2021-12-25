@@ -75,7 +75,7 @@ export default class Dashboard extends Component {
   }
   state = {
     loader: true,
-    news: null,
+    News: null,
     school: null,
     region: null,
     staff: null,
@@ -193,7 +193,7 @@ export default class Dashboard extends Component {
           console.log(News[i]);
         }
         this.setState({
-          Tumanlar: res.data,
+          News: res.data,
           loading: false,
         });
       })
@@ -554,122 +554,27 @@ export default class Dashboard extends Component {
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px"
               >
-                {this.state.news !==null ?(
-                  thi.state.news.map((item)=>{
-                    return(
+                {this.state.News !== null ? (
+                  this.state.News.map((item) => {
+                    return (
                       <div>
-                  <div className={style.new_item}>
-                    <div>
-                      <img src={newspictureolimp} />
-                      <h4>
-                        O'qituvchilar uchun ilk marta reytingli olimpiada !!!
-                      </h4>
-                      <p className={style.date}>
-                        <i className="fa fa-calendar">18.12.2021</i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                    )
+                        <div className={style.new_item}>
+                          <div>
+                            <img src={item.image} />
+                            <h4>{item.name}</h4>
+                            <p className={style.date}>
+                              <i className="fa fa-calendar">
+                                {item.date_added}
+                              </i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    );
                   })
+                ) : (
+                  <div></div>
                 )}
-                <div>
-                  <div className={style.new_item}>
-                    <div>
-                      <img src={newspictureolimp} />
-                      <h4>
-                        O'qituvchilar uchun ilk marta reytingli olimpiada !!!
-                      </h4>
-                      <p className={style.date}>
-                        <i className="fa fa-calendar">18.12.2021</i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className={style.new_item}>
-                    <div>
-                      <img src={newspicturekosonsoy} />
-                      <h4>
-                        Kosonsoylik o'quvchilar kasblar yarmakasida qatnashishdi
-                      </h4>
-                      <p className={style.date}>
-                        <i className="fa fa-calendar">18.12.2021</i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className={style.new_item}>
-                    <div>
-                      <img src={newspicturetakewoondo} />
-                      <h4>
-                        Namanganlik o'quvchi jahon chempionatida 3-o'rinni
-                        qo'lga kiritdi
-                      </h4>
-                      <p className={style.date}>
-                        <i className="fa fa-calendar">18.12.2021</i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className={style.new_item}>
-                    <div>
-                      <img src={newspicturemeningpre} />
-                      <h4>
-                        Namanganda "Mening Prezidentim" tanlovi bosqichi
-                        ishtirokchilari tarixiy shaharlarga bepul sayohat
-                        qiladilar.
-                      </h4>
-                      <p className={style.date}>
-                        <i className="fa fa-calendar">17.12.2021</i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className={style.new_item}>
-                    <div>
-                      <img src={newspicturegilam} />
-                      <h4>
-                        NAMANGANLIK OʻQUVCHILAR TOʻQIYOTGAN GILAMLAR TURKIYA VA
-                        ARABISTONGA SOTILMOQDA
-                      </h4>
-                      <p className={style.date}>
-                        <i className="fa fa-calendar">18.12.2021</i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className={style.new_item}>
-                    <div>
-                      <img src={newspictureasal} />
-                      <h4>
-                        NAMANGANLIK OʻQUVCHILAR TADBIRKORLIK ORTIDAN 70 MLN
-                        SOʻMDAN ZIYOD DAROMAD TOPMOQDA
-                      </h4>
-                      <p className={style.date}>
-                        <i className="fa fa-calendar">19.12.2021</i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div className={style.new_item}>
-                    <div>
-                      <img src={newspicturekalendar} />
-                      <h4>
-                        MAKTAB OʻQUVCHILARI UCHUN QISHKI TAʼTIL 28-DEKABRDAN
-                        BOSHLANADI
-                      </h4>
-                      <p className={style.date}>
-                        <i className="fa fa-calendar">19.12.2021</i>
-                      </p>
-                    </div>
-                  </div>
-                </div>
               </Carousel>
               <br />
               <br />

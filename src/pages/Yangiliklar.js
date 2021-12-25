@@ -28,18 +28,34 @@ const { Panel } = Collapse;
 export default class Yangiliklar extends Component {
   state = {
     loader: true,
-    news: null,
+    News: null,
     school: null,
   };
+  constructor() {
+    super();
+    this.state = {
+      loading: true,
+      News: [],
+    };
+  }
+
   getNews = () => {
     getNews()
       .then((res) => {
+        var News = res.data;
+        for (let i = 0; i < News.length; i++) {
+          News[i].key = i + 1;
+          console.log(News[i]);
+        }
         this.setState({
-          news: res.data,
+          Tumanlar: res.data,
+          loading: false,
         });
       })
       .catch((err) => {
-        console.log(err);
+        this.setState({
+          loading: false,
+        });
       });
   };
 
