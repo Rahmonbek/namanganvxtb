@@ -378,9 +378,7 @@ export default class Dashboard extends Component {
 
             <div className={style.new}>
               <div className={style.back}></div>
-              <div className={style.tad}>
-                <h1 className={style.sarlavha}> Tadbirlar</h1>
-                <br />
+             
                 {this.state.events !== null &&
                 this.state.events.length !== 0 ? (
                   <Carousel
@@ -414,7 +412,7 @@ export default class Dashboard extends Component {
                               </p>
                               <p className={style.mar}>
                                 <i className="fa fa-map-marker"></i>
-                                {item.description}
+                                {item.address}
                               </p>
                               <p className={style.time}>
                                 <i className="fa fa-clock-o"></i>
@@ -430,7 +428,7 @@ export default class Dashboard extends Component {
                   ""
                 )}
                 <br />{" "}
-              </div>
+              
               <div id="fotolar"></div>
             </div>
             <div className={style.gal}>
@@ -734,58 +732,6 @@ export default class Dashboard extends Component {
               </Row>
             </div>
 
-            <div className={style.tad}>
-              <h1 className={style.sarlavha}> Tadbirlar</h1>
-              <br />
-              {this.state.events !== null && this.state.events.length !== 0 ? (
-                <Carousel
-                  swipeable={false}
-                  draggable={false}
-                  showDots={true}
-                  responsive={responsive2}
-                  ssr={true} // means to render carousel on server-side.
-                  infinite={true}
-                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                  autoPlaySpeed={3000}
-                  keyBoardControl={true}
-                  customTransition="all .5"
-                  transitionDuration={100}
-                  containerClass="carousel-container"
-                  removeArrowOnDeviceType={["tablet", "mobile"]}
-                  deviceType={this.props.deviceType}
-                  dotListClass="custom-dot-list-style"
-                  itemClass="carousel-item-padding-40-px"
-                >
-                  {this.state.events.map((item) => {
-                    return (
-                      <div>
-                        <div className={style.tad_item}>
-                          <div>
-                            <img src={item.image} />
-                            <h4>{item.name}</h4>
-                            <p className={style.date}>
-                              <i className="fa fa-calendar"></i>
-                              {item.date}
-                            </p>
-                            <p className={style.mar}>
-                              <i className="fa fa-map-marker"></i>
-                              {item.description}
-                            </p>
-                            <p className={style.time}>
-                              <i className="fa fa-clock-o"></i>
-                              {item.time}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </Carousel>
-              ) : (
-                ""
-              )}
-              <br />{" "}
-            </div>
             <div
               style={{
                 backgroundColor: "white",
