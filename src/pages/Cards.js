@@ -87,7 +87,7 @@ export default class Cards extends Component {
       <Card.Img
         className={style.news_itemcard2}
         variant="top"
-        src={chortoqrah}
+        src={item.image}
       />
       <Card.Body>
         <Card.Text className={style.ptr}>
