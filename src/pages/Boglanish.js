@@ -6,18 +6,42 @@ import NavbarT from "./NavbarT";
 import style from '../css/Boglanish.module.css'
 import GridLoader from "react-spinners/GridLoader";
 import { Row, Col } from 'react-bootstrap'
+import axios from "axios";
+import { url } from "../host/Host";
+import { config } from "@fortawesome/fontawesome-svg-core";
+import { message } from "antd";
 
 export default class Boglanish extends Component {
   constructor(props) {
     super(props);
     this.state = {
       timePassed: false,
+      boshqarma:null
     };
   }
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ timePassed: true });
-    }, 4000);
+   axios.get(`${url}/boshqarma`).then(res=>{
+     this.setState({
+boshqarma:res.data[0],
+timePassed: true,
+
+    })
+   })
+  }
+  sendMurojat=()=>{
+    var name = document.getElementById('name').value
+    var phone = document.getElementById('phone').value
+    var text = document.getElementById('text').value
+    var seen=false
+    var config={name, phone, text, seen}
+    axios.post(`${url}/murojaat/`,config).then(res=>{
+        message.success("Xabar yuborildi")
+        document.getElementById('name').value=""
+ document.getElementById('phone').value=""
+document.getElementById('text').value=""
+      }).catch(err=>{
+        message.error("Xabar jo'natilmadi")
+      })
   }
   render() {
     return (
@@ -38,7 +62,7 @@ export default class Boglanish extends Component {
 
 <YMaps>
 <div className={style.xarita_item} style={{paddingLeft:'10%',}}>
-<Map style={{width:'100%', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', height:'550px'}} defaultState={{ center: [41.000630,71.669404], zoom: 12 }} >
+<Map style={{width:'100%', boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', height:'550px'}} defaultState={{ center: this.state.boshqarma!==null?this.state.boshqarma.params:[41.000630,71.669404], zoom: 12 }} >
 <Clusterer
               options={{
                 groupByCoordinates: false,
@@ -46,7 +70,7 @@ export default class Boglanish extends Component {
             >
               <Placemark
                 key={-1}
-                geometry={[41.000630,71.669404]}
+                geometry={ this.state.boshqarma!==null?this.state.boshqarma.params:[41.000630,71.669404]}
                 options={{
                   iconLayout: "default#image",
                 }}
