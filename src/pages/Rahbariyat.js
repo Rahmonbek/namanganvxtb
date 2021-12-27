@@ -37,57 +37,67 @@ export default class Rahbariyat extends Component {
     timePassed: false,
     show: false,
     image: null,
-    fullName: "",
+    full_name: "",
     phone: "",
     email: "",
-    describe: "",
-    describe1: "",
-    describe2: "",
-    describe3: "",
-    describe4: "",
-    describe5: "",
-    describe6: "",
+    description: "",
+    description1: "",
+    description2: "",
+    description3: "",
+    description4: "",
+    description5: "",
+    description6: "",
     lavozimi: "",
     daraja: 1,
+    option:null,
   };
-  // openModal = (id) => {
-  //   this.setState({
-  //     show: true,
-  //     fullName: this.state.rahbariyat[id].fullName,
-  //     phone: this.state.rahbariyat[id].phone,
-  //     email: this.state.rahbariyat[id].email,
-  //     describe: this.state.rahbariyat[id].describe,
-  //     describe1: this.state.rahbariyat[id].describe1,
-  //     describe2: this.state.rahbariyat[id].describe2,
-  //     describe3: this.state.rahbariyat[id].describe3,
-  //     describe4: this.state.rahbariyat[id].describe4,
-  //     describe5: this.state.rahbariyat[id].describe5,
-  //     describe6: this.state.rahbariyat[id].describe6,
-  //     image: this.state.rahbariyat[id].image,
-  //     lavozimi: this.state.rahbariyat[id].lavozimi,
-  //   });
-  // };
-  // closeModal = () => {
-  //   this.setState({
-  //     show: false,
-  //     fullName: "",
-  //     phone: "",
-  //     email: "",
-  //     describe: "",
-  //     describe1: "",
-  //     describe2: "",
-  //     describe3: "",
-  //     describe4: "",
-  //     describe5: "",
-  //     describe6: "",
-  //     image: null,
-  //     lavozimi: "",
-  //   });
-  // };
+  openModal = (id) => {
+    this.setState({
+      show: true,
+      full_name: this.state.rahbariyat[id].full_name,
+      
+      phone: this.state.rahbariyat[id].phone,
+      email: this.state.rahbariyat[id].email,
+      description: this.state.rahbariyat[id].description,
+      image: this.state.rahbariyat[id].image,
+      lavozimi: this.state.rahbariyat[id].spec,
+    });
+  };
+  closeModal = () => {
+    this.setState({
+      show: false,
+      full_name: "",
+      phone: "",
+      email: "",
+      description: "",
+      description1: "",
+      description2: "",
+      description3: "",
+      description4: "",
+      description5: "",
+      description6: "",
+      image: null,
+      lavozimi: "",
+    });
+  };
+  echoOptions = (a) => {
+    var g = "";
+    this.state.options.map((item) => {
+      if (item.id === a) {
+        g = item.name;
+      }
+    });
+    return g;
+  };
+  getSpec = () => {
+    axios.get(`${url}/speciality/`)
+      .then((res) => {
+        this.setState({ options: res.data, timePassed:true });
+      })
+      .catch((err) => console.log(err));
+  };
   componentDidMount() {
-    setTimeout(() => {
-      this.setState({ timePassed: true });
-    }, 2500);
+   
     this.getRahbariyat();
   }
 
@@ -95,8 +105,9 @@ export default class Rahbariyat extends Component {
     axios.get(`${url}/rahbariyat/`).then((res) => {
       this.setState({
         rahbariyat: res.data,
-        loading: false,
+       
       });
+      this.getSpec()
     });
   };
   render() {
@@ -126,7 +137,7 @@ export default class Rahbariyat extends Component {
                     <Col lg={9} sm={12}>
                       <Row>
                         {this.state.rahbariyat !== null
-                          ? this.state.rahbariyat.map((item) => {
+                          ? this.state.rahbariyat.map((item, key) => {
                               return (
                                 <Col lg={12} md={12} sm={12}>
                                   <div className={style.card}>
@@ -136,7 +147,7 @@ export default class Rahbariyat extends Component {
                                       </Col>
                                       <Col xl={8} lg={7} md={7} sm={7} xs={12}>
                                         <div className={style.cardBody}>
-                                          <h4>{item.spec}</h4>
+                                          <h4>{this.echoOptions(item.spec)}</h4>
                                           <h4>{item.full_name}</h4>
                                           <h6>
                                             <b>Qabul kunlari:</b> {item.qabul}
@@ -154,9 +165,9 @@ export default class Rahbariyat extends Component {
                                                 backgroundColor: "#1105e6",
                                                 borderRadius: "none",
                                               }}
-                                              // onClick={() =>
-                                              //   this.openModal(key)
-                                              // }
+                                              onClick={() =>
+                                                this.openModal(key)
+                                              }
                                               className={style.btn}
                                             >
                                               Batafsil
@@ -256,18 +267,13 @@ export default class Rahbariyat extends Component {
                   style={{ minHeight: "320px" }}
                 >
                   <p style={{ textAlign: "center", marginBottom: "0" }}>
-                    {this.state.lavozimi}
+                    {this.echoOptions(this.state.lavozimi)}
                   </p>
-                  <p style={{ textAlign: "center" }}>{this.state.fullName}</p>
+                  <p style={{ textAlign: "center" }}>{this.state.full_name}</p>
                   <p>
-                    Qo'shimcha ma'lumot:
-                    <p>{this.state.describe}</p>
-                    <p>{this.state.describe1}</p>
-                    <p>{this.state.describe2}</p>
-                    <p>{this.state.describe3}</p>
-                    <p>{this.state.describe4}</p>
-                    <p>{this.state.describe5}</p>
-                    <p>{this.state.describe6}</p>
+                   
+                    <p>{this.state.description}</p>
+                    
                   </p>
                 </Col>
               </Row>
