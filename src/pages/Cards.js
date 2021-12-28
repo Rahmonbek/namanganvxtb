@@ -5,25 +5,6 @@ import style from "../css/Cards.module.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import pic13 from "../images/ac2ba8c2-8cea-312b-591a-b5e87feba57b.jpg";
-import drasm1 from "../images/drasm1.jpeg";
-import drasm3 from "../images/drasm3.jpeg";
-import drasm2 from "../images/drasm2.png";
-import drasm8 from "../images/drasm8.png";
-import drasm5 from "../images/drasm5.png";
-import drasm6 from "../images/drasm6.jpg";
-import drasm7 from "../images/drasm7.jpg";
-import drasm9 from "../images/drasm9.jpg";
-import drasm10 from "../images/drasm10.jpg";
-import chortoqrah from "../images/Chortoq tumanirah.jpg";
-import chustrah from "../images/chustrah.jpg";
-import mingbuloqrah from "../images/Mingbuloq tumanirah.jpg";
-import namangantumrah from "../images/Namangan tumanirah.jpg";
-import norinrah from "../images/Norin tumanirah.jpg";
-import poprah from "../images/pop tumanirah.jpg";
-import namanganshrah from "../images/namangan shaxarrah.jpg";
-import toraqqorgonrah from "../images/Toraqorgon tumanirah.jpg";
-import uchqorgonrah from "../images/Uchqorgon tumanirah.jpg";
 import axios from 'axios'
 import {url} from '../host/Host'
 import "antd/dist/antd.css";

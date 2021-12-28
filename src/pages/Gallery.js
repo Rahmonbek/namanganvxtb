@@ -1,38 +1,33 @@
-import video2 from '../videos/bosh2.mp4'
+
 import React, { Component } from 'react'
-import NavbarT from './NavbarT'
 import style from '../css/Dashboard.module.css'
 import styles from '../css/Gallery.module.css'
 import { Col, Row } from 'react-bootstrap'
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import GridLoader from "react-spinners/GridLoader";
 import axios from 'axios'
 import {url, } from '../host/Host'
 import NavbarA from './NavbarA'
 import Footer from './Footer'
-import rasm1 from "../images/rasm1.jpg";
-import rasm2 from "../images/rasm2.jpg";
-import rasm3 from "../images/rasm3.jpg";
-import rasm4 from "../images/rasm4.jpg";
-import rasm5 from "../images/rasm5.jpg";
-import rasm6 from "../images/rasm6.jpg";
-import rasm7 from "../images/rasm7.jpg";
-import rasm8 from "../images/rasm8.jpg";
-import rasm9 from "../images/rasm9.jpg";
-import rasm10 from "../images/rasm10.jpg";
 
 
 export default class Gallery extends Component {
 state={
     loader:true,
    images:null,
+   boshqarma:null,
 }
 getImages=()=>{
-      axios.get(`${url}/fotos/`).then(res=>{
-        console.log(res.data) 
-        this.setState({images:res.data,loader:false})
-      })
+  axios.get(`${url}/boshqarma`).then(res=>{
+    this.setState({
+      boshqarma:res.data[0]
+    })
+   
+    axios.get(`${url}/fotos/`).then(res=>{
+      this.setState({images:res.data,loader:false})
+    })
+  })
+   
 }
  
   
@@ -52,7 +47,7 @@ this.getImages()
                 <NavbarA/>
                 <div className={style.video}>
                 <video loop={true} autoPlay={true} muted={true}>
-      <source src={video2} type="video/mp4" />
+      <source src={this.state.boshqarma!==null?this.state.boshqarma.video2:''} type="video/mp4" />
   </video>
   </div>
   <div className={style.binaf}>

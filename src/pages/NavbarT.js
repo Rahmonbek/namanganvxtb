@@ -1,4 +1,3 @@
-import { Row } from 'react-bootstrap'
 import React, { Component } from 'react'
 import style from '../css/Navbar.module.css'
 import logo from '../images/logo.png'
@@ -50,7 +49,7 @@ export default class NavbarT extends Component {
                             </li>
                            
                             <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/yangiliklar">Yangiliklar</NavLink>
+                                <NavLink className={style.lik} to="/yangiliklar/0">Yangiliklar</NavLink>
                             </li>
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/rahbariyat">Rahbariyat</NavLink>

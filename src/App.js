@@ -25,7 +25,7 @@ export default class App extends Component {
   <Route exact path="/gallery">
   <Gallery/>
   </Route>
-  <Route exact path="/yangiliklar">
+  <Route path="/yangiliklar">
   <Yangiliklar/>
   </Route>
   <Route exact path="/tumanlar">

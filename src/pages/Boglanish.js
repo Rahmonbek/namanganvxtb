@@ -8,7 +8,6 @@ import GridLoader from "react-spinners/GridLoader";
 import { Row, Col } from 'react-bootstrap'
 import axios from "axios";
 import { url } from "../host/Host";
-import { config } from "@fortawesome/fontawesome-svg-core";
 import { message } from "antd";
 
 export default class Boglanish extends Component {

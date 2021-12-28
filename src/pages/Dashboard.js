@@ -1,6 +1,3 @@
-import video from "../videos/bosh.mp4";
-import video2 from "../videos/bosh2.mp4";
-import video3 from "../videos/bosh3.mp4";
 import React, { Component } from "react";
 import NavbarT from "./NavbarT";
 import style from "../css/Dashboard.module.css";
@@ -8,58 +5,17 @@ import { Col, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import school from "../images/gerb.jpg";
-import newspictureolimp from "../images/Newspictureolimp.jpg";
-import newspicturekosonsoy from "../images/Newspicturekosonsoy.jpg";
-import newspicturetakewoondo from "../images/NewspictureTakewoondo.jpg";
-import newspicturemeningpre from "../images/Newspicturemeningpre.jpg";
-import newspicturegilam from "../images/Newspicturegilam.jpg";
-import newspictureasal from "../images/Newspictureasal.jpg";
-import newspicturekalendar from "../images/Newspicturekalendar.jpg";
-import lavha1 from "../images/lavha1.jpg";
-import lavha2 from "../images/lavha2.jpg";
-import lavha3 from "../images/lavha3.jpg";
-import lavha4 from "../images/lavha4.jpg";
 import her2 from "../images/h2.jpg";
 import her3 from "../images/h3.jpg";
 import her4 from "../images/h4.jpg";
 import her5 from "../images/h5.png";
 import her6 from "../images/h6.png";
-import new1 from "../images/new1.jpg";
-import new2 from "../images/new2.jpg";
-import new3 from "../images/new3.jpg";
-import new4 from "../images/new4.jpg";
-import new5 from "../images/new5.jpg";
-import new6 from "../images/new6.jpg";
-import rasm1 from "../images/rasm1.jpg";
-import rasm2 from "../images/rasm2.jpg";
-import rasm3 from "../images/rasm3.jpg";
-import rasm4 from "../images/rasm4.jpg";
-import rasm5 from "../images/rasm5.jpg";
-import rasm6 from "../images/rasm6.jpg";
 import YouTube from "@u-wave/react-youtube";
-import rahbar from "../images/Xudoyberganov.png";
-import gozal from "../images/gozal.png";
-import axmedov from "../images/axmedov.png";
-import sapayev from "../images/sapayev.jpg";
-import matyoqubov from "../images/matyoqubov.png";
-import abdurahmonov from "../images/abdurahmonov.png";
-import gerb from "../images/gerb.png";
-import lex from "../images/h3.jpg";
-import gov from "../images/h4.jpg";
-import par from "../images/logo_small.png";
-import xalq from "../images/logo.png";
-import p from "../images/p.webp";
-import rustambek from "../images/rustambek.jpg";
-import tohirjon from "../images/tohirjon.jpg";
-import muzaffar from "../images/muzaffar.png";
-import xayrullo from "../images/xayrullo.jpg";
 import Footer from "./Footer";
 import { Clusterer, Map, Placemark, YMaps } from "react-yandex-maps";
 import GridLoader from "react-spinners/GridLoader";
 import axios from "axios";
 import { url } from "../host/Host";
-import { getNews } from "../host/Config";
-import pic20 from "../images/twitter 2.png";
 import Cards from "./Cards";
 import { Link } from "react-router-dom";
 import "./form.css";
@@ -230,7 +186,7 @@ document.getElementById('text').value=""
             <NavbarT />
             <div className={style.video}>
               <video loop={true} autoPlay={true} muted={true}>
-                <source src={video} type="video/mp4" />
+                <source src={this.state.boshqarma!==null?this.state.boshqarma.video1:''} type="video/mp4" />
               </video>
             </div>
             <div className={style.binaf}>
@@ -341,56 +297,48 @@ document.getElementById('text').value=""
 
             <div className={style.new}>
               <div className={style.back}></div>
-             
-                {this.state.events !== null &&
-                this.state.events.length !== 0 ? (
-                  <Carousel
-                    swipeable={false}
-                    draggable={false}
-                    showDots={true}
-                    responsive={responsive2}
-                    ssr={true} // means to render carousel on server-side.
-                    infinite={true}
-                    autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                    autoPlaySpeed={3000}
-                    keyBoardControl={true}
-                    customTransition="all .5"
-                    transitionDuration={100}
-                    containerClass="carousel-container"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    deviceType={this.props.deviceType}
-                    dotListClass="custom-dot-list-style"
-                    itemClass="carousel-item-padding-40-px"
-                  >
-                    {this.state.events.map((item) => {
-                      return (
-                        <div>
-                          <div className={style.tad_item}>
-                            <div>
-                              <img src={item.image} />
-                              <h4>{item.name}</h4>
-                              <p className={style.date}>
-                                <i className="fa fa-calendar"></i>
-                                {item.date}
-                              </p>
-                              <p className={style.mar}>
-                                <i className="fa fa-map-marker"></i>
-                                {item.address}
-                              </p>
-                              <p className={style.time}>
-                                <i className="fa fa-clock-o"></i>
-                                {item.time}
-                              </p>
-                            </div>
+              {this.state.news !== null && this.state.news.length !== 0 ? (
+                <Carousel
+                  swipeable={false}
+                  draggable={false}
+                  showDots={true}
+                  responsive={responsive2}
+                  ssr={true} // means to render carousel on server-side.
+                  infinite={true}
+                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                  autoPlaySpeed={3000}
+                  keyBoardControl={true}
+                  customTransition="all .5"
+                  transitionDuration={100}
+                  containerClass="carousel-container"
+                  removeArrowOnDeviceType={["tablet", "mobile"]}
+                  deviceType={this.props.deviceType}
+                  dotListClass="custom-dot-list-style"
+                  itemClass="carousel-item-padding-40-px"
+                >
+                  {this.state.news.map((item, key) => {
+                    return (
+                      <div>
+                      <Link to={`/yangiliklar/${key}`}>
+                        <div className={style.new_item}>
+                          <div>
+                            <img src={item.image} />
+                            <h4>{item.name}</h4>
+                            <p className={style.date}>
+                              <i className="fa fa-calendar">
+                                {item.date_added}
+                              </i>
+                            </p>
                           </div>
                         </div>
-                      );
-                    })}
-                  </Carousel>
-                ) : (
-                  ""
-                )}
-                <br />{" "}
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </Carousel>
+              ) : (
+                ""
+              )}<br />{" "}
               
               <div id="fotolar"></div>
             </div>
@@ -488,7 +436,7 @@ document.getElementById('text').value=""
             <Hujjatlar />
             <div className={style.video1}>
               <video loop={true} autoPlay={true} muted={true}>
-                <source src={video2} type="video/mp4" />
+                <source src={this.state.boshqarma!==null?this.state.boshqarma.video2:''} type="video/mp4" />
               </video>
             </div>
             <div className={style.binaf1}>
@@ -497,60 +445,67 @@ document.getElementById('text').value=""
             <div className={style.ustoz}>
               <div id="yangilik"></div>
 
-              <h1 className={style.sarlavha}> Yangiliklar</h1>
+              <h1 className={style.sarlavha}> Tadbirlar</h1>
               <br />
-              {this.state.news !== null && this.state.news.length !== 0 ? (
-                <Carousel
-                  swipeable={false}
-                  draggable={false}
-                  showDots={true}
-                  responsive={responsive2}
-                  ssr={true} // means to render carousel on server-side.
-                  infinite={true}
-                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                  autoPlaySpeed={3000}
-                  keyBoardControl={true}
-                  customTransition="all .5"
-                  transitionDuration={100}
-                  containerClass="carousel-container"
-                  removeArrowOnDeviceType={["tablet", "mobile"]}
-                  deviceType={this.props.deviceType}
-                  dotListClass="custom-dot-list-style"
-                  itemClass="carousel-item-padding-40-px"
-                >
-                  {this.state.news.map((item) => {
-                    return (
-                      <div>
-                        <div className={style.new_item}>
-                          <div>
-                            <img src={item.image} />
-                            <h4>{item.name}</h4>
-                            <p className={style.date}>
-                              <i className="fa fa-calendar">
-                                {item.date_added}
-                              </i>
-                            </p>
+           
+              {this.state.events !== null &&
+                this.state.events.length !== 0 ? (
+                  <Carousel
+                    swipeable={false}
+                    draggable={false}
+                    showDots={true}
+                    responsive={responsive2}
+                    ssr={true} // means to render carousel on server-side.
+                    infinite={true}
+                    autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                    autoPlaySpeed={3000}
+                    keyBoardControl={true}
+                    customTransition="all .5"
+                    transitionDuration={100}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    deviceType={this.props.deviceType}
+                    dotListClass="custom-dot-list-style"
+                    itemClass="carousel-item-padding-40-px"
+                  >
+                    {this.state.events.map((item) => {
+                      return (
+                        <div>
+                          <div className={style.tad_item}>
+                            <div>
+                              <img src={item.image} />
+                              <h4>{item.title}</h4>
+                              <p className={style.date}>
+                                <i className="fa fa-calendar"></i>
+                                {item.date}
+                              </p>
+                              <p className={style.mar}>
+                                <i className="fa fa-map-marker"></i>
+                                {item.address}
+                              </p>
+                              <p className={style.time}>
+                                <i className="fa fa-clock-o"></i>
+                                {item.time}
+                              </p>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    );
-                  })}
-                </Carousel>
-              ) : (
-                ""
-              )}
+                      );
+                    })}
+                  </Carousel>
+                ) : (
+                  ""
+                )}
+                
               <br />
               <br />
               <br />
-              <Link to="/yangiliklar" className={style.but}>
-                Barchasini ko'rish
-              </Link>
-            </div>
+              </div>
             <Cards />
 
             <div className={style.video1}>
               <video loop={true} autoPlay={true} muted={true}>
-                <source src={video3} type="video/mp4" />
+                <source src={this.state.boshqarma!==null?this.state.boshqarma.video3:''} type="video/mp4" />
               </video>
             </div>
             <div className={style.binaf1}>
