@@ -99,7 +99,7 @@ document.getElementById('text').value=""
   getNews = () => {
     axios.get(`${url}/news/`).then((res) => {
       this.setState({
-        news: res.data,
+        news: res.data.reverse(),
         
       });
       this.getEvents();

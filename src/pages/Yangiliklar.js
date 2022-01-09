@@ -34,7 +34,7 @@ export default class Yangiliklar extends Component {
       })
       axios.get(`${url}/news/`).then((res) => {
         this.setState({
-          news: res.data,
+          news: res.data.reverse(),
           
         });
         setTimeout(()=>{
