@@ -1,8 +1,7 @@
 import { Row, Col } from 'react-bootstrap'
 import React, { Component } from 'react'
 import style from '../css/Hujjatlar.module.css'
-import doc from "../images/doc.jpg"
-import qoy from "../images/qoy.jpg"
+
 import uzb from "../images/uzb.png"
 import axios from 'axios'
 import {url} from '../host/Host'

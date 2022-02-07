@@ -85,12 +85,19 @@ boshqarma:res.data[0],
               <br />
             </p>
             <p>
-              <b>Email : </b>{this.state.boshqarma!==null?this.state.boshqarma.email:''}
+              <b>Email manzili: </b>{this.state.boshqarma!==null?this.state.boshqarma.email:''}
             </p>
+            <p>
+              <b>Ехаt manzili: </b>namangan_vxtb@exat.uz
+            </p>
+             
             <p>
               <b>Manzil : </b>{this.state.boshqarma!==null?this.state.boshqarma.manzil:''}
             </p>
-            <div className={style.icons}>
+           
+          </Col>
+        </Row>
+        <div className={style.icons}>
               <a target="_blank" href={this.state.boshqarma!==null?this.state.boshqarma.telegram:''}>
                 <i className="fa fa-telegram"></i>
               </a>
@@ -102,12 +109,20 @@ boshqarma:res.data[0],
               >
                 <i className="fa fa-youtube"></i>
               </a>
+              <a target="_blank" href={`tel: ${this.state.boshqarma!==null?this.state.boshqarma.phone:''}`}
+              >
+                <i className="fa fa-phone"></i>
+              </a>
+              <a target="_blank" href={`mailto: ${this.state.boshqarma!==null?this.state.boshqarma.email:''}`}
+              >
+                <i className="fa fa-envelope"></i>
+              </a>
+            
               <a target="_blank" href={this.state.boshqarma!==null?this.state.boshqarma.facebook:''}>
                 <i className="fa fa-facebook"></i>
               </a>
             </div>
-          </Col>
-        </Row>
+            <p className={style.g}>Sayt muallifi: <a href="http://ittower.uz/">IT TOWER MCHJ</a></p>
       </div>
     );
   }

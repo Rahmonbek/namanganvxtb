@@ -34,7 +34,9 @@ export default class Dashboard extends Component {
     boshqarma:null,
     fotos:null,
   };
-
+onEndY=(e)=>{
+  console.log(e)
+}
   componentDidMount() {
     axios.get(`${url}/boshqarma`).then(res=>{
       this.setState({
@@ -559,7 +561,10 @@ document.getElementById('text').value=""
                 return(
                   <div className={style.videos_item}>
                     <YouTube
-                      onEnd={this._onEnd}
+                      onEnd={this.onEndY(this)}
+                      showCaptions={false}
+                 
+                      showRelatedVideos={false}
                       opts={{
                         playerVars: {
                           rel: 0,
@@ -586,7 +591,8 @@ document.getElementById('text').value=""
                 textAlign: "center",
               }}
               className={style.homiy}
-            >
+            ><br/>
+            <br/>
               <h1 className={style.sarlavha}> Bizning hamkorlarimiz</h1>
               <br />
 

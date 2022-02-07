@@ -45,18 +45,21 @@ export default class NavbarA extends Component {
                     </div>
                     <div className={style.nav}>
                     <ul id="navb">
-                    <li onClick={this.closeNav}>
+                    {/* <li onClick={this.closeNav}>
                     <NavLink className={style.lik} to="/">Bosh sahifa</NavLink>
-                            </li>
-                          
+                            </li> */}
+                          <li onClick={this.closeNav}>
+                                
+                                <NavLink className={style.lik} to="/rahbariyat">Rahbariyat</NavLink>
+                                </li>
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/yangiliklar/0">Yangiliklar</NavLink>
                             </li> 
                             <li onClick={this.closeNav}>
-                                
-                            <NavLink className={style.lik} to="/rahbariyat">Rahbariyat</NavLink>
+                                <NavLink className={style.lik} to="/tumanlar">Tumanlar</NavLink>
                             </li>
-                            <li onClick={this.closeNav}>
+                            <li onClick={this.closeNav} className="fr">
+
                             <Dropdown>
   <Dropdown.Toggle className="dropD" variant="light" id="dropdown-basic">
     Hujjatlar
@@ -70,21 +73,25 @@ export default class NavbarA extends Component {
     <NavLink className={style.lik} to="/farmon">Prezident farmonlari, farmoyishlari va qarorlari</NavLink>
     </Dropdown.Item>
     <Dropdown.Item>
-    <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun</NavLink>
+    <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun qonunlar</NavLink>
     </Dropdown.Item>
    
   </Dropdown.Menu>
 </Dropdown> 
                               
                                 </li>
-                                
-                            <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/tumanlar">Tumanlar</NavLink>
-                            </li>
-                            <li onClick={this.closeNav}>
+                               
+                          
+                                <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/maktablar">Maktablar</NavLink>
                             </li>
-                         
+                            <li className="grt" onClick={this.closeNav}>
+                                <NavLink className={style.lik} to="/talim">Ta'limga oid qonunlar</NavLink>
+                            </li> <li className="grt" onClick={this.closeNav}>
+                                <NavLink className={style.lik} to="/farmon">Prezident farmonlari, farmoyishlari va qarorlari</NavLink>
+                            </li> <li className="grt" onClick={this.closeNav}>
+                                <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun qonunlar</NavLink>
+                            </li>
                             <li onClick={this.closeNav}>
                             <NavLink className={style.lik} to="/boglanish">Bog'lanish</NavLink>
                             </li>

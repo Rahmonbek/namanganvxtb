@@ -1,4 +1,4 @@
-.foot{padding:50px 5%; background-color:rgb(62, 26, 99) }
+.foot{padding:50px 5% 20px 5%; background-color:rgb(62, 26, 99) }
 .foot ul{list-style:none; }
 .foot ul li{margin-top: 20px;}
 .foot li a{color:white; font-size:18px}
@@ -12,6 +12,7 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     height:50px; display: flex; align-items:center; justify-content: center; background-color:white; color:rebeccapurple;}
 .icons i{font-size: 25px;}
+.icons a:hover{color:white;  background-color:rebeccapurple;}
 @media (max-width:1050px){
    .foot ul{justify-content: center; width:100%;}
    .foot li{width:100%; text-align: center;margin-top: 30px; margin-left:-20px}
@@ -33,3 +34,6 @@
     .icons i{font-size: 45px;}
     .icons a{width: 80px;height: 80px;}
 }
+.g{text-align: center; padding-top: 30px; }
+.g a{color:gold}
+.g a:hover{color:white}
