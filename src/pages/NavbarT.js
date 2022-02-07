@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import style from '../css/Navbar.module.css'
 import logo from '../images/logo.png'
 import { NavLink } from 'react-router-dom'
+import { Dropdown } from 'react-bootstrap'
 export default class NavbarT extends Component {
  state={
      id:0
@@ -54,6 +55,28 @@ export default class NavbarT extends Component {
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/rahbariyat">Rahbariyat</NavLink>
                             </li>
+                            <li onClick={this.closeNav}>
+                            <Dropdown>
+  <Dropdown.Toggle className="dropD" variant="light" id="dropdown-basic">
+    Hujjatlar
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu>
+  <Dropdown.Item>
+    <NavLink className={style.lik} to="/talim">Ta'limga oid qonunlar</NavLink>
+    </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/farmon">Prezident farmonlari, farmoyishlari va qarorlari</NavLink>
+    </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun</NavLink>
+    </Dropdown.Item>
+   
+  </Dropdown.Menu>
+</Dropdown> 
+                              
+                                </li>
+                          
                             <li onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/tumanlar">Tumanlar</NavLink>
                             </li>

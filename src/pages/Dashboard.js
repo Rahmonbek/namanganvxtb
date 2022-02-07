@@ -19,7 +19,7 @@ import { url } from "../host/Host";
 import Cards from "./Cards";
 import { Link } from "react-router-dom";
 import "./form.css";
-import Hujjatlar from "./Hujjatlar";
+
 import { message } from "antd";
 
 export default class Dashboard extends Component {
@@ -157,6 +157,26 @@ document.getElementById('text').value=""
         items: 1,
       },
     };
+    const responsiveY = {
+      superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 2,
+      },
+      desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 2,
+      },
+      tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 1,
+      },
+      mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1,
+      },
+    };
+    
 
     const responsive = {
       desktop: {
@@ -433,7 +453,7 @@ document.getElementById('text').value=""
               </Row>
               <div id="rahbariyat"></div>
             </div>
-            <Hujjatlar />
+         
             <div className={style.video1}>
               <video loop={true} autoPlay={true} muted={true}>
                 <source src={this.state.boshqarma!==null?this.state.boshqarma.video2:''} type="video/mp4" />
@@ -516,9 +536,27 @@ document.getElementById('text').value=""
 
               <h1 className={style.sarlavha}> Videolavhalar</h1>
               <br />
-              <Row>
-              {this.state.boshqarma!==null?this.state.boshqarma.youtube_videos.map(item=>{
-                return(<Col lg={6} md={6} sm={12}>
+              
+              <Carousel
+                  swipeable={false}
+                  draggable={false}
+                  showDots={true}
+                  responsive={responsiveY}
+                  ssr={true} // means to render carousel on server-side.
+                  infinite={true}
+                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                  autoPlaySpeed={3000}
+                  keyBoardControl={true}
+                  customTransition="all .5"
+                  transitionDuration={100}
+                  containerClass="carousel-container"
+                  removeArrowOnDeviceType={["tablet", "mobile"]}
+                  deviceType={this.props.deviceType}
+                  dotListClass="custom-dot-list-style"
+                  itemClass="carousel-item-padding-40-px"
+                >
+ {this.state.boshqarma!==null?this.state.boshqarma.youtube_videos.map(item=>{
+                return(
                   <div className={style.videos_item}>
                     <YouTube
                       onEnd={this._onEnd}
@@ -533,10 +571,12 @@ document.getElementById('text').value=""
                       muted={true}
                     />
                   </div>
-                </Col>)
+              )
               }):''}
+             
+                </Carousel>
                 
-              </Row>
+            
             </div>
 
             <div

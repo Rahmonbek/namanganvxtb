@@ -5,9 +5,9 @@
 display: flex; align-items: center;  padding-left: 0; padding-right:10%;}
 .brand{flex:35%; height:100px; display: flex; padding-left:30px; align-items: center; justify-content:center;}
 .nav{flex:65%; display: flex;padding-left:30px; }
-.brand p{padding-left: 10px; margin-top:10px; color:rgb(118, 14, 105); font-size:17px;}
+.brand p{padding-left: 10px; margin-top:10px; color:rgb(118, 14, 105); font-size:16px;}
 .nav ul{display:flex;width:100%; list-style: none; padding:10px;}
-.nav ul li{flex:20%; font-size:17px;}
+.nav ul li{flex:20%; font-size:16px;}
 .brand img{width:80px; height:80px; border-radius:50%; }
 .lik{color:rgb(118, 14, 105)}
 .lik:hover{color:gold;}

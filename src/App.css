@@ -40,6 +40,12 @@ body{width:100%; overflow-x:hidden}
   width: 100%;
   margin-top: 30px;
 }
+.dropD{
+  background-color: white; border:none;  color: rgb(90, 8, 81); padding:0px; outline: none; font-size:17px;
+  box-shadow: 0px 0px 0px transparent !important;
+}
+.dropD:hover{background-color: white;color:gold; border:none; outline: none; padding:0px; box-shadow: 0px 0px 0px transparent !important;}
+.dropD:focus{background-color: white !important;color:gold !important; border:none; outline: none; padding:0px; box-shadow: 0px 0px 0px transparent !important;}
 @media (min-width:1650px){
   .sliderHomiy p {
   font-size: 23px;

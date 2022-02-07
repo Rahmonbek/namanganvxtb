@@ -10,6 +10,9 @@ import Tumanlar from './pages/Tumanlar';
 import Rahbariyat from './pages/Rahbariyat';
 import Boglanish from './pages/Boglanish';
 import Eslatma from './pages/Eslatma';
+import HujjatlarT from './pages/HujjatlarT';
+import HujjatlarF from './pages/HujjatlarF';
+import HujjatlarO from './pages/HujjatlarO';
 import {Xarita} from './pages/Xarita';
 
 export default class App extends Component {
@@ -30,6 +33,15 @@ export default class App extends Component {
   </Route>
   <Route exact path="/tumanlar">
   <Tumanlar/>
+  </Route>
+  <Route exact path="/talim">
+  <HujjatlarT/>
+  </Route>
+  <Route exact path="/farmon">
+  <HujjatlarF/>
+  </Route>
+  <Route exact path="/oquvchi">
+  <HujjatlarO/>
   </Route>
   <Route exact path="/rahbariyat">
   <Rahbariyat/>
