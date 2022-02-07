@@ -26,10 +26,12 @@ this.setState({hujjatlar:res.data, loader:false})
           </div>:
 <>
 <NavbarT/>
-              <br/><br/>    <br/><br/> 
+<div className={style.head}>
+<h1 className={style.sarlavha}>Ta'limga oid qonunlar</h1>
+              
+              </div>   <br/><br/> 
             <div className={style.hujjat}>
               
-                <h1 className={style.sarlavha}>Ta'limga oid qonunlar</h1>
                 <Row className={style.rowT}>
 
               

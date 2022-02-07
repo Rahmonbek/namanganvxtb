@@ -2,6 +2,7 @@ import { Row, Col } from 'react-bootstrap'
 import React, { Component } from 'react'
 import style from '../css/Hujjatlar.module.css'
 
+
 import uzb from "../images/uzb.png"
 import axios from 'axios'
 import {url} from '../host/Host'
@@ -27,10 +28,13 @@ this.setState({hujjatlar:res.data, loader:false})
                 <GridLoader color="violet" loading={this.state.loader} size={40} />
               </div>:<>
               <NavbarT/>
-             <br/><br/>    <br/><br/> 
-            <div className={style.hujjat}>
+              <div className={style.head}>
                
-                <h1 className={style.sarlavha}>Prezident farmonlari, farmoyishlari va qarorlari</h1>
+              <h1 className={style.sarlavha}>Prezident farmonlari, farmoyishlari va qarorlari</h1>
+              </div>
+             <br/><br/>  
+            <div className={style.hujjat}>
+              
                 <Row className={style.rowT}>
 
                

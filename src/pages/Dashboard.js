@@ -572,7 +572,7 @@ document.getElementById('text').value=""
                       }}
                       video={item}
                       className={style.you}
-                      autoplay={true}
+                      // autoplay={true}
                       muted={true}
                     />
                   </div>

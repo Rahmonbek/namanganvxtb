@@ -27,10 +27,12 @@ this.setState({hujjatlar:res.data, loader:false})
             <GridLoader color="violet" loading={this.state.loader} size={40} />
           </div>:<>
           <NavbarT/>
-            <br/><br/>    <br/><br/> 
+          <div className={style.head}>
+          <h1 className={style.sarlavha}>O`quvchilar uchun qonunlar</h1>
+              
+              </div>    <br/><br/> 
             <div className={style.hujjat}>
               
-                <h1 className={style.sarlavha}>O`quvchilar uchun</h1>
                 <Row>
 
 

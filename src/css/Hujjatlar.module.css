@@ -3,7 +3,7 @@
 .ss img{width:100%;}
 .ss h1{font-size:18px; color:blueviolet;}
 .ss h1:hover{color:rgb(46, 12, 79)}
-.sarlavha{color:rebeccapurple; font-size: 32px; text-align:center}
+.sarlavha{color:rebeccapurple; font-size: 32px; text-align:center;  background-color:rgba(255, 255, 255, 0.713); width:100%; padding:30px;}
 .colT:nth-child(odd){padding-right:10px; border-right:3px solid rgb(46, 12, 79)}
 .rowT{border-bottom:3px solid rgb(46, 12, 79); padding-bottom:20px; }
 .load {
@@ -17,4 +17,48 @@
     justify-content: center;
     align-items: center;
   }
+  .head {
+    margin-top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-image: url(../images/h.jpg);
+    padding-top: 100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex; align-items: center;
+  }
   
+@media (max-width: 650px) {
+  
+  .head {
+    padding-top: 120%;
+  }
+}
+@media (max-width: 767px) {
+  .head {
+    background-size: 200% 100%;
+  }
+}
+@media (max-width: 550px) {
+  .head {
+    background-size: 200% 100%;
+  }
+ 
+}
+
+@media (max-width: 430px) {
+  .head {
+    background-size: 200% 100%;
+  }
+ 
+
+}
+@media (max-width: 360px) {
+  .head {
+    height: 600px;
+    background-size: 200% 100%;
+  }
+ 
+}
