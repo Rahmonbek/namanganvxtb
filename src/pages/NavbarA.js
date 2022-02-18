@@ -82,15 +82,46 @@ export default class NavbarA extends Component {
                                 </li>
                                
                           
-                                <li onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/maktablar">Maktablar</NavLink>
-                            </li>
+                                <li onClick={this.closeNav} className="fr">
+
+<Dropdown>
+<Dropdown.Toggle className="dropD" variant="light" id="dropdown-basic">
+Maktablar
+</Dropdown.Toggle>
+
+<Dropdown.Menu>
+<Dropdown.Item>
+<NavLink className={style.lik} to="/ishlanma">Dars ishlanmalar</NavLink>
+</Dropdown.Item>
+<Dropdown.Item>
+<NavLink className={style.lik} to="/kutubxona">Elektron kutubxona</NavLink>
+</Dropdown.Item>
+<Dropdown.Item>
+<NavLink className={style.lik} to="/maktablar">Xarita</NavLink>
+</Dropdown.Item>
+
+</Dropdown.Menu>
+</Dropdown> 
+  
+    </li>
+   
+
+
                             <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/talim">Ta'limga oid qonunlar</NavLink>
                             </li> <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/farmon">Prezident farmonlari, farmoyishlari va qarorlari</NavLink>
                             </li> <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun qonunlar</NavLink>
+                            </li>
+                            <li className="grt" onClick={this.closeNav}>
+                                <NavLink className={style.lik} to="/ishlanma">Dars ishlanmalar</NavLink>
+                            </li>
+                            <li className="grt" onClick={this.closeNav}>
+                                <NavLink className={style.lik} to="/kutubxona">Elektron kutubxona</NavLink>
+                            </li>
+                            <li className="grt" onClick={this.closeNav}>
+                                <NavLink className={style.lik} to="/maktablar">Xarita</NavLink>
                             </li>
                             <li onClick={this.closeNav}>
                             <NavLink className={style.lik} to="/boglanish">Bog'lanish</NavLink>

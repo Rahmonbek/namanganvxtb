@@ -79,3 +79,14 @@ body{width:100%; overflow-x:hidden}
   align-items:center;
   justify-content:center;
 }
+
+@media (min-width:1650px){
+  
+  .dropD{font-size: 25px !important;} 
+  }
+  
+  @media (max-width:704px){
+  #navb{height:calc(100% - 100px); overflow-y: auto;}
+  
+ }
+ 

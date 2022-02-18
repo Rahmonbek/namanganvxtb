@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 import style from "../css/Footer.module.css";
 import { url } from "../host/Host";
 import logo from "../images/logo.png";
@@ -25,60 +26,51 @@ boshqarma:res.data[0],
     return (
       <div className={style.foot}>
         <Row>
-          <Col lg={4} md={12} sm={12}>
+        <Col lg={4} md={12} sm={12}>
             <ul>
               <li>
-                <a
-                  className={style.lik}
-                  activeStyle={{ color: "gold" }}
-                  href="#"
-                >
-                  Bosh sahifa
-                </a>
+                 <NavLink className={style.lik} to="/rahbariyat">Rahbariyat</NavLink>
               </li>
               <li>
-                <a
-                  className={style.lik}
-                  activeStyle={{ color: "gold" }}
-                  href="#fotolar"
-                >
-                  Foto lavhalar
-                </a>
+                 <NavLink className={style.lik} to="/yangiliklar/0">Yangiliklar</NavLink>
               </li>
               <li>
-                <a
-                  className={style.lik}
-                  activeStyle={{ color: "gold" }}
-                  href="#yangilik"
-                >
-                  Yangiliklar
-                </a>
+                 <NavLink className={style.lik} to="/tumanlar">Tumanlar</NavLink>
               </li>
 
               <li>
-                <a
-                  className={style.lik}
-                  activeStyle={{ color: "gold" }}
-                  href="#video"
-                >
-                  Video lavhalar
-                </a>
+              <NavLink className={style.lik} to="/talim">Ta'limga oid qonunlar</NavLink>
               </li>
 
               <li>
-                <a
-                  className={style.lik}
-                  activeStyle={{ color: "gold" }}
-                  href="#bog'lanish"
-                >
-                  Bog'lanish
-                </a>
+              <NavLink className={style.lik} to="/farmon">Prezident farmonlari</NavLink>
               </li>
             </ul>
           </Col>
-          <Col className={style.colImg} lg={4} md={12} sm={12}>
-            <img src={logo} />
+          <Col lg={4} md={12} sm={12}>
+            <ul>
+              <li>
+              <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun qonunlar</NavLink>
+              </li>
+              <li>
+              <NavLink className={style.lik} to="/ishlanma">Dars ishlanmalar</NavLink>
+              </li>
+              <li>
+              <NavLink className={style.lik} to="/kutubxona">Elektron kutubxona</NavLink>
+              </li>
+
+              <li>
+              <NavLink className={style.lik} to="/maktablar">Xarita</NavLink>
+              </li>
+
+              <li>
+              <NavLink className={style.lik} to="/boglanish">Bog'lanish</NavLink>
+              </li>
+            </ul>
           </Col>
+          {/* <Col className={style.colImg} lg={3} md={12} sm={12}>
+            <img src={logo} />
+          </Col> */}
           <Col lg={4} md={12} sm={12}>
             <p>
               <b>Ishonch telefonlari : </b>{this.state.boshqarma!==null?this.state.boshqarma.phone:''}
