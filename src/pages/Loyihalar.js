@@ -57,7 +57,7 @@ this.getNews()
         });
         setTimeout(()=>{
           this.setState({loader:false})
-        },1000)
+        },2000)
       })});  
       
  
