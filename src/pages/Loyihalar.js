@@ -37,12 +37,19 @@ export default class Loyihalar extends Component {
    
 
   }
+  download=(id)=>{
+    this.setState({loader:true})
+    var b=this.state.news[id]
+    b.download+=1
+    axios.patch(`${url}/projects/${b.id}/`, {download:b.download}).then(res=>{console.log(res)})
+this.getNews()
+  }
   getNews = () => {
     axios.get(`${url}/boshqarma`).then(res=>{
       this.setState({
         school:res.data[0]
       })
-      axios.get(`${url}/news/`).then((res) => {
+      axios.get(`${url}/projects/`).then((res) => {
         this.setState({
           news: res.data.reverse(),
           
@@ -50,11 +57,21 @@ export default class Loyihalar extends Component {
         setTimeout(()=>{
           this.setState({loader:false})
         },1000)
-      });  
+      })});  
       
-    })
+ 
    
   };
+ getTuman=(id)=>{
+var a=[]
+var b=this.state.news
+for(let i=0; i<b.length; i++){
+  if (b[i].region===id){
+    a.push(b[i])
+  }
+}
+return(a)
+ }
   render() {
     return (
       <>
@@ -74,119 +91,59 @@ export default class Loyihalar extends Component {
             <div className={style.binaf}></div>
             <div className={styles.newsY}>
               <Collapse accordion defaultActiveKey={[this.state.raqam]}>
-                {this.state.tumanlar !== null
-                  ? this.state.tumanlar.map((item) => {
-                      return (
-                        <Panel header={item.name}>
+              <Panel className={styled.panel} header="Namangan viloyati">
                           <div>
                             <Container>
                          <Row>
-                         <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
-                                    <div className={styled.ss}>
-                                      <div className={styled.bag}><i className="fa fa-download"></i>  22</div>
-                                    <Row>
-                                   
-                                        <Col lg={3}><img src={item.image.indexOf(".ppt")!==-1?power:(item.image.indexOf(".doc")!==-1?word:(item.image.indexOf(".xls")!==-1?excel:(item.image.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
-                                        <Col lg={9}
-                                         style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1>
-                                                                           {item.full_name}</h1>
-                                        <a className={styled.but} href={item.file} target="_blank">Yuklab olish</a>
+                           {this.getTuman(null).length!==0?this.getTuman(null).map((item,key)=>{
+                             return( <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
+                             <div className={styled.ss}>
+                               <div className={styled.bag}><i className="fa fa-download"></i>  {item.download===null?0:item.download}</div>
+                             <Row>
+                            
+                                 <Col lg={3}><img src={item.file.indexOf(".ppt")!==-1?power:(item.file.indexOf(".doc")!==-1?word:(item.file.indexOf(".xls")!==-1?excel:(item.file.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
+                                 <Col lg={9}
+                                  style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1 style={{textAlign:'left'}}>
+                                                                    {item.name}</h1>
+                                 <a className={styled.but} onClick={()=>{this.download(key)}} href={item.file} target="_blank">Yuklab olish</a>
 
-                                        </Col>
-                                    
-                                    </Row></div>
-                                                        </Col>
-                                                        <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
-                                    <div className={styled.ss}>
-                                      <div className={styled.bag}><i className="fa fa-download"></i>  22</div>
-                                    <Row>
-                                   
-                                        <Col lg={3}><img src={item.image.indexOf(".ppt")!==-1?power:(item.image.indexOf(".doc")!==-1?word:(item.image.indexOf(".xls")!==-1?excel:(item.image.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
-                                        <Col lg={9}
-                                         style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1>
-                                                                           {item.full_name}</h1>
-                                        <a className={styled.but} href={item.file} target="_blank">Yuklab olish</a>
+                                 </Col>
+                             
+                             </Row></div>
+                             </Col>           
+                             )
+                           }):<h1 className={styled.HT}><i className="fa fa-folder-open"></i> Loyiha mavjud emas!!!</h1>}
+                                            
+                         </Row>
+                            </Container>
+                          </div>
+                        </Panel>
+                {this.state.tumanlar !== null
+                  ? this.state.tumanlar.map((item1) => {
+                      return (
+                        <Panel className={styled.panel} header={item1.name}>
+                          <div>
+                            <Container>
+                         <Row>
+                         {this.getTuman(item1.id).length!==0?this.getTuman(item1.id).map((item,key)=>{
+                             return( <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
+                             <div className={styled.ss}>
+                               <div className={styled.bag}><i className="fa fa-download"></i>  {item.download===null?0:item.download}</div>
+                             <Row>
+                            
+                                 <Col lg={3}><img src={item.file.indexOf(".ppt")!==-1?power:(item.file.indexOf(".doc")!==-1?word:(item.file.indexOf(".xls")!==-1?excel:(item.file.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
+                                 <Col lg={9}
+                                  style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1 style={{textAlign:'left'}}>
+                                                                    {item.name}</h1>
+                                 <a className={styled.but} onClick={()=>{this.download(key)}} href={item.file} target="_blank">Yuklab olish</a>
 
-                                        </Col>
-                                    
-                                    </Row></div>
-                                                        </Col>
-                                                        <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
-                                    <div className={styled.ss}>
-                                      <div className={styled.bag}><i className="fa fa-download"></i>  22</div>
-                                    <Row>
-                                   
-                                        <Col lg={3}><img src={item.image.indexOf(".ppt")!==-1?power:(item.image.indexOf(".doc")!==-1?word:(item.image.indexOf(".xls")!==-1?excel:(item.image.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
-                                        <Col lg={9}
-                                         style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1>
-                                                                           {item.full_name}</h1>
-                                        <a className={styled.but} href={item.file} target="_blank">Yuklab olish</a>
-
-                                        </Col>
-                                    
-                                    </Row></div>
-                                                        </Col>
-                                                        <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
-                                    <div className={styled.ss}>
-                                      <div className={styled.bag}><i className="fa fa-download"></i>  22</div>
-                                    <Row>
-                                   
-                                        <Col lg={3}><img src={item.image.indexOf(".ppt")!==-1?power:(item.image.indexOf(".doc")!==-1?word:(item.image.indexOf(".xls")!==-1?excel:(item.image.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
-                                        <Col lg={9}
-                                         style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1>
-                                                                           {item.full_name}</h1>
-                                        <a className={styled.but} href={item.file} target="_blank">Yuklab olish</a>
-
-                                        </Col>
-                                    
-                                    </Row></div>
-                                                        </Col>
-                                                        <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
-                                    <div className={styled.ss}>
-                                      <div className={styled.bag}><i className="fa fa-download"></i>  22</div>
-                                    <Row>
-                                   
-                                        <Col lg={3}><img src={item.image.indexOf(".ppt")!==-1?power:(item.image.indexOf(".doc")!==-1?word:(item.image.indexOf(".xls")!==-1?excel:(item.image.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
-                                        <Col lg={9}
-                                         style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1>
-                                                                           {item.full_name}</h1>
-                                        <a className={styled.but} href={item.file} target="_blank">Yuklab olish</a>
-
-                                        </Col>
-                                    
-                                    </Row></div>
-                                                        </Col>
-                                                        <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
-                                    <div className={styled.ss}>
-                                      <div className={styled.bag}><i className="fa fa-download"></i>  22</div>
-                                    <Row>
-                                   
-                                        <Col lg={3}><img src={item.image.indexOf(".ppt")!==-1?power:(item.image.indexOf(".doc")!==-1?word:(item.image.indexOf(".xls")!==-1?excel:(item.image.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
-                                        <Col lg={9}
-                                         style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1>
-                                                                           {item.full_name}</h1>
-                                        <a className={styled.but} href={item.file} target="_blank">Yuklab olish</a>
-
-                                        </Col>
-                                    
-                                    </Row></div>
-                                                        </Col>
-                                                        <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
-                                    <div className={styled.ss}>
-                                      <div className={styled.bag}><i className="fa fa-download"></i>  22</div>
-                                    <Row>
-                                   
-                                        <Col lg={3}><img src={item.image.indexOf(".ppt")!==-1?power:(item.image.indexOf(".doc")!==-1?word:(item.image.indexOf(".xls")!==-1?excel:(item.image.indexOf(".pdf")!==-1?pdf:(file))))} /></Col>
-                                        <Col lg={9}
-                                         style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1>
-                                                                           {item.full_name}</h1>
-                                        <a className={styled.but} href={item.file} target="_blank">Yuklab olish</a>
-
-                                        </Col>
-                                    
-                                    </Row></div>
-                                                        </Col>
-                                                        
+                                 </Col>
+                             
+                             </Row></div>
+                             </Col>           
+                             )
+                           }):<h1 className={styled.HT}><i className="fa fa-folder-open"></i> Loyiha mavjud emas!!!</h1>}
+                                                  
                                                         
                          </Row>
                             </Container>
