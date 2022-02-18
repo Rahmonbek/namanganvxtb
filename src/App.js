@@ -15,6 +15,8 @@ import HujjatlarF from './pages/HujjatlarF';
 import HujjatlarO from './pages/HujjatlarO';
 import {Xarita} from './pages/Xarita';
 import Kutubxona from './pages/Kutubxona';
+import Darslar from './pages/Darslar';
+import Loyihalar from './pages/Loyihalar';
 
 export default class App extends Component {
   render() {
@@ -55,6 +57,12 @@ export default class App extends Component {
   </Route>
   <Route exact path="/kutubxona">
   <Kutubxona/>
+  </Route>
+  <Route exact path="/ishlanma">
+  <Darslar/>
+  </Route>
+  <Route path="/loyihalar">
+  <Loyihalar/>
   </Route>
 </Switch>
       <Eslatma/>

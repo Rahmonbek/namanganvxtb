@@ -97,6 +97,10 @@ Maktablar
 <NavLink className={style.lik} to="/kutubxona">Elektron kutubxona</NavLink>
 </Dropdown.Item>
 <Dropdown.Item>
+<NavLink className={style.lik} to="/loyihalar">Loyihalar</NavLink>
+</Dropdown.Item>
+
+<Dropdown.Item>
 <NavLink className={style.lik} to="/maktablar">Xarita</NavLink>
 </Dropdown.Item>
 
@@ -119,8 +123,13 @@ Maktablar
                                 <NavLink className={style.lik} to="/kutubxona">Elektron kutubxona</NavLink>
                             </li>
                             <li className="grt" onClick={this.closeNav}>
+<NavLink className={style.lik} to="/loyihalar">Loyihalar</NavLink>
+                               
+                            </li>
+                            <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/maktablar">Xarita</NavLink>
                             </li>
+                          
                             <li onClick={this.closeNav}>
                             <NavLink className={style.lik} to="/boglanish">Bog'lanish</NavLink>
                             </li>

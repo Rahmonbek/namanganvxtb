@@ -34,10 +34,11 @@ export default class Kutubxona extends Component {
           </div>:
 <>
 <NavbarT/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div className={style.head}>
+<h1 className={style.sarlavha}>Elektron kitoblar to'plami</h1>
+               
+               </div>
+              <br/><br/>  
 <br/>
 <br/>
 <div className={style.sinflar}>

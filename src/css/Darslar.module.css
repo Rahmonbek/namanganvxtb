@@ -1,8 +1,11 @@
 .hujjat{width:100%; padding:40px 10%; background-color:white;}
-.ss{width:100%; align-items:center;}
+.ss{width:100%; align-items:center; position:relative;}
+.bag{padding:3px 9px; font-size:12px; color:rgb(46, 12, 79); background-color: white; position: absolute;  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; top:-20px; right:20px; border-radius: 10px; ;}
 .ss img{width:100%;}
 .ss h1{font-size:18px; color:blueviolet;}
 .ss h1:hover{color:rgb(46, 12, 79)}
+.sarlavha{color:rebeccapurple; font-size: 32px; text-align:center; 
+   background-color:rgba(255, 255, 255, 0.713); width:100%; padding:30px;}
 .colT:nth-child(odd){padding-right:10px; border-right:3px solid rgb(46, 12, 79)}
 .rowT{border-bottom:3px solid rgb(46, 12, 79); padding-bottom:20px; }
 .load {
@@ -43,15 +46,12 @@
     box-shadow: 0px 0px 0px 0px transparent;
   }
   
-  .sarlavha{color:rebeccapurple; font-size: 32px; text-align:center; 
-    background-color:rgba(255, 255, 255, 0.713); width:100%; padding:30px;}
- 
   .head {
     margin-top: 0px;
     width: 100%;
     height: 100vh;
     background-size: 100% 100%;
-    background-image: url(../images/h.jpg);
+    background-image: url(../images/dars.jpg);
     padding-top: 100px;
     background-attachment: fixed;
     background-repeat: no-repeat;

@@ -23,3 +23,51 @@
 .but:active {
   box-shadow: 0px 0px 0px 0px transparent;
 }
+.sarlavha{color:rebeccapurple; font-size: 32px; text-align:center;  background-color:rgba(255, 255, 255, 0.713); width:100%; padding:30px;}
+
+.head {
+  margin-top: 50px;
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-image: url(../images/kitoblar.png);
+  background-color: rgb(53, 15, 89);
+  padding-top: 100px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center 25px;
+  display: flex; align-items: center;
+}
+
+@media (max-width: 650px) {
+
+.head {
+  padding-top: 120%;
+}
+}
+@media (max-width: 767px) {
+.head {
+  background-size: 200% 100%;
+}
+}
+@media (max-width: 550px) {
+.head {
+  background-size: 200% 100%;
+}
+
+}
+
+@media (max-width: 430px) {
+.head {
+  background-size: 200% 100%;
+}
+
+
+}
+@media (max-width: 360px) {
+.head {
+  height: 600px;
+  background-size: 200% 100%;
+}
+
+}
