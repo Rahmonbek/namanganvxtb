@@ -41,6 +41,7 @@ export default class Loyihalar extends Component {
     this.setState({loader:true})
     var b=this.state.news[id]
     b.download+=1
+  
     axios.patch(`${url}/projects/${b.id}/`, {download:b.download}).then(res=>{console.log(res)})
 this.getNews()
   }
