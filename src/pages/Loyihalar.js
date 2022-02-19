@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { message, Collapse } from "antd";
+
 import style from "../css/Dashboard.module.css";
 import styled from "../css/Darslar.module.css";
 import styles from "../css/Gallery.module.css";
@@ -14,7 +16,6 @@ import GridLoader from "react-spinners/GridLoader";
 import axios from "axios";
 import { url } from "../host/Host";
 import NavbarA from "./NavbarA";
-import { Collapse } from "antd";
 import Footer from "./Footer";
 
 const { Panel } = Collapse;
@@ -28,6 +29,8 @@ export default class Loyihalar extends Component {
     showComment:false,
     showCommentT:false,
     raqam:"0",
+    comments:[],
+    id:null
   };
 
   componentDidMount() {
@@ -45,22 +48,90 @@ export default class Loyihalar extends Component {
       showComment:false
     })
   }
-  openModal=()=>{
-
+  openModal=(id)=>{
     this.setState({
-      showComment:true
+   showComment:true,
+comments:this.numberComment(id)
     })
 
+
   }
+addComment=()=>{
+var name=document.getElementById('name').value
+var email=document.getElementById('email').value
+var comment=document.getElementById('comment').value
+
+var config={
+  name,
+  email,
+  comment,
+  project:this.state.id
+}
+if(name.length!==0 && email.length!==0 && comment.length!==0){
+  axios.post(`${url}/comments/`, config).then(res=>{
+    this.handleCloseT()
+    this.getNews();
+    console.log('qoshildi')
+    message.success({content:"Izoh qo'shildi",
+    style: {
+      position:'fixed',
+      bottom:'20px',
+      left:'20px',
+      zIndex:'5432',
+      color:'rgb(53, 15, 89)'
+    },
+  duration:3})
+    
+  }).catch(err=>{
+   
+  
+    console.log('qoshilmadi')
+    message.error({content:"Siz bu loyiha uchun izoh qoldirgansiz",
+      style: {
+      position:'fixed',
+      bottom:'20px',
+      left:'20px',
+      zIndex:'5432',
+      color:'rgb(53, 15, 89)'
+    },
+  duration:3})
+    
+  })
+}else{
+ 
+  message.error({content:"Iltimos so'ralgan barcha ma'lumotlarni kiriting",
+  style: {
+      position:'fixed',
+      bottom:'20px',
+      left:'20px',
+      zIndex:'5432',
+      color:'rgb(53, 15, 89)'
+      
+    },
+duration:3})
+ 
+}
+}
+numberComment=(id)=>{
+  var a=this.state.comments
+  var b=[]
+  for(let i=0; i<a.length; i++){
+if(a[i].project===id){
+  b.push(a[i])
+}
+  }
+  return(b)
+}
   handleCloseT=()=>{
     this.setState({
       showCommentT:false
     })
   }
-  openModalT=()=>{
+  openModalT=(id)=>{
 
     this.setState({
-      showCommentT:true
+      showCommentT:true,
+      id:id
     })
   }
 
@@ -78,12 +149,24 @@ this.getNews()
         school:res.data[0]
       })
       axios.get(`${url}/projects/`).then((res) => {
+       
+    
+      
+          axios.get(`${url}/comments/`).then(res1=>{
+       this.setState({
+            
+              comments:res1.data,
+            })
+          })
+            
+        
         this.setState({
           news: res.data.reverse(),
-          
+          loader:false
         });
         setTimeout(()=>{
-          this.setState({loader:false})
+         
+          console.log(this.state.comments, this.state.news)
         },2000)
       })});  
       
@@ -127,7 +210,7 @@ return(a)
                            {this.getTuman(null).length!==0?this.getTuman(null).map((item,key)=>{
                              return( <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
                              <div className={styled.ss}>
-                             <div className={styled.bag1}  onClick={this.openModal} ><i className="fa fa-comments"></i>  {item.download===null?0:item.download}</div>
+                             <div className={styled.bag1}  onClick={()=>{this.openModal(item.id)}} ><i className="fa fa-comments"></i>  {this.numberComment(item.id).length}</div>
                                <div className={styled.bag}><i className="fa fa-download"></i>  {item.download===null?0:item.download}</div>
                              <Row>
                             
@@ -141,7 +224,7 @@ return(a)
                              <br/>
 
                             <div className={styled.butlar}>
-                            <buttun onClick={this.openModalT}  className={styled.but1}>Izoh qoldirish</buttun>
+                            <buttun onClick={()=>{this.openModalT(item.id)}}  className={styled.but1}>Izoh qoldirish</buttun>
 
 <a className={styled.but} onClick={()=>{this.download(key)}} href={item.file} target="_blank">Yuklab olish</a>
 
@@ -167,7 +250,7 @@ return(a)
                          {this.getTuman(item1.id).length!==0?this.getTuman(item1.id).map((item,key)=>{
                              return( <Col lg={6} md={12} className={styled.colT} style={{marginTop:'20px'}} sm={12}>
                              <div className={styled.ss}>
-                             <div className={styled.bag1} onClick={this.openModal} ><i className="fa fa-comments"></i>  {item.download===null?0:item.download}</div>
+                             <div className={styled.bag1} onClick={()=>{this.openModal(item.id)}}><i className="fa fa-comments"></i>   {this.numberComment(item.id).length}</div>
                             
                                <div className={styled.bag}><i className="fa fa-download"></i>  {item.download===null?0:item.download}</div>
                              <Row>
@@ -182,7 +265,7 @@ return(a)
                              <br/>
 
 <div className={styled.butlar}>
-<buttun onClick={this.openModalT}   className={styled.but1}>Izoh qoldirish</buttun>
+<buttun onClick={()=>{this.openModalT(item.id)}}   className={styled.but1}>Izoh qoldirish</buttun>
 
 <a className={styled.but} onClick={()=>{this.download(key)}} href={item.file} target="_blank">Yuklab olish</a>
 
@@ -202,49 +285,26 @@ return(a)
                   : ""}
               </Collapse>
             </div>
-            <Modal style={{zIndex:'6789'}} show={this.state.showComment} onHide={this.handleClose}>
+            <Modal style={{zIndex:'4789'}} show={this.state.showComment} onHide={this.handleClose}>
         <Modal.Header closeButton>
           <Modal.Title className={style.sarlavha}>Foydalanuvchilarning fikrlari</Modal.Title>
         </Modal.Header>
         <Modal.Body>
 <div className="comments">
-<div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div><div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
-                    <h4>Jhon Doe</h4> <br/><span>20 October, 2018</span> <br/>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam vero sequi velit molestias doloremque molestiae dicta?</p>
-                </div>
+  {this.state.comments!==null && this.state.comments.length!==0?
+this.state.comments.map(item=>{
+  return(<div className="comment mt-4 text-justify float-left"> <img src="https://i.imgur.com/yTFUilP.jpg" alt="" className="rounded-circle" width="40" height="40"/>
+  <h4>{item.name}</h4> <br/><span>{item.date_created}</span> <br/>
+  <p>{item.comment}</p>
+</div>)
+}):<h6 style={{textAlign:'center'}}>Izoh mavjud emas!!!</h6>}
+
 
 </div>
         </Modal.Body>
      
       </Modal>
-      <Modal style={{zIndex:'6789'}} show={this.state.showCommentT} onHide={this.handleCloseT}>
+      <Modal style={{zIndex:'4789'}} show={this.state.showCommentT} onHide={this.handleCloseT}>
         <Modal.Header closeButton>
           <Modal.Title className={style.sarlavha}>Fikringiz biz uchun muhim</Modal.Title>
         </Modal.Header>
@@ -252,11 +312,11 @@ return(a)
 <div className="comments">
 <form id="algin-form">
                     <div className="form-group">
-                        <label for="message">Izohni yozing</label> <textarea name="msg" id="" msg cols="30" rows="5" className="form-control"></textarea>
+                        <label for="message">Izohni yozing</label> <textarea name="msg" id="comment" msg cols="30" rows="5" className="form-control"></textarea>
                     </div>
-                    <div className="form-group"> <label for="name">Ism familiyani yozing</label> <input type="text" name="name" id="fullname" className="form-control"/> </div>
-                    <div className="form-group"> <label for="email">Emailni yozing</label> <input type="text" name="email" id="email" className="form-control"/> </div>
-                  <div className="form-group"> <button type="button" id="post" className="btn">Yuborish</button> </div>
+                    <div className="form-group"> <label for="name">Ism familiyani yozing</label> <input required type="text" name="name" id="name" className="form-control"/> </div>
+                    <div className="form-group"> <label for="email">Emailni yozing</label> <input required type="text" name="email" id="email" className="form-control"/> </div>
+                  <div className="form-group"> <button type="button" id="post" onClick={this.addComment} className="btn">Yuborish</button> </div>
                 </form>
 </div>
         </Modal.Body>
