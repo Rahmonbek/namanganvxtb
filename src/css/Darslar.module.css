@@ -1,6 +1,8 @@
 .hujjat{width:100%; padding:40px 10%; background-color:white;}
 .ss{width:100%; align-items:center; position:relative;}
 .bag{padding:3px 9px; font-size:12px; color:rgb(46, 12, 79); background-color: white; position: absolute;  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; top:-20px; right:20px; border-radius: 10px; ;}
+.bag1{padding:3px 9px; cursor: pointer; font-size:12px; color:rgb(46, 12, 79); background-color: white; position: absolute;  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; top:-20px; right:100px; border-radius: 10px; ;}
+.bag1:hover{color:white; background-color:rgb(46, 12, 79)}
 .ss img{width:100%;}
 .ss h1{font-size:18px; color:blueviolet;}
 .ss h1:hover{color:rgb(46, 12, 79)}
@@ -34,7 +36,7 @@
     width:200px;
     margin-top: 20px;
     margin-bottom: 30px;
-   margin-left:calc(100% - 220px)
+   margin-left:calc(100% - 440px)
      
   }
   .but {
@@ -47,6 +49,61 @@
   .but:active {
     box-shadow: 0px 0px 0px 0px transparent;
   }
+  .butlar{display: flex; width:100%;  align-items: center; justify-content: space-between;}
+  .but1 {
+    cursor: pointer;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      border: none;
+      padding: 10px 20px;
+      background-color: rgb(53, 15, 89);
+      font-size: 16px;
+    
+      color: white;
+      text-align: center;
+      width:200px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+     margin-left:20px
+       
+    }
+    .but1 {
+      color: white !important;
+    }
+    .but1:hover {
+      color: rgb(53, 15, 89) !important;
+      background-color: white;
+    }
+    .but1:active {
+      box-shadow: 0px 0px 0px 0px transparent;
+    }
+    .but2 {
+      cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        border: none;
+        padding: 10px 20px;
+        background-color: rgb(53, 15, 89);
+        font-size: 16px;
+      
+        color: white;
+        text-align: center;
+        width:200px;
+
+      
+       margin-left:calc(100% - 220px)
+         
+      }
+      .but2 {
+        color: white !important;
+      }
+      .but2:hover {
+        color: rgb(53, 15, 89) !important;
+        background-color: white;
+      }
+      .but2:active {
+        box-shadow: 0px 0px 0px 0px transparent;
+      }
   
   .head {
     margin-top: 0px;

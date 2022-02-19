@@ -58,8 +58,9 @@ this.setState({hujjatlar:res.data, loader:false})
                                          style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column'}}><h1>
                                    
                                         {item.name}</h1>
-                                        <a className={style.but} href={item.file} target="_blank">Yuklab olish</a>
-
+                                        <br/>
+                                        <a className={style.but2} href={item.file} target="_blank">Yuklab olish</a>
+<br/>
                                         </Col>
                                     
                                     </Row></div>
