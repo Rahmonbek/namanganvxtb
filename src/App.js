@@ -18,6 +18,13 @@ import {Xarita} from './pages/Xarita';
 import Kutubxona from './pages/Kutubxona';
 import Darslar from './pages/Darslar';
 import Loyihalar from './pages/Loyihalar';
+import HujjatV from './pages/HujjatV';
+import HujjatV10 from './pages/HujjatV10';
+import HujjatV9 from './pages/HujjatV9';
+import HujjatV8 from './pages/HujjatV8';
+import HujjatV7 from './pages/HujjatV7';
+import HujjatV6 from './pages/HujjatV6';
+import HujjatV5 from './pages/HujjatV5';
 
 export default class App extends Component {
   render() {
@@ -61,6 +68,30 @@ export default class App extends Component {
   </Route>
   <Route exact path="/ishlanma">
   <Darslar/>
+  </Route>
+  <Route exact path="/xalq_ta'limi_vazirligi_hay'at_qarorlari">
+<HujjatV/>
+  </Route>
+  
+  <Route exact path="/xalq_ta'limi_vazirligi_me'yoriy_hujjatlari">
+<HujjatV5/>
+  </Route>
+  
+  <Route exact path="/o'z_kuchini_yo'qotgan_me'yoriy_huquqiy_hujjatlar">
+<HujjatV6/>
+  </Route>
+  
+  <Route exact path="/me'yoriy_hujjatlar_loyihalari">
+<HujjatV7/>
+  </Route>
+  <Route exact path="/ta'limga_oid_normativ-huquqiy_hujjatlar">
+<HujjatV8/>
+  </Route>
+  <Route exact path="/vazirlik_ishtirokidagi_xalqaro_shartnomalar">
+<HujjatV9/>
+  </Route>
+  <Route exact path="/davlat_tiliga_oid_normativ-huquqiy_hujjatlar">
+<HujjatV10/>
   </Route>
   <Route path="/loyihalar">
   <Loyihalar/>

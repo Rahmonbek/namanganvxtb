@@ -75,6 +75,30 @@ export default class NavbarA extends Component {
     <Dropdown.Item>
     <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun qonunlar</NavLink>
     </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/xalq_ta'limi_vazirligi_hay'at_qarorlari">Xalq ta'limi vazirligi Hay'at qarorlari </NavLink>
+    </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/xalq_ta'limi_vazirligi_me'yoriy_hujjatlari">Xalq ta'limi vazirligi me'yoriy hujjatlari </NavLink>
+    </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/o'z_kuchini_yo'qotgan_me'yoriy_huquqiy_hujjatlar">O'z kuchini yo'qotgan me'yoriy-huquqiy hujjatlar</NavLink>
+    </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/me'yoriy_hujjatlar_loyihalari">Me'yoriy hujjatlar loyihalari </NavLink>
+    </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/ta'limga_oid_normativ-huquqiy_hujjatlar">Ta'limga oid normativ-huquqiy hujjatlar</NavLink>
+    </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/vazirlik_ishtirokidagi_xalqaro_shartnomalar">Vazirlik ishtirokidagi Xalqaro shartnomalar</NavLink>
+    </Dropdown.Item>
+    <Dropdown.Item>
+    <NavLink className={style.lik} to="/davlat_tiliga_oid_normativ-huquqiy_hujjatlar">Davlat tiliga oid normativ-huquqiy hujjatlar</NavLink>
+    </Dropdown.Item>
+
+    
+   
    
   </Dropdown.Menu>
 </Dropdown> 
@@ -117,6 +141,14 @@ Maktablar
                             </li> <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun qonunlar</NavLink>
                             </li>
+                           <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/xalq_ta'limi_vazirligi_hay'at_qarorlari">Xalq ta'limi vazirligi Hay'at qarorlari </NavLink></li>
+   <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/xalq_ta'limi_vazirligi_me'yoriy_hujjatlari">Xalq ta'limi vazirligi me'yoriy hujjatlari </NavLink></li>
+   <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/o'z_kuchini_yo'qotgan_me'yoriy_huquqiy_hujjatlar">O'z kuchini yo'qotgan me'yoriy-huquqiy hujjatlar</NavLink></li>
+   <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/me'yoriy_hujjatlar_loyihalari">Me'yoriy hujjatlar loyihalari </NavLink></li>
+   <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/ta'limga_oid_normativ-huquqiy_hujjatlar">Ta'limga oid normativ-huquqiy hujjatlar</NavLink></li>
+   <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/vazirlik_ishtirokidagi_xalqaro_shartnomalar">Vazirlik ishtirokidagi Xalqaro shartnomalar</NavLink></li>
+   <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/davlat_tiliga_oid_normativ-huquqiy_hujjatlar">Davlat tiliga oid normativ-huquqiy hujjatlar</NavLink></li>
+
                             <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/ishlanma">Dars ishlanmalar</NavLink>
                             </li>
