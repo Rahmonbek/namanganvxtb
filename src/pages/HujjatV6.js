@@ -18,7 +18,7 @@ export default class HujjatV extends Component {
         {type:3, nom:"O`quvchilar uchun qarorlar"},
         {type:4, nom:"Xalq ta'limi vazirligi Hay'at qarorlari "},
         {type:5, nom:"Xalq ta'limi vazirligi me'yoriy hujjatlari "},
-        {type:6, nom:"O'z kuchini yo'qotgan me'yoriy-huquqiy hujjatlar"},
+        {type:6, nom:"Ochiq ma'lumotlar"},
         {type:7, nom:"Me'yoriy hujjatlar loyihalari "},
         {type:8, nom:"Ta'limga oid normativ-huquqiy hujjatlar"},
         {type:9, nom:"Vazirlik ishtirokidagi Xalqaro shartnomalar"},

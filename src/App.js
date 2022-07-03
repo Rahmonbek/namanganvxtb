@@ -77,7 +77,7 @@ export default class App extends Component {
 <HujjatV5/>
   </Route>
   
-  <Route exact path="/o'z_kuchini_yo'qotgan_me'yoriy_huquqiy_hujjatlar">
+  <Route exact path="/ochiq_malumotlar">
 <HujjatV6/>
   </Route>
   
