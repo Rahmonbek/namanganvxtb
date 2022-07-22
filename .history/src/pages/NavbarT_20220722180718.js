@@ -3,7 +3,7 @@ import style from '../css/Navbar.module.css'
 import logo from '../images/logo.png'
 import { NavLink } from 'react-router-dom'
 import { Dropdown } from 'react-bootstrap'
-export default class NavbarA extends Component {
+export default class NavbarT extends Component {
  state={
      id:0
  }
@@ -24,10 +24,10 @@ export default class NavbarA extends Component {
     
    }
    closeNav=()=>{
-       if(this.state.id===1){
+    if(this.state.id===1){
         document.querySelector('#navb').style.display="none"
    
-       }
+    }
     }
     render() {
 
@@ -38,7 +38,7 @@ export default class NavbarA extends Component {
                       <i className="fa fa-bars"></i>
                   </div>
                     <div className={style.brand}>
-                        <NavLink style={{textDecoration:"none", display:'flex', alignItems: 'center', justifyContent:'center'}} to="/">
+                    <NavLink style={{textDecoration:"none", display:'flex', alignItems: 'center', justifyContent:'center'}} to="/">
                         <img src={logo}/>
                         <p>Namangan viloyat xalq ta'limi boshqarmasi</p>
                         </NavLink>
@@ -66,8 +66,7 @@ export default class NavbarA extends Component {
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
-  
-    <Dropdown.Item>
+  <Dropdown.Item>
   <NavLink className={style.lik} to="/talim">Ta'limga oid qonunlar</NavLink>
     </Dropdown.Item>
     <Dropdown.Item>
@@ -82,6 +81,7 @@ export default class NavbarA extends Component {
     <Dropdown.Item>
     <NavLink className={style.lik} to="/xalq_ta'limi_vazirligi_me'yoriy_hujjatlari">Xalq ta'limi vazirligi me'yoriy hujjatlari </NavLink>
     </Dropdown.Item>
+   
     <Dropdown.Item>
     <NavLink className={style.lik} to="/me'yoriy_hujjatlar_loyihalari">Me'yoriy hujjatlar loyihalari </NavLink>
     </Dropdown.Item>
@@ -95,14 +95,11 @@ export default class NavbarA extends Component {
     <NavLink className={style.lik} to="/davlat_tiliga_oid_normativ-huquqiy_hujjatlar">Davlat tiliga oid normativ-huquqiy hujjatlar</NavLink>
     </Dropdown.Item>
 
-    
-   
-   
   </Dropdown.Menu>
 </Dropdown> 
                               
                                 </li>
-                               
+                              
                           
                                 <li onClick={this.closeNav} className="fr">
 
@@ -121,6 +118,7 @@ Maktablar
 <Dropdown.Item>
 <NavLink className={style.lik} to="/loyihalar">Loyihalar</NavLink>
 </Dropdown.Item>
+
 <Dropdown.Item>
 <NavLink className={style.lik} to="/maktablar">Xarita</NavLink>
 </Dropdown.Item>
@@ -133,16 +131,14 @@ Maktablar
     <NavLink className={style.lik} to="/ochiq_malumotlar">Ochiq ma'lumotlar</NavLink>
 
                             </li>
-
-
                             <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/talim">Ta'limga oid qonunlar</NavLink>
                             </li> <li className="grt" onClick={this.closeNav}>
-                                <NavLink className={style.lik} to="/farmon">Prezident farmonlari, farmoyishlari va qarorlari</NavLink>
+                                <NavLink className={style.lik} to="/farmon">Prezident farmonlari</NavLink>
                             </li> <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/oquvchi">O`quvchilar uchun qonunlar</NavLink>
                             </li>
-                           <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/xalq_ta'limi_vazirligi_hay'at_qarorlari">Xalq ta'limi vazirligi Hay'at qarorlari </NavLink></li>
+                            <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/xalq_ta'limi_vazirligi_hay'at_qarorlari">Xalq ta'limi vazirligi Hay'at qarorlari </NavLink></li>
    <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/xalq_ta'limi_vazirligi_me'yoriy_hujjatlari">Xalq ta'limi vazirligi me'yoriy hujjatlari </NavLink></li>
    <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/ochiq_malumotlar">Ochiq ma'lumotlar</NavLink></li>
    <li className="grt" onClick={this.closeNav}> <NavLink className={style.lik} to="/me'yoriy_hujjatlar_loyihalari">Me'yoriy hujjatlar loyihalari </NavLink></li>
@@ -163,8 +159,7 @@ Maktablar
                             <li className="grt" onClick={this.closeNav}>
                                 <NavLink className={style.lik} to="/maktablar">Xarita</NavLink>
                             </li>
-                           
-
+                          
                             <li onClick={this.closeNav}>
                             <NavLink className={style.lik} to="/boglanish">Bog'lanish</NavLink>
                             </li>

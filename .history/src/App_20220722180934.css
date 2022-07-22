@@ -89,7 +89,7 @@ body{width:100%; overflow-x:hidden}
   }
   
   @media (max-width:704px){
-    .dropD{font-size: 20px !important;} 
+    .dropD{font-size: 16px !important;} 
   #navb{height:calc(100% - 100px); overflow-y: auto;}
   
  }

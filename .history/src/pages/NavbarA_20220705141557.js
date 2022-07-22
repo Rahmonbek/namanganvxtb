@@ -66,8 +66,7 @@ export default class NavbarA extends Component {
   </Dropdown.Toggle>
 
   <Dropdown.Menu>
-  
-    <Dropdown.Item>
+  <Dropdown.Item>
   <NavLink className={style.lik} to="/talim">Ta'limga oid qonunlar</NavLink>
     </Dropdown.Item>
     <Dropdown.Item>
